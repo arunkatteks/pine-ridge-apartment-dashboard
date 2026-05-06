@@ -1,7 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pine Ridge Apartment Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body { font-family: Arial; margin: 10px; background: #f5f7fa; }
+h1 { text-align: center; }
+
+.card {
+  background: white;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+select, button {
+  padding: 10px;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 8px; border-bottom: 1px solid #ddd; }
+
+.paid { color: green; font-weight: bold; }
+.unpaid { color: red; font-weight: bold; background: #ffe6e6; }
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  table { font-size: 12px; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Pine Ridge Apartment Dashboard</h1>
+
+<div class="card">
+  <label>Select Month:</label>
+  <select id="monthSelect"></select>
+</div>
+
+<div class="card">
+  <h3>Summary</h3>
+  <p>Expenses: ₹<span id="expenses"></span></p>
+  <p>Collected: ₹<span id="collected"></span></p>
+  <p>Pending: ₹<span id="pending"></span></p>
+</div>
+
+<div class="card">
+  <h3>Expense Breakdown</h3>
+  <canvas id="expenseChart"></canvas>
+</div>
+
+<div class="card">
+  <h3>Collection Status</h3>
+  <canvas id="collectionChart"></canvas>
+</div>
+
+<div class="card">
+  <h3>Defaulters</h3>
+  <button onclick="copyDefaulters()">Copy WhatsApp Message</button>
+  <pre id="defaultersText"></pre>
+</div>
+
+<div class="card">
+  <h3>Apartment Tracker</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Flat</th>
+        <th>Owner</th>
+        <th>Due</th>
+        <th>Paid</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
 <script>
-const EXCEL_URL = "https://1drv.ms/x/c/FB84C1A8D91E06CC/IQC1EeGASlmARoLgya8IJtSGAT5g7Aedg3ivGJ2pmSPZk5I?download=1";
+const EXCEL_URL = "https://onedrive.live.com/download?resid=FB84C1A8D91E06CC!105&authkey=!ANkLgya8IJtSGA";
 
 let workbookData = {};
 
@@ -22,23 +124,21 @@ function populateMonths() {
 
   Object.keys(workbookData).forEach(sheet => {
     if (sheet.startsWith("Expenses ")) {
-      const month = sheet.replace("Expenses ", "");
-      months.add(month);
+      months.add(sheet.replace("Expenses ", ""));
     }
   });
 
   const select = document.getElementById("monthSelect");
   select.innerHTML = "";
 
-  months.forEach(month => {
+  months.forEach(m => {
     const opt = document.createElement("option");
-    opt.value = month;
-    opt.textContent = month;
+    opt.value = m;
+    opt.textContent = m;
     select.appendChild(opt);
   });
 
   select.onchange = () => loadMonth(select.value);
-
   loadMonth(select.value);
 }
 
@@ -53,13 +153,13 @@ function loadMonth(month) {
 }
 
 function renderSummary(exp, col) {
-  let totalExp = exp.reduce((s,x)=>s+(x.Amount||0),0);
-  let totalPaid = col.reduce((s,x)=>s+(x["Amount Paid"]||0),0);
-  let totalPending = col.reduce((s,x)=>s+((x["Amount Due"]||0)-(x["Amount Paid"]||0)),0);
+  let e = exp.reduce((s,x)=>s+(x.Amount||0),0);
+  let c = col.reduce((s,x)=>s+(x["Amount Paid"]||0),0);
+  let p = col.reduce((s,x)=>s+((x["Amount Due"]||0)-(x["Amount Paid"]||0)),0);
 
-  document.getElementById("expenses").textContent = totalExp;
-  document.getElementById("collected").textContent = totalPaid;
-  document.getElementById("pending").textContent = totalPending;
+  expenses.textContent = e;
+  collected.textContent = c;
+  pending.textContent = p;
 }
 
 function renderCharts(exp, col) {
@@ -88,21 +188,20 @@ function renderCharts(exp, col) {
 }
 
 function renderTable(col) {
-  const tbody = document.getElementById("tableBody");
-  tbody.innerHTML = "";
+  tableBody.innerHTML = "";
 
   col.forEach(c=>{
-    let isUnpaid = (c["Amount Paid"]||0) < (c["Amount Due"]||0);
+    let unpaid = (c["Amount Paid"]||0) < (c["Amount Due"]||0);
 
-    let row = `<tr>
-      <td>${c.Flat}</td>
-      <td>${c.Owner}</td>
-      <td>₹${c["Amount Due"]}</td>
-      <td>₹${c["Amount Paid"]}</td>
-      <td class="${isUnpaid?'unpaid':'paid'}">${isUnpaid?'Unpaid':'Paid'}</td>
-    </tr>`;
-
-    tbody.innerHTML += row;
+    tableBody.innerHTML += `
+      <tr>
+        <td>${c.Flat}</td>
+        <td>${c.Owner}</td>
+        <td>₹${c["Amount Due"]}</td>
+        <td>₹${c["Amount Paid"]}</td>
+        <td class="${unpaid?'unpaid':'paid'}">${unpaid?'Unpaid':'Paid'}</td>
+      </tr>
+    `;
   });
 }
 
@@ -127,3 +226,6 @@ function copyDefaulters() {
   alert("Copied for WhatsApp!");
 }
 </script>
+
+</body>
+</html>
