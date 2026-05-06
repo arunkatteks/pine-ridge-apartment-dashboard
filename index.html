@@ -48,6 +48,12 @@ pre {
   border-radius: 6px;
 }
 
+.error {
+  color: red;
+  padding: 20px;
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   table { font-size: 12px; }
 }
@@ -103,12 +109,17 @@ pre {
 </div>
 
 <script>
-const EXCEL_URL = "https://onedrive.live.com/download?resid=FB84C1A8D91E06CC!105&authkey=!ANkLgya8IJtSGA";
+// ✅ FIXED OneDrive API link
+const EXCEL_URL = "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9GQjg0QzFBOEQ5MUUwNkNDL0lRQzFFZUdBU2xtQVJvTGd5YThJSnRTR0FUNWc3QWVkZzNpdkdKMnBtU1Baa1lJ/root/content";
 
 let workbookData = {};
 
+// ✅ SAFE FETCH (no more blank screen)
 fetch(EXCEL_URL)
-  .then(res => res.arrayBuffer())
+  .then(res => {
+    if (!res.ok) throw new Error("Failed to fetch Excel file");
+    return res.arrayBuffer();
+  })
   .then(data => {
     const workbook = XLSX.read(data, { type: "array" });
 
@@ -117,6 +128,14 @@ fetch(EXCEL_URL)
     });
 
     populateMonths();
+  })
+  .catch(err => {
+    document.body.innerHTML = `
+      <div class="error">
+        Error loading Excel data<br><br>
+        ${err}
+      </div>
+    `;
   });
 
 function populateMonths() {
@@ -157,9 +176,9 @@ function renderSummary(exp, col) {
   let c = col.reduce((s,x)=>s+(x["Amount Paid"]||0),0);
   let p = col.reduce((s,x)=>s+((x["Amount Due"]||0)-(x["Amount Paid"]||0)),0);
 
-  expenses.textContent = e;
-  collected.textContent = c;
-  pending.textContent = p;
+  document.getElementById("expenses").textContent = e;
+  document.getElementById("collected").textContent = c;
+  document.getElementById("pending").textContent = p;
 }
 
 function renderCharts(exp, col) {
@@ -188,12 +207,13 @@ function renderCharts(exp, col) {
 }
 
 function renderTable(col) {
-  tableBody.innerHTML = "";
+  const tbody = document.getElementById("tableBody");
+  tbody.innerHTML = "";
 
   col.forEach(c=>{
     let unpaid = (c["Amount Paid"]||0) < (c["Amount Due"]||0);
 
-    tableBody.innerHTML += `
+    tbody.innerHTML += `
       <tr>
         <td>${c.Flat}</td>
         <td>${c.Owner}</td>
