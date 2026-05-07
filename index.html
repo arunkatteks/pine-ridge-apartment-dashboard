@@ -1,3 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pine Ridge Apartment Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: Arial;
+  margin: 10px;
+  background: #f5f7fa;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+select, button {
+  padding: 10px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.unpaid {
+  color: red;
+  font-weight: bold;
+}
+
+.paid {
+  color: green;
+  font-weight: bold;
+}
+
+pre {
+  background: #eee;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Pine Ridge Apartment Dashboard</h1>
+
+<div class="card">
+  <label>Select Month:</label>
+  <select id="monthSelect"></select>
+</div>
+
+<div class="card">
+  <p>Expenses: ₹<span id="expenses"></span></p>
+  <p>Collected: ₹<span id="collected"></span></p>
+  <p>Pending: ₹<span id="pending"></span></p>
+</div>
+
+<div class="card">
+  <canvas id="expenseChart"></canvas>
+</div>
+
+<div class="card">
+  <canvas id="collectionChart"></canvas>
+</div>
+
+<div class="card">
+  <button onclick="copyDefaulters()">Copy Defaulters</button>
+  <pre id="defaultersText"></pre>
+</div>
+
+<div class="card">
+  <h3>Apartment Tracker</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Flat</th>
+        <th>Owner</th>
+        <th>Due</th>
+        <th>Paid</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
 <script>
 let workbookData = {};
 
@@ -39,6 +146,7 @@ function populateMonths() {
 }
 
 function loadMonth(month) {
+
   const expenseKey = Object.keys(workbookData)
     .find(k => k.toLowerCase() === ("expenses " + month).toLowerCase());
 
@@ -55,6 +163,7 @@ function loadMonth(month) {
 }
 
 function renderSummary(exp, col) {
+
   document.getElementById("expenses").textContent =
     exp.reduce((s,x)=>s+(x.Amount||0),0);
 
@@ -66,51 +175,48 @@ function renderSummary(exp, col) {
 }
 
 function renderCharts(exp, col) {
+
   let cat = {};
 
   exp.forEach(e => {
     cat[e.Category] = (cat[e.Category] || 0) + e.Amount;
   });
 
-  if (window.expenseChartObj) {
+  if(window.expenseChartObj)
     window.expenseChartObj.destroy();
-  }
 
   window.expenseChartObj = new Chart(
     document.getElementById("expenseChart"),
     {
-      type: 'pie',
-      data: {
-        labels: Object.keys(cat),
-        datasets: [{
-          data: Object.values(cat)
+      type:'pie',
+      data:{
+        labels:Object.keys(cat),
+        datasets:[{
+          data:Object.values(cat)
         }]
       }
     }
   );
 
-  let paid = 0;
-  let unpaid = 0;
+  let paid=0, unpaid=0;
 
-  col.forEach(c => {
-    if ((c["Amount Paid"] || 0) >= (c["Amount Due"] || 0))
-      paid++;
-    else
-      unpaid++;
+  col.forEach(c=>{
+    ((c["Amount Paid"]||0)>=c["Amount Due"])
+      ? paid++
+      : unpaid++;
   });
 
-  if (window.collectionChartObj) {
+  if(window.collectionChartObj)
     window.collectionChartObj.destroy();
-  }
 
   window.collectionChartObj = new Chart(
     document.getElementById("collectionChart"),
     {
-      type: 'bar',
-      data: {
-        labels: ["Paid", "Unpaid"],
-        datasets: [{
-          data: [paid, unpaid]
+      type:'bar',
+      data:{
+        labels:["Paid","Unpaid"],
+        datasets:[{
+          data:[paid, unpaid]
         }]
       }
     }
@@ -118,12 +224,16 @@ function renderCharts(exp, col) {
 }
 
 function renderTable(col) {
+
   const tbody = document.getElementById("tableBody");
+
   tbody.innerHTML = "";
 
   col.forEach(c => {
+
     let unpaid =
-      (c["Amount Paid"] || 0) < (c["Amount Due"] || 0);
+      (c["Amount Paid"]||0) <
+      (c["Amount Due"]||0);
 
     tbody.innerHTML += `
       <tr>
@@ -140,6 +250,7 @@ function renderTable(col) {
 }
 
 function renderDefaulters(col, month) {
+
   let txt =
     "Hello, below are defaulters for " +
     month +
@@ -147,8 +258,8 @@ function renderDefaulters(col, month) {
 
   col
     .filter(c =>
-      (c["Amount Paid"] || 0) <
-      (c["Amount Due"] || 0)
+      (c["Amount Paid"]||0) <
+      (c["Amount Due"]||0)
     )
     .forEach(d => {
       txt += d.Flat + "\n";
@@ -158,6 +269,7 @@ function renderDefaulters(col, month) {
 }
 
 function copyDefaulters() {
+
   navigator.clipboard.writeText(
     document.getElementById("defaultersText").textContent
   );
@@ -165,3 +277,6 @@ function copyDefaulters() {
   alert("Copied!");
 }
 </script>
+
+</body>
+</html>
