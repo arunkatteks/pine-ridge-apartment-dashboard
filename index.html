@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pine Ridge Apartment Dashboard</title>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
 body {
-  font-family: Arial;
-  margin: 10px;
+  font-family: Arial, sans-serif;
   background: #f5f7fa;
+  margin: 10px;
 }
 
 h1 {
@@ -21,15 +20,35 @@ h1 {
 
 .card {
   background: white;
-  padding: 12px;
-  margin: 10px 0;
+  padding: 15px;
+  margin-bottom: 15px;
   border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 select, button {
-  padding: 10px;
   width: 100%;
-  margin: 5px 0;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.table-container {
+  overflow-x: auto;
 }
 
 table {
@@ -40,11 +59,7 @@ table {
 th, td {
   padding: 8px;
   border-bottom: 1px solid #ddd;
-}
-
-.unpaid {
-  color: red;
-  font-weight: bold;
+  text-align: left;
 }
 
 .paid {
@@ -52,13 +67,24 @@ th, td {
   font-weight: bold;
 }
 
+.unpaid {
+  color: red;
+  font-weight: bold;
+}
+
 pre {
-  background: #eee;
+  white-space: pre-wrap;
+  background: #f0f0f0;
   padding: 10px;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
 }
 </style>
 </head>
-
 <body>
 
 <h1>Pine Ridge Apartment Dashboard</h1>
@@ -69,25 +95,29 @@ pre {
 </div>
 
 <div class="card">
-  <p>Expenses: ₹<span id="expenses"></span></p>
-  <p>Collected: ₹<span id="collected"></span></p>
-  <p>Pending: ₹<span id="pending"></span></p>
+  <h3>Summary</h3>
+  <p>Total Expenses: ₹<span id="expenses">0</span></p>
+  <p>Total Collected: ₹<span id="collected">0</span></p>
+  <p>Total Pending: ₹<span id="pending">0</span></p>
 </div>
 
 <div class="card">
+  <h3>Expense Breakdown</h3>
   <canvas id="expenseChart"></canvas>
 </div>
 
 <div class="card">
+  <h3>Collection Status</h3>
   <canvas id="collectionChart"></canvas>
 </div>
 
 <div class="card">
-  <button onclick="copyDefaulters()">Copy Defaulters</button>
+  <h3>Defaulters</h3>
+  <button onclick="copyDefaulters()">Copy WhatsApp Message</button>
   <pre id="defaultersText"></pre>
 </div>
 
-<div class="card">
+<div class="card table-container">
   <h3>Apartment Tracker</h3>
 
   <table>
@@ -107,51 +137,69 @@ pre {
 
 <script>
 let workbookData = {};
+let expenseChartObj = null;
+let collectionChartObj = null;
 
-fetch("data.json")
-  .then(res => res.json())
+fetch('data.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Could not load data.json');
+    }
+    return response.json();
+  })
   .then(data => {
     workbookData = data;
     populateMonths();
   })
-  .catch(err => {
-    document.body.innerHTML =
-      "<h2 style='color:red'>Error loading data.json</h2><pre>" + err + "</pre>";
+  .catch(error => {
+    document.body.innerHTML = `
+      <div class="card error">
+        Error loading dashboard data.<br><br>
+        ${error}
+      </div>
+    `;
   });
 
 function populateMonths() {
+  const monthSelect = document.getElementById('monthSelect');
+
+  if (!monthSelect) {
+    console.error('monthSelect element missing');
+    return;
+  }
+
   const months = [];
 
   Object.keys(workbookData).forEach(sheet => {
-    if (sheet.toLowerCase().includes("expenses")) {
-      months.push(sheet.replace(/expenses/i, "").trim());
+    if (sheet.toLowerCase().includes('expenses')) {
+      months.push(sheet.replace(/expenses/i, '').trim());
     }
   });
 
-  const select = document.getElementById("monthSelect");
-  select.innerHTML = "";
+  monthSelect.innerHTML = '';
 
   months.forEach(month => {
-    const opt = document.createElement("option");
-    opt.value = month;
-    opt.textContent = month;
-    select.appendChild(opt);
+    const option = document.createElement('option');
+    option.value = month;
+    option.textContent = month;
+    monthSelect.appendChild(option);
   });
 
   if (months.length > 0) {
     loadMonth(months[0]);
   }
 
-  select.onchange = () => loadMonth(select.value);
+  monthSelect.addEventListener('change', function() {
+    loadMonth(this.value);
+  });
 }
 
 function loadMonth(month) {
-
   const expenseKey = Object.keys(workbookData)
-    .find(k => k.toLowerCase() === ("expenses " + month).toLowerCase());
+    .find(key => key.toLowerCase() === ('expenses ' + month).toLowerCase());
 
   const maintenanceKey = Object.keys(workbookData)
-    .find(k => k.toLowerCase() === ("maintenance " + month).toLowerCase());
+    .find(key => key.toLowerCase() === ('maintenance ' + month).toLowerCase());
 
   const expenses = workbookData[expenseKey] || [];
   const collection = workbookData[maintenanceKey] || [];
@@ -162,119 +210,129 @@ function loadMonth(month) {
   renderDefaulters(collection, month);
 }
 
-function renderSummary(exp, col) {
+function renderSummary(expenses, collection) {
+  document.getElementById('expenses').textContent =
+    expenses.reduce((sum, item) => sum + (item.Amount || 0), 0);
 
-  document.getElementById("expenses").textContent =
-    exp.reduce((s,x)=>s+(x.Amount||0),0);
+  document.getElementById('collected').textContent =
+    collection.reduce((sum, item) => sum + (item['Amount Paid'] || 0), 0);
 
-  document.getElementById("collected").textContent =
-    col.reduce((s,x)=>s+(x["Amount Paid"]||0),0);
-
-  document.getElementById("pending").textContent =
-    col.reduce((s,x)=>s+((x["Amount Due"]||0)-(x["Amount Paid"]||0)),0);
+  document.getElementById('pending').textContent =
+    collection.reduce((sum, item) => {
+      return sum + ((item['Amount Due'] || 0) - (item['Amount Paid'] || 0));
+    }, 0);
 }
 
-function renderCharts(exp, col) {
+function renderCharts(expenses, collection) {
+  const categoryTotals = {};
 
-  let cat = {};
-
-  exp.forEach(e => {
-    cat[e.Category] = (cat[e.Category] || 0) + e.Amount;
+  expenses.forEach(item => {
+    categoryTotals[item.Category] =
+      (categoryTotals[item.Category] || 0) + (item.Amount || 0);
   });
 
-  if(window.expenseChartObj)
-    window.expenseChartObj.destroy();
+  if (expenseChartObj) {
+    expenseChartObj.destroy();
+  }
 
-  window.expenseChartObj = new Chart(
-    document.getElementById("expenseChart"),
+  expenseChartObj = new Chart(
+    document.getElementById('expenseChart'),
     {
-      type:'pie',
-      data:{
-        labels:Object.keys(cat),
-        datasets:[{
-          data:Object.values(cat)
+      type: 'pie',
+      data: {
+        labels: Object.keys(categoryTotals),
+        datasets: [{
+          data: Object.values(categoryTotals)
         }]
       }
     }
   );
 
-  let paid=0, unpaid=0;
+  let paid = 0;
+  let unpaid = 0;
 
-  col.forEach(c=>{
-    ((c["Amount Paid"]||0)>=c["Amount Due"])
-      ? paid++
-      : unpaid++;
+  collection.forEach(item => {
+    if ((item['Amount Paid'] || 0) >= (item['Amount Due'] || 0)) {
+      paid++;
+    } else {
+      unpaid++;
+    }
   });
 
-  if(window.collectionChartObj)
-    window.collectionChartObj.destroy();
+  if (collectionChartObj) {
+    collectionChartObj.destroy();
+  }
 
-  window.collectionChartObj = new Chart(
-    document.getElementById("collectionChart"),
+  collectionChartObj = new Chart(
+    document.getElementById('collectionChart'),
     {
-      type:'bar',
-      data:{
-        labels:["Paid","Unpaid"],
-        datasets:[{
-          data:[paid, unpaid]
+      type: 'bar',
+      data: {
+        labels: ['Paid', 'Unpaid'],
+        datasets: [{
+          data: [paid, unpaid]
         }]
       }
     }
   );
 }
 
-function renderTable(col) {
+function renderTable(collection) {
+  const tableBody = document.getElementById('tableBody');
 
-  const tbody = document.getElementById("tableBody");
+  if (!tableBody) {
+    console.error('tableBody element missing');
+    return;
+  }
 
-  tbody.innerHTML = "";
+  tableBody.innerHTML = '';
 
-  col.forEach(c => {
+  collection.forEach(item => {
+    const unpaid =
+      (item['Amount Paid'] || 0) < (item['Amount Due'] || 0);
 
-    let unpaid =
-      (c["Amount Paid"]||0) <
-      (c["Amount Due"]||0);
+    const row = document.createElement('tr');
 
-    tbody.innerHTML += `
-      <tr>
-        <td>${c.Flat || ""}</td>
-        <td>${c.Owner || ""}</td>
-        <td>₹${c["Amount Due"] || 0}</td>
-        <td>₹${c["Amount Paid"] || 0}</td>
-        <td class="${unpaid ? 'unpaid' : 'paid'}">
-          ${unpaid ? 'Unpaid' : 'Paid'}
-        </td>
-      </tr>
+    row.innerHTML = `
+      <td>${item.Flat || ''}</td>
+      <td>${item.Owner || ''}</td>
+      <td>₹${item['Amount Due'] || 0}</td>
+      <td>₹${item['Amount Paid'] || 0}</td>
+      <td class="${unpaid ? 'unpaid' : 'paid'}">
+        ${unpaid ? 'Unpaid' : 'Paid'}
+      </td>
     `;
+
+    tableBody.appendChild(row);
   });
 }
 
-function renderDefaulters(col, month) {
+function renderDefaulters(collection, month) {
+  const defaultersText = document.getElementById('defaultersText');
 
-  let txt =
-    "Hello, below are defaulters for " +
+  let text =
+    'Hello, below are defaulters for ' +
     month +
-    " maintenance:\n\n";
+    ' maintenance:\n\n';
 
-  col
-    .filter(c =>
-      (c["Amount Paid"]||0) <
-      (c["Amount Due"]||0)
-    )
-    .forEach(d => {
-      txt += d.Flat + "\n";
+  collection
+    .filter(item => {
+      return (item['Amount Paid'] || 0) < (item['Amount Due'] || 0);
+    })
+    .forEach(item => {
+      text += (item.Flat || '') + '\n';
     });
 
-  document.getElementById("defaultersText").textContent = txt;
+  defaultersText.textContent = text;
 }
 
 function copyDefaulters() {
+  const text = document.getElementById('defaultersText').textContent;
 
-  navigator.clipboard.writeText(
-    document.getElementById("defaultersText").textContent
-  );
-
-  alert("Copied!");
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      alert('Copied for WhatsApp');
+    });
 }
 </script>
 
