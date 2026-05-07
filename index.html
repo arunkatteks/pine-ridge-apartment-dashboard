@@ -1,46 +1,273 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pine Ridge Apartment Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.chart-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.chart-box {
+  width: 320px;
+  height: 320px;
+}
+
+.small-chart {
+  width: 320px;
+  margin: auto;
+}
+
+.chart-box canvas,
+.small-chart canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #f2f2f2;
+}
+
+.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.unpaid {
+  color: red;
+  font-weight: bold;
+  background: #fff0f0;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .chart-box {
+    width: 100%;
+    height: 280px;
+  }
+
+  .small-chart {
+    width: 100%;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Pine Ridge Apartment Dashboard</h1>
+
+<div class="card">
+
+  <label>Select Month:</label>
+
+  <select id="monthSelect"></select>
+
+</div>
+
+<div class="card">
+
+  <h3>Summary</h3>
+
+  <p>Total Expenses: ₹<span id="expenses">0</span></p>
+
+  <p>Total Collected: ₹<span id="collected">0</span></p>
+
+  <p>Total Pending: ₹<span id="pending">0</span></p>
+
+</div>
+
+<div class="card">
+
+  <h3>Expense Analytics</h3>
+
+  <div class="chart-row">
+
+    <div class="chart-box">
+      <canvas id="expenseChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+      <canvas id="expenseDescriptionChart"></canvas>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="card">
+
+  <h3>Collection Status</h3>
+
+  <div class="small-chart">
+    <canvas id="collectionChart"></canvas>
+  </div>
+
+</div>
+
+<div class="card">
+
+  <h3>Defaulters</h3>
+
+  <button onclick="copyDefaulters()">
+    Copy WhatsApp Message
+  </button>
+
+  <pre id="defaultersText"></pre>
+
+</div>
+
+<div class="card table-container">
+
+  <h3>Apartment Tracker</h3>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>Flat</th>
+        <th>Owner</th>
+        <th>Amount Due</th>
+        <th>Amount Paid</th>
+        <th>Status</th>
+      </tr>
+
+    </thead>
+
+    <tbody id="tableBody"></tbody>
+
+  </table>
+
+</div>
+
 <script>
-/*Updated file*/
+
 document.addEventListener("DOMContentLoaded", function () {
 
 let workbookData = {};
+
 let expenseChartObj = null;
+let expenseDescriptionChartObj = null;
 let collectionChartObj = null;
 
 fetch("data.json")
+
   .then(response => {
+
     if (!response.ok) {
       throw new Error("Could not load data.json");
     }
+
     return response.json();
+
   })
+
   .then(data => {
+
     workbookData = data;
+
     populateMonths();
+
   })
+
   .catch(error => {
 
-    const body = document.querySelector("body");
-
-    if (body) {
-      body.innerHTML = `
-        <div style="padding:20px;color:red;font-weight:bold;">
-          Error loading data.json<br><br>
-          ${error}
-        </div>
-      `;
-    }
-
     console.error(error);
+
+    document.body.innerHTML = `
+      <div class="card error">
+        Error loading dashboard data.<br><br>
+        ${error}
+      </div>
+    `;
+
   });
 
 function populateMonths() {
 
-  const monthSelect = document.getElementById("monthSelect");
-
-  if (!monthSelect) {
-    console.error("monthSelect missing");
-    return;
-  }
+  const monthSelect =
+    document.getElementById("monthSelect");
 
   const months = [];
 
@@ -51,97 +278,209 @@ function populateMonths() {
       months.push(
         sheet.replace(/expenses/i, "").trim()
       );
+
     }
+
   });
 
   monthSelect.innerHTML = "";
 
   months.forEach(month => {
 
-    const option = document.createElement("option");
+    const option =
+      document.createElement("option");
 
     option.value = month;
     option.textContent = month;
 
     monthSelect.appendChild(option);
+
   });
 
   if (months.length > 0) {
+
     loadMonth(months[0]);
+
   }
 
   monthSelect.addEventListener("change", function () {
+
     loadMonth(this.value);
+
   });
+
 }
 
 function loadMonth(month) {
 
   const expenseKey = Object.keys(workbookData)
+
     .find(key =>
+
       key.toLowerCase() ===
       ("expenses " + month).toLowerCase()
+
     );
 
   const maintenanceKey = Object.keys(workbookData)
+
     .find(key =>
+
       key.toLowerCase() ===
       ("maintenance " + month).toLowerCase()
+
     );
 
-  const expenses = workbookData[expenseKey] || [];
-  const collection = workbookData[maintenanceKey] || [];
+  const expenses =
+    workbookData[expenseKey] || [];
+
+  const collection =
+    workbookData[maintenanceKey] || [];
 
   renderSummary(expenses, collection);
+
   renderCharts(expenses, collection);
+
   renderTable(collection);
+
   renderDefaulters(collection, month);
+
 }
 
 function renderSummary(expenses, collection) {
 
   document.getElementById("expenses").textContent =
+
     expenses.reduce((sum, item) =>
-      sum + (item.Amount || 0), 0);
+
+      sum + (item.Amount || 0)
+
+    , 0);
 
   document.getElementById("collected").textContent =
+
     collection.reduce((sum, item) =>
-      sum + (item["Amount Paid"] || 0), 0);
+
+      sum + (item["Amount Paid"] || 0)
+
+    , 0);
 
   document.getElementById("pending").textContent =
+
     collection.reduce((sum, item) =>
-      sum + (
-        (item["Amount Due"] || 0) -
+
+      sum +
+
+      (
+        (item["Amount Due"] || 0)
+        -
         (item["Amount Paid"] || 0)
-      ), 0);
+      )
+
+    , 0);
+
 }
 
 function renderCharts(expenses, collection) {
 
-  const categories = {};
+  const categoryTotals = {};
+
+  const descriptionTotals = {};
 
   expenses.forEach(item => {
 
-    categories[item.Category] =
-      (categories[item.Category] || 0) +
+    categoryTotals[item.Category] =
+
+      (categoryTotals[item.Category] || 0)
+
+      +
+
       (item.Amount || 0);
+
+    descriptionTotals[item.Description] =
+
+      (descriptionTotals[item.Description] || 0)
+
+      +
+
+      (item.Amount || 0);
+
   });
 
   if (expenseChartObj) {
     expenseChartObj.destroy();
   }
 
+  if (expenseDescriptionChartObj) {
+    expenseDescriptionChartObj.destroy();
+  }
+
+  if (collectionChartObj) {
+    collectionChartObj.destroy();
+  }
+
   expenseChartObj = new Chart(
+
     document.getElementById("expenseChart"),
+
     {
+
       type: "pie",
+
       data: {
-        labels: Object.keys(categories),
+
+        labels: Object.keys(categoryTotals),
+
         datasets: [{
-          data: Object.values(categories)
+
+          data: Object.values(categoryTotals)
+
         }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false
+
       }
+
     }
+
+  );
+
+  expenseDescriptionChartObj = new Chart(
+
+    document.getElementById("expenseDescriptionChart"),
+
+    {
+
+      type: "pie",
+
+      data: {
+
+        labels: Object.keys(descriptionTotals),
+
+        datasets: [{
+
+          data: Object.values(descriptionTotals)
+
+        }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false
+
+      }
+
+    }
+
   );
 
   let paid = 0;
@@ -150,31 +489,57 @@ function renderCharts(expenses, collection) {
   collection.forEach(item => {
 
     if (
-      (item["Amount Paid"] || 0) >=
+
+      (item["Amount Paid"] || 0)
+
+      >=
+
       (item["Amount Due"] || 0)
+
     ) {
+
       paid++;
+
     } else {
+
       unpaid++;
+
     }
+
   });
 
-  if (collectionChartObj) {
-    collectionChartObj.destroy();
-  }
-
   collectionChartObj = new Chart(
+
     document.getElementById("collectionChart"),
+
     {
+
       type: "bar",
+
       data: {
+
         labels: ["Paid", "Unpaid"],
+
         datasets: [{
+
           data: [paid, unpaid]
+
         }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: true
+
       }
+
     }
+
   );
+
 }
 
 function renderTable(collection) {
@@ -182,33 +547,43 @@ function renderTable(collection) {
   const tableBody =
     document.getElementById("tableBody");
 
-  if (!tableBody) {
-    console.error("tableBody missing");
-    return;
-  }
-
   tableBody.innerHTML = "";
 
   collection.forEach(item => {
 
     const unpaid =
-      (item["Amount Paid"] || 0) <
+
+      (item["Amount Paid"] || 0)
+
+      <
+
       (item["Amount Due"] || 0);
 
-    const row = document.createElement("tr");
+    const row =
+      document.createElement("tr");
 
     row.innerHTML = `
-      <td>${item.Flat || ""}</td>
-      <td>${item.Owner || ""}</td>
+
+      <td>${item["Flat"] || item["Flat No"] || ""}</td>
+
+      <td>${item["Owner"] || item["Owner Name"] || ""}</td>
+
       <td>₹${item["Amount Due"] || 0}</td>
+
       <td>₹${item["Amount Paid"] || 0}</td>
+
       <td class="${unpaid ? "unpaid" : "paid"}">
+
         ${unpaid ? "Unpaid" : "Paid"}
+
       </td>
+
     `;
 
     tableBody.appendChild(row);
+
   });
+
 }
 
 function renderDefaulters(collection, month) {
@@ -217,22 +592,49 @@ function renderDefaulters(collection, month) {
     document.getElementById("defaultersText");
 
   let text =
-    "Hello, below are defaulters for " +
-    month +
+
+    "Hello, below are defaulters for "
+
+    +
+
+    month
+
+    +
+
     " maintenance:\n\n";
 
   collection
+
     .filter(item =>
-      (item["Amount Paid"] || 0) <
+
+      (item["Amount Paid"] || 0)
+
+      <
+
       (item["Amount Due"] || 0)
+
     )
+
     .forEach(item => {
-      text += (item.Flat || "") + "\n";
+
+      text +=
+
+        (
+          item["Flat"]
+          ||
+          item["Flat No"]
+          ||
+          ""
+        )
+
+        +
+
+        "\n";
+
     });
 
-  if (defaultersText) {
-    defaultersText.textContent = text;
-  }
+  defaultersText.textContent = text;
+
 }
 
 window.copyDefaulters = function () {
@@ -243,8 +645,14 @@ window.copyDefaulters = function () {
 
   navigator.clipboard.writeText(text);
 
-  alert("Copied!");
+  alert("Copied for WhatsApp!");
+
 };
 
 });
+
 </script>
+
+</body>
+</html>
+```
