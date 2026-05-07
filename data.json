@@ -1,0 +1,808 @@
+{
+  "Expenses April 2026": [
+    {
+      "Date": 46141,
+      "Category": "Salary",
+      "Description": "Mallaiah Salary",
+      "Amount": 10000
+    },
+    {
+      "Date": 46116,
+      "Category": "Maintenance",
+      "Description": "Plumbing work at ground floor",
+      "Amount": 4000
+    },
+    {
+      "Date": 46122,
+      "Category": "Usage bill",
+      "Description": "Electricity Bill",
+      "Amount": 18441
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "Common area Wifi",
+      "Amount": 589
+    },
+    {
+      "Date": 46142,
+      "Category": "Salary",
+      "Description": "Security Salary",
+      "Amount": 13000
+    },
+    {
+      "Date": 46145,
+      "Category": "Usage bill",
+      "Description": "BBMP - Garbage Pickup",
+      "Amount": 3500
+    },
+    {
+      "Date": 46122,
+      "Category": "Usage bill",
+      "Description": "BWSSB Bill",
+      "Amount": 32593
+    },
+    {
+      "Date": 46141,
+      "Category": "Essentials",
+      "Description": "Rangoli",
+      "Amount": 300
+    },
+    {
+      "Date": 45778,
+      "Category": "Salary",
+      "Description": "Housekeeping Salary",
+      "Amount": 11000
+    },
+    {
+      "Date": 46141,
+      "Category": "Essentials",
+      "Description": "Mallayya+Security -Drinking Water",
+      "Amount": 500
+    }
+  ],
+  "Maintenance April 2026": [
+    {
+      "Month": 46113,
+      "Flat No": "G01",
+      "Owner Name": "Sahajahan",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46143
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G02",
+      "Owner Name": "Anoop Ashok",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46117
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G03",
+      "Owner Name": "Bhandari Prakash",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G04",
+      "Owner Name": "Rajesh",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46115
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G05",
+      "Owner Name": "Ravi Kishore",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G06",
+      "Owner Name": "Balachinappa",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46111
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G07",
+      "Owner Name": "Mohammed Fazi",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G08",
+      "Owner Name": "Vasudevaraju",
+      "Amount Due": 700,
+      "Amount Paid": 1300,
+      "Payment Date": 46126
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G09",
+      "Owner Name": "Manujanth Veera",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46143
+    },
+    {
+      "Month": 46113,
+      "Flat No": "G10",
+      "Owner Name": "Ashwath Reddy",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 101,
+      "Owner Name": "Nagesh",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46115
+    },
+    {
+      "Month": 46113,
+      "Flat No": 102,
+      "Owner Name": "Venkatesh Reddy",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46115
+    },
+    {
+      "Month": 46113,
+      "Flat No": 103,
+      "Owner Name": "Charan",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 104,
+      "Owner Name": "Seema Kamath",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46122
+    },
+    {
+      "Month": 46113,
+      "Flat No": 105,
+      "Owner Name": "Ravi Kishore",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 106,
+      "Owner Name": "Siva Prasad Bangaru",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46112
+    },
+    {
+      "Month": 46113,
+      "Flat No": 107,
+      "Owner Name": "Ramamurthy N S",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46114
+    },
+    {
+      "Month": 46113,
+      "Flat No": 108,
+      "Owner Name": "Seshadri Seetharamaiah",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46117
+    },
+    {
+      "Month": 46113,
+      "Flat No": 109,
+      "Owner Name": "Varun",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 110,
+      "Owner Name": "Venkat Reddy",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 201,
+      "Owner Name": "Ramana SS Paradise",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46112
+    },
+    {
+      "Month": 46113,
+      "Flat No": 202,
+      "Owner Name": "Hemanth Ravindra",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46117
+    },
+    {
+      "Month": 46113,
+      "Flat No": 203,
+      "Owner Name": "Chandan",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 204,
+      "Owner Name": "Arun Katte",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46113
+    },
+    {
+      "Month": 46113,
+      "Flat No": 205,
+      "Owner Name": "Swetha Krishnappa",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46144
+    },
+    {
+      "Month": 46113,
+      "Flat No": 206,
+      "Owner Name": "Madhusudhan Reddy",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46143
+    },
+    {
+      "Month": 46113,
+      "Flat No": 207,
+      "Owner Name": "Rama Tejaswi Karipeddi",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46118
+    },
+    {
+      "Month": 46113,
+      "Flat No": 208,
+      "Owner Name": "Madhu Rao",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46143
+    },
+    {
+      "Month": 46113,
+      "Flat No": 209,
+      "Owner Name": "Jagadish Gopalaiah",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46127
+    },
+    {
+      "Month": 46113,
+      "Flat No": 210,
+      "Owner Name": "Venkat Reddy",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46113
+    },
+    {
+      "Month": 46113,
+      "Flat No": 301,
+      "Owner Name": "Athmaram",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 302,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 303,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 304,
+      "Owner Name": "Sridhar Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46113,
+      "Flat No": 305,
+      "Owner Name": "Akash C Y",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46113
+    },
+    {
+      "Month": 46113,
+      "Flat No": 306,
+      "Owner Name": "Marineni Prasad",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46116
+    },
+    {
+      "Month": 46113,
+      "Flat No": 307,
+      "Owner Name": "Athmaram",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46127
+    },
+    {
+      "Month": 46113,
+      "Flat No": 308,
+      "Owner Name": "Athmaram",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46113,
+      "Flat No": 309,
+      "Owner Name": "Narayanaswamy Reddy",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46117
+    },
+    {
+      "Month": 46113,
+      "Flat No": 310,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46115
+    },
+    {
+      "Month": 46113,
+      "Flat No": 401,
+      "Owner Name": "Vijay Kumar Pentam",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46127
+    },
+    {
+      "Month": 46113,
+      "Flat No": 402,
+      "Owner Name": "Srivalli",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46115
+    },
+    {
+      "Month": 46113,
+      "Flat No": 403,
+      "Owner Name": "Sridhar Reddy",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46144
+    },
+    {
+      "Month": 46113,
+      "Flat No": 404,
+      "Owner Name": "Madhu Rao",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46143
+    },
+    {
+      "Month": 46113,
+      "Flat No": 405,
+      "Owner Name": "Madhavi",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46117
+    },
+    {
+      "Month": 46113,
+      "Flat No": 406,
+      "Owner Name": "Purushotham Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46113,
+      "Flat No": 407,
+      "Owner Name": "Sabitha",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46114
+    },
+    {
+      "Month": 46113,
+      "Flat No": 408,
+      "Owner Name": "Naren",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46122
+    },
+    {
+      "Month": 46113,
+      "Flat No": 409,
+      "Owner Name": "Shesh Raj Arval",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46113
+    },
+    {
+      "Month": 46113,
+      "Flat No": 410,
+      "Owner Name": "Vijay Kumar Pentam",
+      "Amount Due": 0,
+      "Amount Paid": 2000,
+      "Payment Date": 46127
+    }
+  ],
+  "Expenses May 2026": [
+    {
+      "Category": "Salary",
+      "Description": "Mallaiah Salary",
+      "Amount": 10000
+    },
+    {
+      "Category": "Maintenance",
+      "Description": "Plumbing work at ground floor",
+      "Amount": 4000
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "Electricity Bill"
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "Common area Wifi",
+      "Amount": 589
+    },
+    {
+      "Category": "Salary",
+      "Description": "Security Salary",
+      "Amount": 13000
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "BBMP - Garbage Pickup",
+      "Amount": 3500
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "BWSSB Bill"
+    },
+    {
+      "Category": "Essentials",
+      "Description": "Rangoli",
+      "Amount": 300
+    },
+    {
+      "Category": "Salary",
+      "Description": "Housekeeping Salary",
+      "Amount": 11000
+    },
+    {
+      "Category": "Essentials",
+      "Description": "Mallayya+Security -Drinking Water",
+      "Amount": 500
+    },
+    {
+      "Date": 46148,
+      "Category": "Essentials",
+      "Description": "Generator diesel",
+      "Amount": 3877.62
+    }
+  ],
+  "Maintenance May 2026": [
+    {
+      "Month": 46143,
+      "Flat No": "G01",
+      "Owner Name": "Sahajahan",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G02",
+      "Owner Name": "Anoop Ashok",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G03",
+      "Owner Name": "Bhandari Prakash",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G04",
+      "Owner Name": "Rajesh",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G05",
+      "Owner Name": "Ravi Kishore",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G06",
+      "Owner Name": "Balachinappa",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G07",
+      "Owner Name": "Mohammed Fazi",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G08",
+      "Owner Name": "Vasudevaraju",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G09",
+      "Owner Name": "Manujanth Veera",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": "G10",
+      "Owner Name": "Ashwath Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 101,
+      "Owner Name": "Nagesh",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 102,
+      "Owner Name": "Venkatesh Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 103,
+      "Owner Name": "Charan",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 104,
+      "Owner Name": "Seema Kamath",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 105,
+      "Owner Name": "Ravi Kishore",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 106,
+      "Owner Name": "Siva Prasad Bangaru",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 107,
+      "Owner Name": "Ramamurthy N S",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 108,
+      "Owner Name": "Seshadri Seetharamaiah",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 109,
+      "Owner Name": "Varun",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 110,
+      "Owner Name": "Venkat Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 201,
+      "Owner Name": "Ramana SS Paradise",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 202,
+      "Owner Name": "Hemanth Ravindra",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 203,
+      "Owner Name": "Chandan",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 204,
+      "Owner Name": "Arun Katte",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 205,
+      "Owner Name": "Swetha Krishnappa",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 206,
+      "Owner Name": "Madhusudhan Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 207,
+      "Owner Name": "Rama Tejaswi Karipeddi",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 208,
+      "Owner Name": "Madhu Rao",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 209,
+      "Owner Name": "Jagadish Gopalaiah",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 210,
+      "Owner Name": "Venkat Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 301,
+      "Owner Name": "Athmaram",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 302,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 303,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 304,
+      "Owner Name": "Sridhar Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 305,
+      "Owner Name": "Akash C Y",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 306,
+      "Owner Name": "Marineni Prasad",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 307,
+      "Owner Name": "Athmaram",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 308,
+      "Owner Name": "Athmaram",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 309,
+      "Owner Name": "Narayanaswamy Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 310,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 401,
+      "Owner Name": "Vijay Kumar Pentam",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 402,
+      "Owner Name": "Srivalli",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 403,
+      "Owner Name": "Sridhar Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 404,
+      "Owner Name": "Madhu Rao",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 405,
+      "Owner Name": "Madhavi",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 406,
+      "Owner Name": "Purushotham Reddy",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 407,
+      "Owner Name": "Sabitha",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 408,
+      "Owner Name": "Naren",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 409,
+      "Owner Name": "Shesh Raj Arval",
+      "Amount Due": 2000
+    },
+    {
+      "Month": 46143,
+      "Flat No": 410,
+      "Owner Name": "Vijay Kumar Pentam",
+      "Amount Due": 2000
+    }
+  ]
+}
