@@ -1,7 +1,61 @@
 {
+  "Play area": [
+    {
+      "__EMPTY_1": 16140
+    },
+    {
+      "__EMPTY": "Mallaiah Salary",
+      "__EMPTY_1": 10000
+    },
+    {
+      "__EMPTY": "Plumbing work at ground floor",
+      "__EMPTY_1": 4000
+    },
+    {
+      "__EMPTY": "Security Salary",
+      "__EMPTY_1": 13000
+    },
+    {
+      "__EMPTY": "Rangoli",
+      "__EMPTY_1": 300
+    },
+    {
+      "__EMPTY": "Housekeeping Salary",
+      "__EMPTY_1": 11000
+    },
+    {
+      "__EMPTY": "Mallayya+Security -Drinking Water",
+      "__EMPTY_1": 500
+    },
+    {
+      "__EMPTY": "Cash withdrawl",
+      "__EMPTY_1": -40000
+    },
+    {
+      "__EMPTY": "Actual sent by Fazi",
+      "__EMPTY_1": 113716
+    },
+    {
+      "__EMPTY": "Paid from apt pocket for BWSSB",
+      "__EMPTY_1": -99046
+    },
+    {
+      "__EMPTY": "Overpaid by flat 210 till July",
+      "__EMPTY_1": -6000
+    },
+    {
+      "__EMPTY_1": 8670
+    }
+  ],
   "Expenses April 2026": [
     {
-      "Date": 46141,
+      "Date": 46113,
+      "Category": "Balance",
+      "Description": "Opening Balance",
+      "Amount": 4000
+    },
+    {
+      "Date": 46142,
       "Category": "Salary",
       "Description": "Mallaiah Salary",
       "Amount": 10000
@@ -19,6 +73,7 @@
       "Amount": 18441
     },
     {
+      "Date": 46142,
       "Category": "Usage bill",
       "Description": "Common area Wifi",
       "Amount": 589
