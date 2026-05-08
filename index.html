@@ -134,13 +134,27 @@ th {
 .partial {
   color: orange;
   font-weight: bold;
-  background: #fff8e1;
+  background: #fff4d6;
 }
 
 .unpaid {
   color: red;
   font-weight: bold;
   background: #fff0f0;
+}
+
+.link-box {
+  background: #f8f9fb;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.link-box a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  word-break: break-word;
 }
 
 pre {
@@ -250,6 +264,25 @@ pre {
 
   <div class="status-chart-box">
     <canvas id="collectionChart"></canvas>
+  </div>
+
+</div>
+
+<div class="card">
+
+  <h3>Payment Proofs & Bills</h3>
+
+  <div class="link-box">
+
+    <p>
+      Click below to view all maintenance payment screenshots,
+      vendor bills, invoices and proof documents:
+    </p>
+
+    <a href="https://1drv.ms/f/c/FB84C1A8D91E06CC/IgAy-baWb3ovQ5CBHzwEwfGcAenLFGo3a7ZciZxXt25xTsI?e=uubXVU" target="_blank">
+      Open Payment Proofs & Bills Folder
+    </a>
+
   </div>
 
 </div>
@@ -604,11 +637,14 @@ function renderCharts(expenses, collection) {
     const paidAmt =
       Number(item["Amount Paid"] || 0);
 
+    const balance =
+      due - paidAmt;
+
     if (paidAmt === 0) {
 
       unpaid++;
 
-    } else if (paidAmt < due) {
+    } else if (balance > 0) {
 
       partial++;
 
@@ -757,9 +793,6 @@ function renderDefaulters(collection, month) {
 
     const flat =
       String(item["Flat"] || item["Flat No"] || "");
-
-    const prefix =
-      flat.match(/^[A-Za-z]+|\d/);
 
     let key = "";
 
