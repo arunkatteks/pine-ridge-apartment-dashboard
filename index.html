@@ -92,13 +92,15 @@ button:hover {
   height: 320px;
 }
 
-.small-chart {
-  width: 320px;
+.status-chart-box {
+  width: 100%;
+  max-width: 500px;
   margin: auto;
+  height: 320px;
 }
 
 .chart-box canvas,
-.small-chart canvas {
+.status-chart-box canvas {
   max-width: 100%;
   max-height: 100%;
 }
@@ -127,6 +129,12 @@ th {
 .paid {
   color: green;
   font-weight: bold;
+}
+
+.partial {
+  color: orange;
+  font-weight: bold;
+  background: #fff8e1;
 }
 
 .unpaid {
@@ -161,8 +169,9 @@ pre {
     height: 280px;
   }
 
-  .small-chart {
+  .status-chart-box {
     width: 100%;
+    height: 260px;
   }
 
 }
@@ -240,7 +249,7 @@ pre {
 
   <h3>Collection Status</h3>
 
-  <div class="small-chart">
+  <div class="status-chart-box">
     <canvas id="collectionChart"></canvas>
   </div>
 
@@ -460,7 +469,6 @@ function renderSummary(expenses, collection) {
 
     , 0);
 
-  // FIXED PENDING CALCULATION
   const pendingCollection =
 
     collection.reduce((sum, item) => {
@@ -471,10 +479,7 @@ function renderSummary(expenses, collection) {
       const paid =
         Number(item["Amount Paid"] || 0);
 
-      const pending =
-        Math.max(due - paid, 0);
-
-      return sum + pending;
+      return sum + Math.max(due - paid, 0);
 
     }, 0);
 
@@ -491,23 +496,18 @@ function renderSummary(expenses, collection) {
     totalExpenses;
 
   document.getElementById("openingBalance").textContent =
-
     openingBalance.toLocaleString("en-IN");
 
   document.getElementById("collected").textContent =
-
     totalCollected.toLocaleString("en-IN");
 
   document.getElementById("expenses").textContent =
-
     totalExpenses.toLocaleString("en-IN");
 
   document.getElementById("pending").textContent =
-
     pendingCollection.toLocaleString("en-IN");
 
   document.getElementById("closingBalance").textContent =
-
     closingBalance.toLocaleString("en-IN");
 
 }
@@ -547,17 +547,9 @@ function renderCharts(expenses, collection) {
 
   });
 
-  if (expenseChartObj) {
-    expenseChartObj.destroy();
-  }
-
-  if (expenseDescriptionChartObj) {
-    expenseDescriptionChartObj.destroy();
-  }
-
-  if (collectionChartObj) {
-    collectionChartObj.destroy();
-  }
+  if (expenseChartObj) expenseChartObj.destroy();
+  if (expenseDescriptionChartObj) expenseDescriptionChartObj.destroy();
+  if (collectionChartObj) collectionChartObj.destroy();
 
   expenseChartObj = new Chart(
 
@@ -622,25 +614,28 @@ function renderCharts(expenses, collection) {
   );
 
   let paid = 0;
+  let partial = 0;
   let unpaid = 0;
 
   collection.forEach(item => {
 
-    if (
+    const due =
+      Number(item["Amount Due"] || 0);
 
-      Number(item["Amount Paid"] || 0)
+    const paidAmt =
+      Number(item["Amount Paid"] || 0);
 
-      >=
+    if (paidAmt === 0) {
 
-      Number(item["Amount Due"] || 0)
+      unpaid++;
 
-    ) {
+    } else if (paidAmt < due) {
 
-      paid++;
+      partial++;
 
     } else {
 
-      unpaid++;
+      paid++;
 
     }
 
@@ -652,15 +647,23 @@ function renderCharts(expenses, collection) {
 
     {
 
-      type: "bar",
+      type: "doughnut",
 
       data: {
 
-        labels: ["Paid", "Unpaid"],
+        labels: [
+          "Paid",
+          "Partially Paid",
+          "Unpaid"
+        ],
 
         datasets: [{
 
-          data: [paid, unpaid]
+          data: [
+            paid,
+            partial,
+            unpaid
+          ]
 
         }]
 
@@ -669,7 +672,15 @@ function renderCharts(expenses, collection) {
       options: {
 
         responsive: true,
-        maintainAspectRatio: true
+        maintainAspectRatio: false,
+
+        plugins: {
+
+          legend: {
+            position: "bottom"
+          }
+
+        }
 
       }
 
@@ -688,15 +699,34 @@ function renderTable(collection) {
 
   collection.forEach(item => {
 
-    const balance =
+    const due =
+      Number(item["Amount Due"] || 0);
 
-      Number(item["Amount Due"] || 0)
-
-      -
-
+    const paid =
       Number(item["Amount Paid"] || 0);
 
-    const unpaid = balance > 0;
+    const balance =
+      Math.max(due - paid, 0);
+
+    let status = "";
+    let statusClass = "";
+
+    if (paid === 0) {
+
+      status = "Unpaid";
+      statusClass = "unpaid";
+
+    } else if (paid < due) {
+
+      status = "Partially Paid";
+      statusClass = "partial";
+
+    } else {
+
+      status = "Paid";
+      statusClass = "paid";
+
+    }
 
     const row =
       document.createElement("tr");
@@ -707,16 +737,14 @@ function renderTable(collection) {
 
       <td>${item["Owner"] || item["Owner Name"] || ""}</td>
 
-      <td>₹${Number(item["Amount Due"] || 0).toLocaleString("en-IN")}</td>
+      <td>₹${due.toLocaleString("en-IN")}</td>
 
-      <td>₹${Number(item["Amount Paid"] || 0).toLocaleString("en-IN")}</td>
+      <td>₹${paid.toLocaleString("en-IN")}</td>
 
       <td>₹${balance.toLocaleString("en-IN")}</td>
 
-      <td class="${unpaid ? "unpaid" : "paid"}">
-
-        ${unpaid ? "Pending" : "Paid"}
-
+      <td class="${statusClass}">
+        ${status}
       </td>
 
     `;
@@ -758,19 +786,17 @@ function renderDefaulters(collection, month) {
 
     .forEach(item => {
 
+      const balance =
+
+        Number(item["Amount Due"] || 0)
+
+        -
+
+        Number(item["Amount Paid"] || 0);
+
       text +=
 
-        (
-          item["Flat"]
-          ||
-          item["Flat No"]
-          ||
-          ""
-        )
-
-        +
-
-        "\n";
+        `${item["Flat"] || item["Flat No"] || ""} - ₹${balance.toLocaleString("en-IN")}\n`;
 
     });
 
