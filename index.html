@@ -94,9 +94,9 @@ button:hover {
 
 .status-chart-box {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
-  height: 320px;
+  height: 350px;
 }
 
 .chart-box canvas,
@@ -170,8 +170,7 @@ pre {
   }
 
   .status-chart-box {
-    width: 100%;
-    height: 260px;
+    height: 300px;
   }
 
 }
@@ -308,36 +307,36 @@ let collectionChartObj = null;
 
 fetch("data.json")
 
-  .then(response => {
+.then(response => {
 
-    if (!response.ok) {
-      throw new Error("Could not load data.json");
-    }
+  if (!response.ok) {
+    throw new Error("Could not load data.json");
+  }
 
-    return response.json();
+  return response.json();
 
-  })
+})
 
-  .then(data => {
+.then(data => {
 
-    workbookData = data;
+  workbookData = data;
 
-    populateMonths();
+  populateMonths();
 
-  })
+})
 
-  .catch(error => {
+.catch(error => {
 
-    console.error(error);
+  console.error(error);
 
-    document.body.innerHTML = `
-      <div class="card error">
-        Error loading dashboard data.<br><br>
-        ${error}
-      </div>
-    `;
+  document.body.innerHTML = `
+    <div class="card error">
+      Error loading dashboard data.<br><br>
+      ${error}
+    </div>
+  `;
 
-  });
+});
 
 function populateMonths() {
 
@@ -373,15 +372,11 @@ function populateMonths() {
   });
 
   if (months.length > 0) {
-
     loadMonth(months[0]);
-
   }
 
   monthSelect.addEventListener("change", function () {
-
     loadMonth(this.value);
-
   });
 
 }
@@ -390,21 +385,21 @@ function loadMonth(month) {
 
   const expenseKey = Object.keys(workbookData)
 
-    .find(key =>
+  .find(key =>
 
-      key.toLowerCase() ===
-      ("expenses " + month).toLowerCase()
+    key.toLowerCase() ===
+    ("expenses " + month).toLowerCase()
 
-    );
+  );
 
   const maintenanceKey = Object.keys(workbookData)
 
-    .find(key =>
+  .find(key =>
 
-      key.toLowerCase() ===
-      ("maintenance " + month).toLowerCase()
+    key.toLowerCase() ===
+    ("maintenance " + month).toLowerCase()
 
-    );
+  );
 
   const expenses =
     workbookData[expenseKey] || [];
@@ -431,8 +426,8 @@ function renderSummary(expenses, collection) {
     if (
 
       String(item.Description || "")
-        .toLowerCase()
-        .includes("opening balance")
+      .toLowerCase()
+      .includes("opening balance")
 
     ) {
 
@@ -447,19 +442,19 @@ function renderSummary(expenses, collection) {
 
     expenses
 
-      .filter(item =>
+    .filter(item =>
 
-        !String(item.Description || "")
-          .toLowerCase()
-          .includes("opening balance")
+      !String(item.Description || "")
+      .toLowerCase()
+      .includes("opening balance")
 
-      )
+    )
 
-      .reduce((sum, item) =>
+    .reduce((sum, item) =>
 
-        sum + Number(item.Amount || 0)
+      sum + Number(item.Amount || 0)
 
-      , 0);
+    , 0);
 
   const totalCollected =
 
@@ -486,13 +481,9 @@ function renderSummary(expenses, collection) {
   const closingBalance =
 
     openingBalance
-
     +
-
     totalCollected
-
     -
-
     totalExpenses;
 
   document.getElementById("openingBalance").textContent =
@@ -522,8 +513,8 @@ function renderCharts(expenses, collection) {
     if (
 
       String(item.Description || "")
-        .toLowerCase()
-        .includes("opening balance")
+      .toLowerCase()
+      .includes("opening balance")
 
     ) {
       return;
@@ -532,17 +523,13 @@ function renderCharts(expenses, collection) {
     categoryTotals[item.Category] =
 
       (categoryTotals[item.Category] || 0)
-
       +
-
       Number(item.Amount || 0);
 
     descriptionTotals[item.Description] =
 
       (descriptionTotals[item.Description] || 0)
-
       +
-
       Number(item.Amount || 0);
 
   });
@@ -564,18 +551,14 @@ function renderCharts(expenses, collection) {
         labels: Object.keys(categoryTotals),
 
         datasets: [{
-
           data: Object.values(categoryTotals)
-
         }]
 
       },
 
       options: {
-
         responsive: true,
         maintainAspectRatio: false
-
       }
 
     }
@@ -595,18 +578,14 @@ function renderCharts(expenses, collection) {
         labels: Object.keys(descriptionTotals),
 
         datasets: [{
-
           data: Object.values(descriptionTotals)
-
         }]
 
       },
 
       options: {
-
         responsive: true,
         maintainAspectRatio: false
-
       }
 
     }
@@ -647,23 +626,17 @@ function renderCharts(expenses, collection) {
 
     {
 
-      type: "doughnut",
+      type: "bar",
 
       data: {
 
-        labels: [
-          "Paid",
-          "Partially Paid",
-          "Unpaid"
-        ],
+        labels: ["Paid", "Partially Paid", "Unpaid"],
 
         datasets: [{
 
-          data: [
-            paid,
-            partial,
-            unpaid
-          ]
+          label: "Flats",
+
+          data: [paid, partial, unpaid]
 
         }]
 
@@ -677,7 +650,15 @@ function renderCharts(expenses, collection) {
         plugins: {
 
           legend: {
-            position: "bottom"
+            display: false
+          }
+
+        },
+
+        scales: {
+
+          y: {
+            beginAtZero: true
           }
 
         }
@@ -716,7 +697,7 @@ function renderTable(collection) {
       status = "Unpaid";
       statusClass = "unpaid";
 
-    } else if (paid < due) {
+    } else if (balance > 0) {
 
       status = "Partially Paid";
       statusClass = "partial";
@@ -760,45 +741,69 @@ function renderDefaulters(collection, month) {
   const defaultersText =
     document.getElementById("defaultersText");
 
-  let text =
-
-    "Hello, below are defaulters for "
-
-    +
-
-    month
-
-    +
-
-    " maintenance:\n\n";
+  const grouped = {};
 
   collection
 
-    .filter(item =>
+  .filter(item =>
 
-      Number(item["Amount Paid"] || 0)
+    Number(item["Amount Paid"] || 0)
+    <
+    Number(item["Amount Due"] || 0)
 
-      <
+  )
 
-      Number(item["Amount Due"] || 0)
+  .forEach(item => {
 
-    )
+    const flat =
+      String(item["Flat"] || item["Flat No"] || "");
 
-    .forEach(item => {
+    const prefix =
+      flat.match(/^[A-Za-z]+|\d/);
 
-      const balance =
+    let key = "";
 
-        Number(item["Amount Due"] || 0)
+    if (/^[A-Za-z]/.test(flat)) {
 
-        -
+      key = flat.charAt(0).toUpperCase();
 
-        Number(item["Amount Paid"] || 0);
+    } else {
 
-      text +=
+      key = flat.charAt(0);
 
-        `${item["Flat"] || item["Flat No"] || ""} - ₹${balance.toLocaleString("en-IN")}\n`;
+    }
 
-    });
+    if (!grouped[key]) {
+      grouped[key] = [];
+    }
+
+    grouped[key].push(flat);
+
+  });
+
+  let flatLines = "";
+
+  Object.keys(grouped)
+
+  .sort()
+
+  .forEach(key => {
+
+    flatLines += grouped[key].join(", ") + "\n";
+
+  });
+
+  const text =
+
+`Hello everyone,
+
+The following flats are showing as pending for ${month} maintenance:
+
+${flatLines}
+
+If you have already made the payment, please share the screenshot so I can update the records. Otherwise, request you to kindly clear the dues at the earliest.
+
+Thanks`;
 
   defaultersText.textContent = text;
 
@@ -808,7 +813,7 @@ window.copyDefaulters = function () {
 
   const text =
     document.getElementById("defaultersText")
-      .textContent;
+    .textContent;
 
   navigator.clipboard.writeText(text);
 
