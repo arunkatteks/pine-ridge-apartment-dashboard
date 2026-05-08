@@ -1,7 +1,8 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,11 +16,12 @@ body {
   font-family: Arial, sans-serif;
   background: #f5f7fa;
   margin: 10px;
+  color: #222;
 }
 
 h1 {
   text-align: center;
-  color: #222;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -37,6 +39,7 @@ button {
   margin-top: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  font-size: 14px;
 }
 
 button {
@@ -48,6 +51,33 @@ button {
 
 button:hover {
   opacity: 0.9;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.summary-box {
+  background: #f8f9fb;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.summary-box h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.summary-box p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.highlight {
+  background: #e8f5e9;
 }
 
 .chart-row {
@@ -117,6 +147,13 @@ pre {
   font-weight: bold;
 }
 
+.footer {
+  text-align: center;
+  color: #777;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
 @media (max-width: 768px) {
 
   .chart-box {
@@ -131,6 +168,7 @@ pre {
 }
 
 </style>
+
 </head>
 
 <body>
@@ -147,13 +185,36 @@ pre {
 
 <div class="card">
 
-  <h3>Summary</h3>
+  <h3>Financial Summary</h3>
 
-  <p>Total Expenses: ₹<span id="expenses">0</span></p>
+  <div class="summary-grid">
 
-  <p>Total Collected: ₹<span id="collected">0</span></p>
+    <div class="summary-box">
+      <h4>Opening Balance</h4>
+      <p>₹<span id="openingBalance">0</span></p>
+    </div>
 
-  <p>Total Pending: ₹<span id="pending">0</span></p>
+    <div class="summary-box">
+      <h4>Total Collected</h4>
+      <p>₹<span id="collected">0</span></p>
+    </div>
+
+    <div class="summary-box">
+      <h4>Total Expenses</h4>
+      <p>₹<span id="expenses">0</span></p>
+    </div>
+
+    <div class="summary-box">
+      <h4>Pending Collection</h4>
+      <p>₹<span id="pending">0</span></p>
+    </div>
+
+    <div class="summary-box highlight">
+      <h4>Closing Balance</h4>
+      <p>₹<span id="closingBalance">0</span></p>
+    </div>
+
+  </div>
 
 </div>
 
@@ -210,6 +271,7 @@ pre {
         <th>Owner</th>
         <th>Amount Due</th>
         <th>Amount Paid</th>
+        <th>Balance</th>
         <th>Status</th>
       </tr>
 
@@ -219,6 +281,10 @@ pre {
 
   </table>
 
+</div>
+
+<div class="footer">
+  Pine Ridge Apartment Maintenance Dashboard
 </div>
 
 <script>
@@ -349,45 +415,119 @@ function loadMonth(month) {
 
 function renderSummary(expenses, collection) {
 
-  document.getElementById("expenses").textContent =
+  let openingBalance = 0;
 
-    expenses.reduce((sum, item) =>
+  expenses.forEach(item => {
 
-      sum + (item.Amount || 0)
+    if (
 
-    , 0);
+      String(item.Description || "")
+        .toLowerCase()
+        .includes("opening balance")
 
-  document.getElementById("collected").textContent =
+    ) {
+
+      openingBalance +=
+        Number(item.Amount || 0);
+
+    }
+
+  });
+
+  const totalExpenses =
+
+    expenses
+
+      .filter(item =>
+
+        !String(item.Description || "")
+          .toLowerCase()
+          .includes("opening balance")
+
+      )
+
+      .reduce((sum, item) =>
+
+        sum + Number(item.Amount || 0)
+
+      , 0);
+
+  const totalCollected =
 
     collection.reduce((sum, item) =>
 
-      sum + (item["Amount Paid"] || 0)
+      sum + Number(item["Amount Paid"] || 0)
 
     , 0);
 
-  document.getElementById("pending").textContent =
+  const pendingCollection =
 
     collection.reduce((sum, item) =>
 
       sum +
 
       (
-        (item["Amount Due"] || 0)
+
+        Number(item["Amount Due"] || 0)
+
         -
-        (item["Amount Paid"] || 0)
+
+        Number(item["Amount Paid"] || 0)
+
       )
 
     , 0);
+
+  const closingBalance =
+
+    openingBalance
+
+    +
+
+    totalCollected
+
+    -
+
+    totalExpenses;
+
+  document.getElementById("openingBalance").textContent =
+
+    openingBalance.toLocaleString("en-IN");
+
+  document.getElementById("collected").textContent =
+
+    totalCollected.toLocaleString("en-IN");
+
+  document.getElementById("expenses").textContent =
+
+    totalExpenses.toLocaleString("en-IN");
+
+  document.getElementById("pending").textContent =
+
+    pendingCollection.toLocaleString("en-IN");
+
+  document.getElementById("closingBalance").textContent =
+
+    closingBalance.toLocaleString("en-IN");
 
 }
 
 function renderCharts(expenses, collection) {
 
   const categoryTotals = {};
-
   const descriptionTotals = {};
 
   expenses.forEach(item => {
+
+    if (
+
+      String(item.Description || "")
+        .toLowerCase()
+        .includes("opening balance")
+
+    ) {
+      return;
+    }
 
     categoryTotals[item.Category] =
 
@@ -395,7 +535,7 @@ function renderCharts(expenses, collection) {
 
       +
 
-      (item.Amount || 0);
+      Number(item.Amount || 0);
 
     descriptionTotals[item.Description] =
 
@@ -403,7 +543,7 @@ function renderCharts(expenses, collection) {
 
       +
 
-      (item.Amount || 0);
+      Number(item.Amount || 0);
 
   });
 
@@ -442,7 +582,6 @@ function renderCharts(expenses, collection) {
       options: {
 
         responsive: true,
-
         maintainAspectRatio: false
 
       }
@@ -474,7 +613,6 @@ function renderCharts(expenses, collection) {
       options: {
 
         responsive: true,
-
         maintainAspectRatio: false
 
       }
@@ -490,11 +628,11 @@ function renderCharts(expenses, collection) {
 
     if (
 
-      (item["Amount Paid"] || 0)
+      Number(item["Amount Paid"] || 0)
 
       >=
 
-      (item["Amount Due"] || 0)
+      Number(item["Amount Due"] || 0)
 
     ) {
 
@@ -531,7 +669,6 @@ function renderCharts(expenses, collection) {
       options: {
 
         responsive: true,
-
         maintainAspectRatio: true
 
       }
@@ -551,13 +688,15 @@ function renderTable(collection) {
 
   collection.forEach(item => {
 
-    const unpaid =
+    const balance =
 
-      (item["Amount Paid"] || 0)
+      Number(item["Amount Due"] || 0)
 
-      <
+      -
 
-      (item["Amount Due"] || 0);
+      Number(item["Amount Paid"] || 0);
+
+    const unpaid = balance > 0;
 
     const row =
       document.createElement("tr");
@@ -568,13 +707,15 @@ function renderTable(collection) {
 
       <td>${item["Owner"] || item["Owner Name"] || ""}</td>
 
-      <td>₹${item["Amount Due"] || 0}</td>
+      <td>₹${Number(item["Amount Due"] || 0).toLocaleString("en-IN")}</td>
 
-      <td>₹${item["Amount Paid"] || 0}</td>
+      <td>₹${Number(item["Amount Paid"] || 0).toLocaleString("en-IN")}</td>
+
+      <td>₹${balance.toLocaleString("en-IN")}</td>
 
       <td class="${unpaid ? "unpaid" : "paid"}">
 
-        ${unpaid ? "Unpaid" : "Paid"}
+        ${unpaid ? "Pending" : "Paid"}
 
       </td>
 
@@ -607,11 +748,11 @@ function renderDefaulters(collection, month) {
 
     .filter(item =>
 
-      (item["Amount Paid"] || 0)
+      Number(item["Amount Paid"] || 0)
 
       <
 
-      (item["Amount Due"] || 0)
+      Number(item["Amount Due"] || 0)
 
     )
 
@@ -655,4 +796,3 @@ window.copyDefaulters = function () {
 
 </body>
 </html>
-```
