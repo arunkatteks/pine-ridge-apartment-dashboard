@@ -460,23 +460,23 @@ function renderSummary(expenses, collection) {
 
     , 0);
 
+  // FIXED PENDING CALCULATION
   const pendingCollection =
 
-    collection.reduce((sum, item) =>
+    collection.reduce((sum, item) => {
 
-      sum +
+      const due =
+        Number(item["Amount Due"] || 0);
 
-      (
+      const paid =
+        Number(item["Amount Paid"] || 0);
 
-        Number(item["Amount Due"] || 0)
+      const pending =
+        Math.max(due - paid, 0);
 
-        -
+      return sum + pending;
 
-        Number(item["Amount Paid"] || 0)
-
-      )
-
-    , 0);
+    }, 0);
 
   const closingBalance =
 
