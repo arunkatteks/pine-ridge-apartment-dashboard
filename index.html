@@ -39,7 +39,8 @@
   .header-brand h1 { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; color: #fff; line-height: 1; }
   .header-brand h1 span { color: var(--gold); }
   .header-brand p { font-size: 12px; color: var(--text-muted); margin-top: 5px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; }
-  .month-picker { display: flex; align-items: center; gap: 12px; }
+  .header-address { font-size: 11px; color: var(--text-muted); margin-top: 8px; line-height: 1.6; display: flex; align-items: flex-start; gap: 6px; max-width: 460px; }
+  .header-address .pin { color: var(--gold); font-size: 13px; flex-shrink: 0; margin-top: 1px; }
   .month-picker label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); font-weight: 600; }
   .month-picker select { background: var(--surface2); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 9px 14px; font-size: 14px; font-family: 'DM Sans', sans-serif; font-weight: 500; cursor: pointer; outline: none; transition: border-color 0.2s; min-width: 160px; }
   .month-picker select:focus { border-color: var(--gold); }
@@ -84,8 +85,11 @@
   td { padding: 13px 20px; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.04); color: var(--text-dim); }
   tbody tr { transition: background 0.15s; }
   tbody tr:hover { background: var(--surface2); }
-  tbody tr.row-partial { background: rgba(251,146,60,0.05); border-left: 3px solid var(--orange); }
-  tbody tr.row-partial:hover { background: rgba(251,146,60,0.1); }
+  tbody tr.row-partial { background: rgba(251,146,60,0.07); box-shadow: inset 3px 0 0 var(--orange); }
+  tbody tr.row-partial td { color: var(--orange) !important; }
+  tbody tr.row-partial td.flat-num { color: #ffd4a8 !important; font-weight: 700; }
+  tbody tr.row-partial td.owner { color: #ffd4a8 !important; }
+  tbody tr.row-partial:hover { background: rgba(251,146,60,0.13); }
   td.flat-num { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; color: var(--text); }
   td.owner { color: var(--text); font-weight: 500; }
   td.amount { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
@@ -115,8 +119,11 @@
   .copy-upi-btn:hover { background: rgba(201,168,76,0.25); }
   .upi-apps { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
   .upi-app-tag { background: var(--surface3); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; font-size: 11px; color: var(--text-dim); font-weight: 500; }
-  .pay-note { background: rgba(52,211,153,0.06); border: 1px solid rgba(52,211,153,0.15); border-radius: var(--radius-sm); padding: 12px 14px; font-size: 12px; color: var(--text-muted); line-height: 1.6; }
-  .pay-note strong { color: var(--green); }
+  .pay-note { background: rgba(52,211,153,0.06); border: 1px solid rgba(52,211,153,0.15); border-radius: var(--radius-sm); padding: 14px 16px; font-size: 12px; color: var(--text-muted); line-height: 1.8; }
+  .pay-note strong { color: var(--green); display: block; margin-bottom: 4px; font-size: 13px; }
+  .pay-note ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+  .pay-note ul li { display: flex; align-items: flex-start; gap: 7px; }
+  .pay-note ul li::before { content: '→'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
 
   /* Defaulters card */
   .defaulters-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; animation: fadeUp 0.5s ease 0.45s both; }
@@ -139,7 +146,7 @@
   .footer { text-align: center; padding: 28px 40px 20px; border-top: 1px solid var(--border); margin-top: 8px; }
   .footer-credit { font-size: 11px; color: var(--text-muted); letter-spacing: 0.3px; }
   .footer-credit span { color: var(--gold); font-weight: 600; }
-  .footer-sub { font-size: 10px; color: var(--surface3); margin-top: 6px; letter-spacing: 1px; text-transform: uppercase; }
+  .footer-sub { font-size: 10px; color: var(--text-muted); margin-top: 6px; letter-spacing: 1px; text-transform: uppercase; }
 
   /* Error */
   .error-screen { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 40px; }
@@ -178,6 +185,10 @@
   <div class="header-brand">
     <h1>Pine <span>Ridge</span></h1>
     <p>Apartment Maintenance Dashboard</p>
+    <div class="header-address">
+      <span class="pin">📍</span>
+      <span>19th Cross, KV Jairam Road, Amruthahalli (P), Opp. SBI Jnana Jyothi Training Centre, Jakkuru Main Road, Bengaluru – 560092</span>
+    </div>
   </div>
   <div class="month-picker">
     <label>Period</label>
@@ -288,7 +299,13 @@
             </div>
           </div>
           <div class="pay-note">
-            <strong>After payment:</strong> Please share the payment screenshot with the treasurer so records can be updated promptly.
+            <strong>After payment, please share:</strong>
+            <ul>
+              <li>Payment screenshot with date clearly visible</li>
+              <li>Your flat number (e.g. A-101, B-203)</li>
+              <li>Month the payment is for</li>
+            </ul>
+            <span style="display:block;margin-top:8px;font-size:11px;">This helps us update records accurately and maintain a clean audit trail.</span>
           </div>
         </div>
       </div>
