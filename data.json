@@ -44,7 +44,534 @@
       "__EMPTY_1": -6000
     },
     {
+      "__EMPTY": "Actual left when handed over",
       "__EMPTY_1": 8670
+    },
+    {
+      "__EMPTY": "Balance at the end of April 2026",
+      "__EMPTY_1": 1377
+    }
+  ],
+  "Acct stmt 29-03-26 to 08-05-26": [
+    {
+      "Date": 46083,
+      "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
+      "RefNO": "0000606103063051",
+      "Value Date": 46083,
+      "Debit": 10000,
+      "Closing balance": 47763.81
+    },
+    {
+      "Date": 46083,
+      "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
+      "RefNO": "0000606104063077",
+      "Value Date": 46083,
+      "Debit": 10000,
+      "Closing balance": 37763.81
+    },
+    {
+      "Date": 46083,
+      "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
+      "RefNO": "0000606104063100",
+      "Value Date": 46083,
+      "Debit": 10000,
+      "Closing balance": 27763.81
+    },
+    {
+      "Date": 46083,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 02/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46083,
+      "Credit": 12000,
+      "Closing balance": 39763.81
+    },
+    {
+      "Date": 46083,
+      "Narratoin": "18571130000400-TPT-GARBAGE-MOHAMMED FAZLULLA MD",
+      "RefNO": "0000000561691110",
+      "Value Date": 46083,
+      "Debit": 3500,
+      "Closing balance": 36263.81
+    },
+    {
+      "Date": 46083,
+      "Narratoin": "ATW-403875XXXXXX8577-6NSAHAKA-BENGALURU",
+      "RefNO": "0000606114685298",
+      "Value Date": 46083,
+      "Debit": 6000,
+      "Closing balance": 30263.81
+    },
+    {
+      "Date": 46084,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 03/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46084,
+      "Credit": 14000,
+      "Closing balance": 44263.81
+    },
+    {
+      "Date": 46085,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 04/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46085,
+      "Credit": 12000,
+      "Closing balance": 56263.81
+    },
+    {
+      "Date": 46086,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 05/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46086,
+      "Credit": 8000,
+      "Closing balance": 64263.81
+    },
+    {
+      "Date": 46086,
+      "Narratoin": "18571130000400-TPT-BWSSB-MOHAMMED FAZLULLA MD",
+      "RefNO": "0000000199245648",
+      "Value Date": 46086,
+      "Debit": 32593,
+      "Closing balance": 31670.81
+    },
+    {
+      "Date": 46087,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 06/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46087,
+      "Credit": 4000,
+      "Closing balance": 35670.81
+    },
+    {
+      "Date": 46088,
+      "Narratoin": "HGAKP059CB0790535432-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000000389689008",
+      "Value Date": 46088,
+      "Debit": 7988,
+      "Closing balance": 27682.81
+    },
+    {
+      "Date": 46088,
+      "Narratoin": "HGAKP162E00790541755-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000000364610583",
+      "Value Date": 46088,
+      "Debit": 8430,
+      "Closing balance": 19252.81
+    },
+    {
+      "Date": 46090,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 09/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46090,
+      "Credit": 2000,
+      "Closing balance": 21252.81
+    },
+    {
+      "Date": 46091,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 10/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46091,
+      "Credit": 7922.12,
+      "Closing balance": 29174.93
+    },
+    {
+      "Date": 46093,
+      "Narratoin": "00761610125371-TPT-402-PRAVALLI S",
+      "RefNO": "0000000219095498",
+      "Value Date": 46093,
+      "Credit": 2000,
+      "Closing balance": 31174.93
+    },
+    {
+      "Date": 46093,
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26071934800",
+      "RefNO": "KKBKH26071934800",
+      "Value Date": 46093,
+      "Credit": 2000,
+      "Closing balance": 33174.93
+    },
+    {
+      "Date": 46093,
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26071934612",
+      "RefNO": "KKBKH26071934612",
+      "Value Date": 46093,
+      "Credit": 2000,
+      "Closing balance": 35174.93
+    },
+    {
+      "Date": 46093,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 12/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46093,
+      "Credit": 2000,
+      "Closing balance": 37174.93
+    },
+    {
+      "Date": 46096,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 15/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46096,
+      "Credit": 2000,
+      "Closing balance": 39174.93
+    },
+    {
+      "Date": 46097,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 16/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46097,
+      "Credit": 2000,
+      "Closing balance": 41174.93
+    },
+    {
+      "Date": 46098,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 17/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46098,
+      "Credit": 3961.06,
+      "Closing balance": 45135.99
+    },
+    {
+      "Date": 46099,
+      "Narratoin": "02061140033857-TPT-FUEL-SIVAPRASAD BANGARU",
+      "RefNO": "0000000242046973",
+      "Value Date": 46099,
+      "Debit": 3878,
+      "Closing balance": 41257.99
+    },
+    {
+      "Date": 46106,
+      "Narratoin": "IMPS-608422554215-RAVI KIRAN KANCULAKU-ICIC-XXXXXXXX9522-RENT",
+      "RefNO": "0000608422554215",
+      "Value Date": 46106,
+      "Credit": 2000,
+      "Closing balance": 43257.99
+    },
+    {
+      "Date": 46108,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 27/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46108,
+      "Credit": 2000,
+      "Closing balance": 45257.99
+    },
+    {
+      "Date": 46111,
+      "Narratoin": "18571130000400-TPT-SECURITY SALARY-MOHAMMED FAZLULLA MD",
+      "RefNO": "0000000475796858",
+      "Value Date": 46111,
+      "Debit": 13000,
+      "Closing balance": 32257.99
+    },
+    {
+      "Date": 46111,
+      "Narratoin": "18571130000400-TPT-GARBAGE COLLECTION-MOHAMMED FAZLULLA MD",
+      "RefNO": "0000000475829069",
+      "Value Date": 46111,
+      "Debit": 3500,
+      "Closing balance": 28757.99
+    },
+    {
+      "Date": 46111,
+      "Narratoin": "18571130000400-TPT-LIFT LED DRIVER-MOHAMMED FAZLULLA MD",
+      "RefNO": "0000000475879201",
+      "Value Date": 46111,
+      "Debit": 600,
+      "Closing balance": 28157.99
+    },
+    {
+      "Date": 46111,
+      "Narratoin": "02061140033857-TPT-MALLAIAH MAID AND WA-SIVAPRASAD BANGARU",
+      "RefNO": "0000000475935496",
+      "Value Date": 46111,
+      "Debit": 21300,
+      "Closing balance": 6857.99
+    },
+    {
+      "Date": 46112,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 31/03/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46112,
+      "Credit": 10000,
+      "Closing balance": 16857.99
+    },
+    {
+      "Date": 46113,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 01/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46113,
+      "Credit": 7922.12,
+      "Closing balance": 24780.11
+    },
+    {
+      "Date": 46114,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 02/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46114,
+      "Credit": 16000,
+      "Closing balance": 40780.11
+    },
+    {
+      "Date": 46115,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 03/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46115,
+      "Credit": 5961.06,
+      "Closing balance": 46741.17
+    },
+    {
+      "Date": 46115,
+      "Narratoin": "00761610125371-TPT-402-PRAVALLI S",
+      "RefNO": "0000000482541472",
+      "Value Date": 46115,
+      "Credit": 2000,
+      "Closing balance": 48741.17
+    },
+    {
+      "Date": 46116,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 04/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46116,
+      "Credit": 12000,
+      "Closing balance": 60741.17
+    },
+    {
+      "Date": 46117,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 05/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46117,
+      "Credit": 6000,
+      "Closing balance": 66741.17
+    },
+    {
+      "Date": 46118,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 06/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46118,
+      "Credit": 15000,
+      "Closing balance": 81741.17
+    },
+    {
+      "Date": 46119,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 07/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46119,
+      "Credit": 8000,
+      "Closing balance": 89741.17
+    },
+    {
+      "Date": 46120,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 08/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46120,
+      "Credit": 5000,
+      "Closing balance": 94741.17
+    },
+    {
+      "Date": 46121,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 09/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46121,
+      "Credit": 4000,
+      "Closing balance": 98741.17
+    },
+    {
+      "Date": 46122,
+      "Narratoin": "HGALP07AB10016140995-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000000409235111",
+      "Value Date": 46122,
+      "Debit": 8995,
+      "Closing balance": 89746.17
+    },
+    {
+      "Date": 46122,
+      "Narratoin": "HGALP1343A0016147600-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000000409235166",
+      "Value Date": 46122,
+      "Debit": 9446,
+      "Closing balance": 80300.17
+    },
+    {
+      "Date": 46122,
+      "Narratoin": "HGALP17F890017547766-BANGALOREWA-BILLPAY-50200026202917",
+      "RefNO": "0000000409247998",
+      "Value Date": 46122,
+      "Debit": 32593,
+      "Closing balance": 47707.17
+    },
+    {
+      "Date": 46123,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 11/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46123,
+      "Credit": 4000,
+      "Closing balance": 51707.17
+    },
+    {
+      "Date": 46126,
+      "Narratoin": "IMPS-610401747779-RAVI KIRAN KANCULAKU-ICIC-XXXXXXXX9522-RENT",
+      "RefNO": "0000610401747779",
+      "Value Date": 46126,
+      "Credit": 2000,
+      "Closing balance": 53707.17
+    },
+    {
+      "Date": 46127,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 15/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46127,
+      "Credit": 2600,
+      "Closing balance": 56307.17
+    },
+    {
+      "Date": 46127,
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26105994144",
+      "RefNO": "KKBKH26105994144",
+      "Value Date": 46127,
+      "Credit": 2000,
+      "Closing balance": 58307.17
+    },
+    {
+      "Date": 46127,
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26105667467",
+      "RefNO": "KKBKH26105667467",
+      "Value Date": 46127,
+      "Credit": 2000,
+      "Closing balance": 60307.17
+    },
+    {
+      "Date": 46128,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 16/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46128,
+      "Credit": 4000,
+      "Closing balance": 64307.17
+    },
+    {
+      "Date": 46141,
+      "Narratoin": "ATW-403875XXXXXX8577-S1ANBK90-BANGALORE",
+      "RefNO": "0000000000007644",
+      "Value Date": 46141,
+      "Debit": 10000,
+      "Closing balance": 54307.17
+    },
+    {
+      "Date": 46141,
+      "Narratoin": "ATW-403875XXXXXX8577-S1ANBK90-BANGALORE",
+      "RefNO": "0000000000007645",
+      "Value Date": 46141,
+      "Debit": 10000,
+      "Closing balance": 44307.17
+    },
+    {
+      "Date": 46142,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 30/04/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46142,
+      "Credit": 2000,
+      "Closing balance": 46307.17
+    },
+    {
+      "Date": 46142,
+      "Narratoin": "ATW-403875XXXXXX8577-CHKAR103-KODAGU",
+      "RefNO": "0000000000008131",
+      "Value Date": 46142,
+      "Debit": 10000,
+      "Closing balance": 36307.17
+    },
+    {
+      "Date": 46142,
+      "Narratoin": "ATW-403875XXXXXX8577-CHKAR103-KODAGU",
+      "RefNO": "0000000000008132",
+      "Value Date": 46142,
+      "Debit": 10000,
+      "Closing balance": 26307.17
+    },
+    {
+      "Date": 46143,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 01/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46143,
+      "Credit": 2000,
+      "Closing balance": 28307.17
+    },
+    {
+      "Date": 46144,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 02/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46144,
+      "Credit": 16000,
+      "Closing balance": 44307.17
+    },
+    {
+      "Date": 46145,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 03/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46145,
+      "Credit": 22000,
+      "Closing balance": 66307.17
+    },
+    {
+      "Date": 46146,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 04/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46146,
+      "Credit": 7961.06,
+      "Closing balance": 74268.23
+    },
+    {
+      "Date": 46147,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 05/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46147,
+      "Credit": 8000,
+      "Closing balance": 82268.23
+    },
+    {
+      "Date": 46148,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 06/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46148,
+      "Credit": 8000,
+      "Closing balance": 90268.23
+    },
+    {
+      "Date": 46148,
+      "Narratoin": "50100735149790-TPT-402-PRAVALLI S",
+      "RefNO": "0000000417490749",
+      "Value Date": 46148,
+      "Credit": 2000,
+      "Closing balance": 92268.23
+    },
+    {
+      "Date": 46149,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 07/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46149,
+      "Credit": 2000,
+      "Closing balance": 94268.23
+    },
+    {
+      "Date": 46150,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 08/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": 46150,
+      "Credit": 4000,
+      "Closing balance": 98268.23
+    },
+    {
+      "Date": 46151,
+      "Narratoin": "HGALP1684E0319222760-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000001411586893",
+      "Value Date": 46151,
+      "Debit": 8755,
+      "Closing balance": 89513.23
+    },
+    {
+      "Date": 46151,
+      "Narratoin": "HGALP17D5E0319237768-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000001411586964",
+      "Value Date": 46151,
+      "Debit": 9227,
+      "Closing balance": 80286.23
     }
   ],
   "Expenses April 2026": [
@@ -52,37 +579,49 @@
       "Date": 46113,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 113716
+      "Amount": 113716,
+      "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
+      "__EMPTY_2": 8670
     },
     {
       "Date": 46142,
       "Category": "Salary",
       "Description": "Mallaiah Salary",
-      "Amount": 10000
+      "Amount": 10000,
+      "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
+      "__EMPTY_2": 113716
     },
     {
       "Date": 46116,
       "Category": "Maintenance",
       "Description": "Plumbing work at ground floor",
-      "Amount": 4000
+      "Amount": 4000,
+      "__EMPTY_1": "Total collection for the month",
+      "__EMPTY_2": 95300
     },
     {
       "Date": 46122,
       "Category": "Usage bill",
       "Description": "Electricity Bill",
-      "Amount": 18441
+      "Amount": 18441,
+      "__EMPTY_1": "Total spent in for the month",
+      "__EMPTY_2": 93923
     },
     {
       "Date": 46142,
       "Category": "Usage bill",
       "Description": "Common area Wifi",
-      "Amount": 589
+      "Amount": 589,
+      "__EMPTY_1": "Actual left in account as on last day of the month",
+      "__EMPTY_2": 10047
     },
     {
       "Date": 46142,
       "Category": "Salary",
       "Description": "Security Salary",
-      "Amount": 13000
+      "Amount": 13000,
+      "__EMPTY_1": "What we are telling left in account as on last day of the month",
+      "__EMPTY_2": 115093
     },
     {
       "Date": 46145,
@@ -113,6 +652,70 @@
       "Category": "Essentials",
       "Description": "Mallayya+Security -Drinking Water",
       "Amount": 500
+    },
+    {
+      "__EMPTY_5": "Water",
+      "__EMPTY_6": -500
+    },
+    {
+      "__EMPTY_5": "Hou sal",
+      "__EMPTY_6": -11000
+    },
+    {
+      "__EMPTY_5": "Rangoli",
+      "__EMPTY_6": -300
+    },
+    {
+      "__EMPTY_5": "Sec sal",
+      "__EMPTY_6": -13000
+    },
+    {
+      "__EMPTY_5": "Mal sal",
+      "__EMPTY_6": -10000
+    },
+    {
+      "__EMPTY_5": "Plumber",
+      "__EMPTY_6": -4000
+    },
+    {
+      "__EMPTY_5": "BBMP",
+      "__EMPTY_6": -3500
+    },
+    {
+      "__EMPTY_5": "Siva",
+      "__EMPTY_6": -5415.62
+    },
+    {
+      "__EMPTY_5": "Cash",
+      "__EMPTY_6": 40000
+    },
+    {
+      "__EMPTY_5": "Sent to Arun#",
+      "__EMPTY_6": -7715.620000000003
+    },
+    {
+      "__EMPTY_9": 7715.62
+    },
+    {
+      "__EMPTY_9": 1739.89
+    },
+    {
+      "__EMPTY_9": 11000
+    },
+    {
+      "__EMPTY_7": -1200,
+      "__EMPTY_9": 113
+    },
+    {
+      "__EMPTY_7": 5415.62,
+      "__EMPTY_9": -2.07
+    },
+    {
+      "__EMPTY_7": 3500,
+      "__EMPTY_9": 1200
+    },
+    {
+      "__EMPTY_9": 4000
     }
   ],
   "Maintenance April 2026": [
@@ -504,58 +1107,48 @@
   ],
   "Expenses May 2026": [
     {
-      "Category": "Salary",
-      "Description": "Mallaiah Salary",
-      "Amount": 10000
+      "Date": 46113,
+      "Category": "Balance",
+      "Description": "Opening Balance",
+      "Amount": 115093,
+      "__EMPTY_2": "Actual carry forwarded to account as on 1st of the month",
+      "__EMPTY_3": 10047
     },
     {
-      "Category": "Maintenance",
-      "Description": "Plumbing work at ground floor",
-      "Amount": 4000
-    },
-    {
+      "Date": 46151,
       "Category": "Usage bill",
-      "Description": "Electricity Bill"
+      "Description": "Electricity Bill",
+      "Amount": 17982,
+      "__EMPTY_2": "What we are telling carry forwarded as on 1st of the month",
+      "__EMPTY_3": 115093
     },
     {
+      "Date": 46151,
       "Category": "Usage bill",
       "Description": "Common area Wifi",
-      "Amount": 589
+      "Amount": 589,
+      "__EMPTY_2": "Total collection for the month",
+      "__EMPTY_3": 62000
     },
     {
-      "Category": "Salary",
-      "Description": "Security Salary",
-      "Amount": 13000
-    },
-    {
-      "Category": "Usage bill",
-      "Description": "BBMP - Garbage Pickup",
-      "Amount": 3500
-    },
-    {
-      "Category": "Usage bill",
-      "Description": "BWSSB Bill"
-    },
-    {
-      "Category": "Essentials",
-      "Description": "Rangoli",
-      "Amount": 300
-    },
-    {
-      "Category": "Salary",
-      "Description": "Housekeeping Salary",
-      "Amount": 11000
-    },
-    {
-      "Category": "Essentials",
-      "Description": "Mallayya+Security -Drinking Water",
-      "Amount": 500
-    },
-    {
-      "Date": 46148,
-      "Category": "Essentials",
+      "Date": 46151,
+      "Category": "Maintenance",
       "Description": "Generator diesel",
-      "Amount": 3877.62
+      "Amount": 3877.62,
+      "__EMPTY_2": "Total spent in for the month",
+      "__EMPTY_3": 22808.62
+    },
+    {
+      "Date": 46151,
+      "Category": "Essentials",
+      "Description": "Phenyl",
+      "Amount": 360,
+      "__EMPTY_2": "Actual left in account as on last day of the month",
+      "__EMPTY_3": 49238.380000000005
+    },
+    {
+      "__EMPTY_2": "What we are telling left in account as on last day of the month",
+      "__EMPTY_3": 154284.38
     }
   ],
   "Maintenance May 2026": [
@@ -563,8 +1156,8 @@
       "Month": 46143,
       "Flat No": "G01",
       "Owner Name": "Sahajahan",
-      "Amount Due": 0,
-      "Amount Paid": 2000
+      "Amount Due": 2000,
+      "Amount Paid": 0
     },
     {
       "Month": 46143,
@@ -777,7 +1370,8 @@
       "Month": 46143,
       "Flat No": 303,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,

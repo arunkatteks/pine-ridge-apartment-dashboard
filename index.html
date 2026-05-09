@@ -1,862 +1,823 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pine Ridge Apartment Dashboard</title>
-
+<title>Pine Ridge · Apartment Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --bg: #0b0f1a;
+    --surface: #111827;
+    --surface2: #1a2235;
+    --surface3: #212d42;
+    --border: rgba(255,255,255,0.07);
+    --gold: #c9a84c;
+    --gold-light: #e8c96a;
+    --gold-dim: rgba(201,168,76,0.15);
+    --green: #34d399;
+    --green-dim: rgba(52,211,153,0.12);
+    --orange: #fb923c;
+    --orange-dim: rgba(251,146,60,0.12);
+    --red: #f87171;
+    --red-dim: rgba(248,113,113,0.12);
+    --blue: #60a5fa;
+    --blue-dim: rgba(96,165,250,0.12);
+    --text: #e2e8f0;
+    --text-muted: #64748b;
+    --text-dim: #94a3b8;
+    --radius: 14px;
+    --radius-sm: 8px;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
-  margin: 10px;
-  color: #222;
-}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
-.card {
-  background: white;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+  /* ── Header ── */
+  .header {
+    background: linear-gradient(135deg, #0e1525 0%, #131e30 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 28px 40px 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 260px; height: 260px;
+    background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header-brand h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #fff;
+    line-height: 1;
+  }
+  .header-brand h1 span { color: var(--gold); }
+  .header-brand p {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .month-picker {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .month-picker label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  .month-picker select {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 9px 14px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+    min-width: 160px;
+  }
+  .month-picker select:focus { border-color: var(--gold); }
 
-select,
-button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
+  /* ── Main layout ── */
+  .main {
+    padding: 32px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
 
-button {
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+  /* ── Section labels ── */
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold-dim), transparent);
+  }
 
-button:hover {
-  opacity: 0.9;
-}
+  /* ── KPI cards ── */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+  }
+  .kpi-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+    animation: fadeUp 0.5s ease both;
+  }
+  .kpi-card:hover { transform: translateY(-2px); border-color: rgba(201,168,76,0.25); }
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent, var(--gold));
+    opacity: 0.6;
+  }
+  .kpi-card .icon {
+    font-size: 18px;
+    margin-bottom: 12px;
+    opacity: 0.7;
+  }
+  .kpi-card .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .kpi-card .value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+  .kpi-card .value .currency {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-right: 2px;
+  }
+  .kpi-card.highlight {
+    background: linear-gradient(135deg, #141f10 0%, #0d1a0e 100%);
+    border-color: rgba(52,211,153,0.2);
+    --accent: var(--green);
+  }
+  .kpi-card.highlight .value { color: var(--green); }
 
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 10px;
-}
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .kpi-card:nth-child(1) { animation-delay: 0.05s; }
+  .kpi-card:nth-child(2) { animation-delay: 0.10s; }
+  .kpi-card:nth-child(3) { animation-delay: 0.15s; }
+  .kpi-card:nth-child(4) { animation-delay: 0.20s; }
+  .kpi-card:nth-child(5) { animation-delay: 0.25s; }
 
-.summary-box {
-  background: #f8f9fb;
-  padding: 12px;
-  border-radius: 8px;
-}
+  /* ── Charts row ── */
+  .charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .chart-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    animation: fadeUp 0.5s ease 0.3s both;
+  }
+  .chart-card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dim);
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+  }
+  .chart-wrap {
+    height: 240px;
+    position: relative;
+  }
+  .chart-card.wide {
+    grid-column: span 1;
+  }
 
-.summary-box h4 {
-  margin: 0 0 8px;
-  font-size: 14px;
-}
-
-.summary-box p {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.highlight {
-  background: #e8f5e9;
-}
-
-.chart-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.chart-box {
-  width: 320px;
-  height: 320px;
-}
-
-.status-chart-box {
-  width: 100%;
-  max-width: 700px;
-  margin: auto;
-  height: 350px;
-}
-
-.chart-box canvas,
-.status-chart-box canvas {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.table-container {
-  overflow-x: auto;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-  font-size: 14px;
-}
-
-th {
-  background: #f2f2f2;
-}
-
-.paid {
-  color: green;
-  font-weight: bold;
-}
-
-.partial {
-  color: orange;
-  font-weight: bold;
-  background: #fff4d6;
-}
-
-.unpaid {
-  color: red;
-  font-weight: bold;
-  background: #fff0f0;
-}
-
-.link-box {
-  background: #f8f9fb;
-  padding: 12px;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
-.link-box a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  word-break: break-word;
-}
-
-pre {
-  white-space: pre-wrap;
-  background: #f0f0f0;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.error {
-  color: red;
-  font-weight: bold;
-}
-
-.footer {
-  text-align: center;
-  color: #777;
-  margin-top: 30px;
-  font-size: 12px;
-}
-
-@media (max-width: 768px) {
-
-  .chart-box {
+  /* ── Table ── */
+  .table-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    animation: fadeUp 0.5s ease 0.4s both;
+  }
+  .table-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .table-header h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dim);
+  }
+  .table-container { overflow-x: auto; }
+  table {
     width: 100%;
-    height: 280px;
+    border-collapse: collapse;
+  }
+  thead tr {
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    padding: 12px 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+  }
+  td {
+    padding: 13px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text-dim);
+  }
+  tbody tr {
+    transition: background 0.15s;
+  }
+  tbody tr:hover { background: var(--surface2); }
+  td.flat-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+  }
+  td.owner { color: var(--text); font-weight: 500; }
+  td.amount {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .badge.paid    { background: var(--green-dim);  color: var(--green); }
+  .badge.partial { background: var(--orange-dim); color: var(--orange); }
+  .badge.unpaid  { background: var(--red-dim);    color: var(--red); }
+  .badge::before { content: '●'; font-size: 7px; }
+
+  /* ── Bottom row ── */
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
-  .status-chart-box {
-    height: 300px;
+  /* ── Defaulters card ── */
+  .defaulters-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    animation: fadeUp 0.5s ease 0.45s both;
+  }
+  .defaulters-card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dim);
+    margin-bottom: 16px;
+  }
+  pre#defaultersText {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--text-dim);
+    white-space: pre-wrap;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 14px;
+  }
+  .copy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 11px;
+    background: linear-gradient(135deg, #25d366, #128c5e);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    transition: opacity 0.2s, transform 0.15s;
+  }
+  .copy-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+  .copy-btn:active { transform: translateY(0); }
+
+  /* ── Bills card ── */
+  .bills-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    animation: fadeUp 0.5s ease 0.5s both;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bills-card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+  }
+  .bills-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .bills-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    background: var(--gold-dim);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--gold-light);
+    font-weight: 600;
+    font-size: 13px;
+    transition: background 0.2s, transform 0.15s;
+    margin-bottom: 0;
+  }
+  .bills-link:hover { background: rgba(201,168,76,0.22); transform: translateY(-1px); }
+  .bills-link .link-icon { font-size: 18px; }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 20px 40px 32px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--border);
   }
 
-}
+  /* ── Error ── */
+  .error-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+  }
+  .error-box {
+    background: var(--surface);
+    border: 1px solid rgba(248,113,113,0.25);
+    border-radius: var(--radius);
+    padding: 40px;
+    max-width: 500px;
+    text-align: center;
+  }
+  .error-box h2 { color: var(--red); margin-bottom: 12px; }
+  .error-box p { color: var(--text-muted); font-size: 14px; }
 
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--surface3); border-radius: 3px; }
+
+  /* ── Responsive ── */
+  @media (max-width: 1100px) {
+    .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+    .charts-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 768px) {
+    .header { flex-direction: column; align-items: flex-start; gap: 16px; padding: 20px; }
+    .main { padding: 20px; gap: 20px; }
+    .kpi-grid { grid-template-columns: 1fr 1fr; }
+    .charts-grid { grid-template-columns: 1fr; }
+    .bottom-grid { grid-template-columns: 1fr; }
+    .month-picker select { min-width: 100%; }
+  }
+  @media (max-width: 480px) {
+    .kpi-grid { grid-template-columns: 1fr; }
+  }
 </style>
-
 </head>
-
 <body>
 
-<h1>Pine Ridge Apartment Dashboard</h1>
-
-<div class="card">
-
-  <label>Select Month:</label>
-
-  <select id="monthSelect"></select>
-
+<div class="header">
+  <div class="header-brand">
+    <h1>Pine <span>Ridge</span></h1>
+    <p>Apartment Maintenance Dashboard</p>
+  </div>
+  <div class="month-picker">
+    <label>Period</label>
+    <select id="monthSelect"></select>
+  </div>
 </div>
 
-<div class="card">
+<div class="main">
 
-  <h3>Financial Summary</h3>
-
-  <div class="summary-grid">
-
-    <div class="summary-box">
-      <h4>Opening Balance</h4>
-      <p>₹<span id="openingBalance">0</span></p>
+  <!-- KPI Row -->
+  <div>
+    <div class="section-label">Financial Overview</div>
+    <div class="kpi-grid">
+      <div class="kpi-card" style="--accent:#60a5fa">
+        <div class="icon">🏦</div>
+        <div class="label">Opening Balance</div>
+        <div class="value"><span class="currency">₹</span><span id="openingBalance">0</span></div>
+      </div>
+      <div class="kpi-card" style="--accent:#34d399">
+        <div class="icon">📥</div>
+        <div class="label">Total Collected</div>
+        <div class="value"><span class="currency">₹</span><span id="collected">0</span></div>
+      </div>
+      <div class="kpi-card" style="--accent:#f87171">
+        <div class="icon">📤</div>
+        <div class="label">Total Expenses</div>
+        <div class="value"><span class="currency">₹</span><span id="expenses">0</span></div>
+      </div>
+      <div class="kpi-card" style="--accent:#fb923c">
+        <div class="icon">⏳</div>
+        <div class="label">Pending Collection</div>
+        <div class="value"><span class="currency">₹</span><span id="pending">0</span></div>
+      </div>
+      <div class="kpi-card highlight">
+        <div class="icon">✅</div>
+        <div class="label">Closing Balance</div>
+        <div class="value"><span class="currency">₹</span><span id="closingBalance">0</span></div>
+      </div>
     </div>
+  </div>
 
-    <div class="summary-box">
-      <h4>Total Collected</h4>
-      <p>₹<span id="collected">0</span></p>
+  <!-- Charts -->
+  <div>
+    <div class="section-label">Expense Analytics</div>
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3>By Category</h3>
+        <div class="chart-wrap"><canvas id="expenseChart"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>By Description</h3>
+        <div class="chart-wrap"><canvas id="expenseDescriptionChart"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Collection Status</h3>
+        <div class="chart-wrap"><canvas id="collectionChart"></canvas></div>
+      </div>
     </div>
+  </div>
 
-    <div class="summary-box">
-      <h4>Total Expenses</h4>
-      <p>₹<span id="expenses">0</span></p>
+  <!-- Table -->
+  <div>
+    <div class="section-label">Apartment Tracker</div>
+    <div class="table-card">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Flat</th>
+              <th>Owner</th>
+              <th>Amount Due</th>
+              <th>Amount Paid</th>
+              <th>Balance</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
     </div>
+  </div>
 
-    <div class="summary-box">
-      <h4>Pending Collection</h4>
-      <p>₹<span id="pending">0</span></p>
+  <!-- Bottom row -->
+  <div class="bottom-grid">
+    <div class="defaulters-card">
+      <h3>Defaulter Notice</h3>
+      <pre id="defaultersText"></pre>
+      <button class="copy-btn" onclick="copyDefaulters()">
+        <span>📱</span> Copy WhatsApp Message
+      </button>
     </div>
-
-    <div class="summary-box highlight">
-      <h4>Closing Balance</h4>
-      <p>₹<span id="closingBalance">0</span></p>
+    <div class="bills-card">
+      <div>
+        <h3>Payment Proofs & Bills</h3>
+        <p>Access all maintenance payment screenshots, vendor bills, invoices and proof documents in the shared folder.</p>
+      </div>
+      <a class="bills-link" href="https://1drv.ms/f/c/FB84C1A8D91E06CC/IgAy-baWb3ovQ5CBHzwEwfGcAenLFGo3a7ZciZxXt25xTsI?e=uubXVU" target="_blank">
+        <span class="link-icon">📁</span>
+        Open Payment Proofs & Bills Folder
+      </a>
     </div>
-
   </div>
 
 </div>
 
-<div class="card">
-
-  <h3>Expense Analytics</h3>
-
-  <div class="chart-row">
-
-    <div class="chart-box">
-      <canvas id="expenseChart"></canvas>
-    </div>
-
-    <div class="chart-box">
-      <canvas id="expenseDescriptionChart"></canvas>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="card">
-
-  <h3>Collection Status</h3>
-
-  <div class="status-chart-box">
-    <canvas id="collectionChart"></canvas>
-  </div>
-
-</div>
-
-<div class="card">
-
-  <h3>Payment Proofs & Bills</h3>
-
-  <div class="link-box">
-
-    <p>
-      Click below to view all maintenance payment screenshots,
-      vendor bills, invoices and proof documents:
-    </p>
-
-    <a href="https://1drv.ms/f/c/FB84C1A8D91E06CC/IgAy-baWb3ovQ5CBHzwEwfGcAenLFGo3a7ZciZxXt25xTsI?e=uubXVU" target="_blank">
-      Open Payment Proofs & Bills Folder
-    </a>
-
-  </div>
-
-</div>
-
-<div class="card">
-
-  <h3>Defaulters</h3>
-
-  <button onclick="copyDefaulters()">
-    Copy WhatsApp Message
-  </button>
-
-  <pre id="defaultersText"></pre>
-
-</div>
-
-<div class="card table-container">
-
-  <h3>Apartment Tracker</h3>
-
-  <table>
-
-    <thead>
-
-      <tr>
-        <th>Flat</th>
-        <th>Owner</th>
-        <th>Amount Due</th>
-        <th>Amount Paid</th>
-        <th>Balance</th>
-        <th>Status</th>
-      </tr>
-
-    </thead>
-
-    <tbody id="tableBody"></tbody>
-
-  </table>
-
-</div>
-
-<div class="footer">
-  Pine Ridge Apartment Maintenance Dashboard
-</div>
+<div class="footer">Pine Ridge Apartment · Maintenance Dashboard</div>
 
 <script>
-
 document.addEventListener("DOMContentLoaded", function () {
 
-let workbookData = {};
+  let workbookData = {};
+  let expenseChartObj = null;
+  let expenseDescriptionChartObj = null;
+  let collectionChartObj = null;
 
-let expenseChartObj = null;
-let expenseDescriptionChartObj = null;
-let collectionChartObj = null;
+  const CHART_COLORS = [
+    '#c9a84c','#60a5fa','#34d399','#f87171','#fb923c',
+    '#a78bfa','#38bdf8','#4ade80','#fbbf24','#f472b6',
+    '#6ee7b7','#93c5fd','#fca5a5','#86efac','#c084fc'
+  ];
 
-fetch("data.json")
+  fetch("data.json")
+    .then(r => { if (!r.ok) throw new Error("Could not load data.json"); return r.json(); })
+    .then(data => { workbookData = data; populateMonths(); })
+    .catch(error => {
+      document.body.innerHTML = `
+        <div class="error-screen">
+          <div class="error-box">
+            <h2>Dashboard Error</h2>
+            <p>${error.message}</p>
+          </div>
+        </div>`;
+    });
 
-.then(response => {
-
-  if (!response.ok) {
-    throw new Error("Could not load data.json");
+  function populateMonths() {
+    const monthSelect = document.getElementById("monthSelect");
+    const months = [];
+    Object.keys(workbookData).forEach(sheet => {
+      if (sheet.toLowerCase().includes("expenses")) {
+        months.push(sheet.replace(/expenses/i, "").trim());
+      }
+    });
+    monthSelect.innerHTML = "";
+    months.forEach(month => {
+      const opt = document.createElement("option");
+      opt.value = month; opt.textContent = month;
+      monthSelect.appendChild(opt);
+    });
+    if (months.length > 0) loadMonth(months[0]);
+    monthSelect.addEventListener("change", function () { loadMonth(this.value); });
   }
 
-  return response.json();
-
-})
-
-.then(data => {
-
-  workbookData = data;
-
-  populateMonths();
-
-})
-
-.catch(error => {
-
-  console.error(error);
-
-  document.body.innerHTML = `
-    <div class="card error">
-      Error loading dashboard data.<br><br>
-      ${error}
-    </div>
-  `;
-
-});
-
-function populateMonths() {
-
-  const monthSelect =
-    document.getElementById("monthSelect");
-
-  const months = [];
-
-  Object.keys(workbookData).forEach(sheet => {
-
-    if (sheet.toLowerCase().includes("expenses")) {
-
-      months.push(
-        sheet.replace(/expenses/i, "").trim()
-      );
-
-    }
-
-  });
-
-  monthSelect.innerHTML = "";
-
-  months.forEach(month => {
-
-    const option =
-      document.createElement("option");
-
-    option.value = month;
-    option.textContent = month;
-
-    monthSelect.appendChild(option);
-
-  });
-
-  if (months.length > 0) {
-    loadMonth(months[0]);
+  function loadMonth(month) {
+    const expenseKey = Object.keys(workbookData).find(k => k.toLowerCase() === ("expenses " + month).toLowerCase());
+    const maintenanceKey = Object.keys(workbookData).find(k => k.toLowerCase() === ("maintenance " + month).toLowerCase());
+    const expenses = workbookData[expenseKey] || [];
+    const collection = workbookData[maintenanceKey] || [];
+    renderSummary(expenses, collection);
+    renderCharts(expenses, collection);
+    renderTable(collection);
+    renderDefaulters(collection, month);
   }
 
-  monthSelect.addEventListener("change", function () {
-    loadMonth(this.value);
-  });
-
-}
-
-function loadMonth(month) {
-
-  const expenseKey = Object.keys(workbookData)
-
-  .find(key =>
-
-    key.toLowerCase() ===
-    ("expenses " + month).toLowerCase()
-
-  );
-
-  const maintenanceKey = Object.keys(workbookData)
-
-  .find(key =>
-
-    key.toLowerCase() ===
-    ("maintenance " + month).toLowerCase()
-
-  );
-
-  const expenses =
-    workbookData[expenseKey] || [];
-
-  const collection =
-    workbookData[maintenanceKey] || [];
-
-  renderSummary(expenses, collection);
-
-  renderCharts(expenses, collection);
-
-  renderTable(collection);
-
-  renderDefaulters(collection, month);
-
-}
-
-function renderSummary(expenses, collection) {
-
-  let openingBalance = 0;
-
-  expenses.forEach(item => {
-
-    if (
-
-      String(item.Description || "")
-      .toLowerCase()
-      .includes("opening balance")
-
-    ) {
-
-      openingBalance +=
-        Number(item.Amount || 0);
-
-    }
-
-  });
-
-  const totalExpenses =
-
-    expenses
-
-    .filter(item =>
-
-      !String(item.Description || "")
-      .toLowerCase()
-      .includes("opening balance")
-
-    )
-
-    .reduce((sum, item) =>
-
-      sum + Number(item.Amount || 0)
-
-    , 0);
-
-  const totalCollected =
-
-    collection.reduce((sum, item) =>
-
-      sum + Number(item["Amount Paid"] || 0)
-
-    , 0);
-
-  const pendingCollection =
-
-    collection.reduce((sum, item) => {
-
-      const due =
-        Number(item["Amount Due"] || 0);
-
-      const paid =
-        Number(item["Amount Paid"] || 0);
-
-      return sum + Math.max(due - paid, 0);
-
+  function renderSummary(expenses, collection) {
+    let openingBalance = 0;
+    expenses.forEach(item => {
+      if (String(item.Description || "").toLowerCase().includes("opening balance")) {
+        openingBalance += Number(item.Amount || 0);
+      }
+    });
+    const totalExpenses = expenses
+      .filter(item => !String(item.Description || "").toLowerCase().includes("opening balance"))
+      .reduce((s, item) => s + Number(item.Amount || 0), 0);
+    const totalCollected = collection.reduce((s, item) => s + Number(item["Amount Paid"] || 0), 0);
+    const pendingCollection = collection.reduce((s, item) => {
+      const due = Number(item["Amount Due"] || 0);
+      const paid = Number(item["Amount Paid"] || 0);
+      return s + Math.max(due - paid, 0);
     }, 0);
+    const closingBalance = openingBalance + totalCollected - totalExpenses;
 
-  const closingBalance =
+    animateValue("openingBalance", openingBalance);
+    animateValue("collected", totalCollected);
+    animateValue("expenses", totalExpenses);
+    animateValue("pending", pendingCollection);
+    animateValue("closingBalance", closingBalance);
+  }
 
-    openingBalance
-    +
-    totalCollected
-    -
-    totalExpenses;
-
-  document.getElementById("openingBalance").textContent =
-    openingBalance.toLocaleString("en-IN");
-
-  document.getElementById("collected").textContent =
-    totalCollected.toLocaleString("en-IN");
-
-  document.getElementById("expenses").textContent =
-    totalExpenses.toLocaleString("en-IN");
-
-  document.getElementById("pending").textContent =
-    pendingCollection.toLocaleString("en-IN");
-
-  document.getElementById("closingBalance").textContent =
-    closingBalance.toLocaleString("en-IN");
-
-}
-
-function renderCharts(expenses, collection) {
-
-  const categoryTotals = {};
-  const descriptionTotals = {};
-
-  expenses.forEach(item => {
-
-    if (
-
-      String(item.Description || "")
-      .toLowerCase()
-      .includes("opening balance")
-
-    ) {
-      return;
+  function animateValue(id, target) {
+    const el = document.getElementById(id);
+    const start = 0;
+    const duration = 700;
+    const startTime = performance.now();
+    function update(now) {
+      const elapsed = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - elapsed, 3);
+      const current = Math.round(start + (target - start) * eased);
+      el.textContent = current.toLocaleString("en-IN");
+      if (elapsed < 1) requestAnimationFrame(update);
     }
+    requestAnimationFrame(update);
+  }
 
-    categoryTotals[item.Category] =
+  function renderCharts(expenses, collection) {
+    const categoryTotals = {};
+    const descriptionTotals = {};
+    expenses.forEach(item => {
+      if (String(item.Description || "").toLowerCase().includes("opening balance")) return;
+      categoryTotals[item.Category] = (categoryTotals[item.Category] || 0) + Number(item.Amount || 0);
+      descriptionTotals[item.Description] = (descriptionTotals[item.Description] || 0) + Number(item.Amount || 0);
+    });
 
-      (categoryTotals[item.Category] || 0)
-      +
-      Number(item.Amount || 0);
+    if (expenseChartObj) expenseChartObj.destroy();
+    if (expenseDescriptionChartObj) expenseDescriptionChartObj.destroy();
+    if (collectionChartObj) collectionChartObj.destroy();
 
-    descriptionTotals[item.Description] =
+    Chart.defaults.color = '#64748b';
+    Chart.defaults.font.family = "'DM Sans', sans-serif";
 
-      (descriptionTotals[item.Description] || 0)
-      +
-      Number(item.Amount || 0);
-
-  });
-
-  if (expenseChartObj) expenseChartObj.destroy();
-  if (expenseDescriptionChartObj) expenseDescriptionChartObj.destroy();
-  if (collectionChartObj) collectionChartObj.destroy();
-
-  expenseChartObj = new Chart(
-
-    document.getElementById("expenseChart"),
-
-    {
-
-      type: "pie",
-
-      data: {
-
-        labels: Object.keys(categoryTotals),
-
-        datasets: [{
-          data: Object.values(categoryTotals)
-        }]
-
-      },
-
-      options: {
-        responsive: true,
-        maintainAspectRatio: false
-      }
-
-    }
-
-  );
-
-  expenseDescriptionChartObj = new Chart(
-
-    document.getElementById("expenseDescriptionChart"),
-
-    {
-
-      type: "pie",
-
-      data: {
-
-        labels: Object.keys(descriptionTotals),
-
-        datasets: [{
-          data: Object.values(descriptionTotals)
-        }]
-
-      },
-
-      options: {
-        responsive: true,
-        maintainAspectRatio: false
-      }
-
-    }
-
-  );
-
-  let paid = 0;
-  let partial = 0;
-  let unpaid = 0;
-
-  collection.forEach(item => {
-
-    const due =
-      Number(item["Amount Due"] || 0);
-
-    const paidAmt =
-      Number(item["Amount Paid"] || 0);
-
-    const balance =
-      due - paidAmt;
-
-    if (paidAmt === 0) {
-
-      unpaid++;
-
-    } else if (balance > 0) {
-
-      partial++;
-
-    } else {
-
-      paid++;
-
-    }
-
-  });
-
-  collectionChartObj = new Chart(
-
-    document.getElementById("collectionChart"),
-
-    {
-
-      type: "bar",
-
-      data: {
-
-        labels: ["Paid", "Partially Paid", "Unpaid"],
-
-        datasets: [{
-
-          label: "Flats",
-
-          data: [paid, partial, unpaid]
-
-        }]
-
-      },
-
-      options: {
-
-        responsive: true,
-        maintainAspectRatio: false,
-
-        plugins: {
-
-          legend: {
-            display: false
-          }
-
+    const pieOptions = {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { padding: 12, boxWidth: 10, font: { size: 11 }, color: '#94a3b8' }
         },
-
-        scales: {
-
-          y: {
-            beginAtZero: true
+        tooltip: {
+          backgroundColor: '#1a2235',
+          borderColor: 'rgba(255,255,255,0.07)',
+          borderWidth: 1,
+          titleColor: '#e2e8f0',
+          bodyColor: '#94a3b8',
+          callbacks: {
+            label: ctx => ` ₹${ctx.raw.toLocaleString("en-IN")}`
           }
-
         }
-
       }
+    };
 
-    }
+    expenseChartObj = new Chart(document.getElementById("expenseChart"), {
+      type: "doughnut",
+      data: {
+        labels: Object.keys(categoryTotals),
+        datasets: [{ data: Object.values(categoryTotals), backgroundColor: CHART_COLORS, borderWidth: 0, hoverOffset: 6 }]
+      },
+      options: pieOptions
+    });
 
-  );
+    expenseDescriptionChartObj = new Chart(document.getElementById("expenseDescriptionChart"), {
+      type: "doughnut",
+      data: {
+        labels: Object.keys(descriptionTotals),
+        datasets: [{ data: Object.values(descriptionTotals), backgroundColor: CHART_COLORS.slice().reverse(), borderWidth: 0, hoverOffset: 6 }]
+      },
+      options: pieOptions
+    });
 
-}
+    let paid = 0, partial = 0, unpaid = 0;
+    collection.forEach(item => {
+      const due = Number(item["Amount Due"] || 0);
+      const paidAmt = Number(item["Amount Paid"] || 0);
+      const balance = due - paidAmt;
+      if (paidAmt === 0) unpaid++;
+      else if (balance > 0) partial++;
+      else paid++;
+    });
 
-function renderTable(collection) {
+    collectionChartObj = new Chart(document.getElementById("collectionChart"), {
+      type: "bar",
+      data: {
+        labels: ["Paid", "Partial", "Unpaid"],
+        datasets: [{
+          label: "Flats",
+          data: [paid, partial, unpaid],
+          backgroundColor: ['rgba(52,211,153,0.7)', 'rgba(251,146,60,0.7)', 'rgba(248,113,113,0.7)'],
+          borderRadius: 6,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#1a2235',
+            borderColor: 'rgba(255,255,255,0.07)',
+            borderWidth: 1,
+            titleColor: '#e2e8f0',
+            bodyColor: '#94a3b8',
+          }
+        },
+        scales: {
+          x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#64748b' } },
+          y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#64748b', precision: 0 } }
+        }
+      }
+    });
+  }
 
-  const tableBody =
-    document.getElementById("tableBody");
+  function renderTable(collection) {
+    const tableBody = document.getElementById("tableBody");
+    tableBody.innerHTML = "";
+    collection.forEach(item => {
+      const due = Number(item["Amount Due"] || 0);
+      const paid = Number(item["Amount Paid"] || 0);
+      const balance = Math.max(due - paid, 0);
+      let badgeClass = "", statusText = "";
+      if (paid === 0) { statusText = "Unpaid"; badgeClass = "unpaid"; }
+      else if (balance > 0) { statusText = "Partially Paid"; badgeClass = "partial"; }
+      else { statusText = "Paid"; badgeClass = "paid"; }
 
-  tableBody.innerHTML = "";
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td class="flat-num">${item["Flat"] || item["Flat No"] || ""}</td>
+        <td class="owner">${item["Owner"] || item["Owner Name"] || ""}</td>
+        <td class="amount">₹${due.toLocaleString("en-IN")}</td>
+        <td class="amount">₹${paid.toLocaleString("en-IN")}</td>
+        <td class="amount">${balance > 0 ? `<span style="color:var(--red)">₹${balance.toLocaleString("en-IN")}</span>` : `<span style="color:var(--green)">₹0</span>`}</td>
+        <td><span class="badge ${badgeClass}">${statusText}</span></td>
+      `;
+      tableBody.appendChild(row);
+    });
+  }
 
-  collection.forEach(item => {
+  function renderDefaulters(collection, month) {
+    const grouped = {};
+    collection
+      .filter(item => Number(item["Amount Paid"] || 0) < Number(item["Amount Due"] || 0))
+      .forEach(item => {
+        const flat = String(item["Flat"] || item["Flat No"] || "");
+        const key = /^[A-Za-z]/.test(flat) ? flat.charAt(0).toUpperCase() : flat.charAt(0);
+        if (!grouped[key]) grouped[key] = [];
+        grouped[key].push(flat);
+      });
 
-    const due =
-      Number(item["Amount Due"] || 0);
+    let flatLines = "";
+    Object.keys(grouped).sort().forEach(key => { flatLines += grouped[key].join(", ") + "\n"; });
 
-    const paid =
-      Number(item["Amount Paid"] || 0);
-
-    const balance =
-      Math.max(due - paid, 0);
-
-    let status = "";
-    let statusClass = "";
-
-    if (paid === 0) {
-
-      status = "Unpaid";
-      statusClass = "unpaid";
-
-    } else if (balance > 0) {
-
-      status = "Partially Paid";
-      statusClass = "partial";
-
-    } else {
-
-      status = "Paid";
-      statusClass = "paid";
-
-    }
-
-    const row =
-      document.createElement("tr");
-
-    row.innerHTML = `
-
-      <td>${item["Flat"] || item["Flat No"] || ""}</td>
-
-      <td>${item["Owner"] || item["Owner Name"] || ""}</td>
-
-      <td>₹${due.toLocaleString("en-IN")}</td>
-
-      <td>₹${paid.toLocaleString("en-IN")}</td>
-
-      <td>₹${balance.toLocaleString("en-IN")}</td>
-
-      <td class="${statusClass}">
-        ${status}
-      </td>
-
-    `;
-
-    tableBody.appendChild(row);
-
-  });
-
-}
-
-function renderDefaulters(collection, month) {
-
-  const defaultersText =
-    document.getElementById("defaultersText");
-
-  const grouped = {};
-
-  collection
-
-  .filter(item =>
-
-    Number(item["Amount Paid"] || 0)
-    <
-    Number(item["Amount Due"] || 0)
-
-  )
-
-  .forEach(item => {
-
-    const flat =
-      String(item["Flat"] || item["Flat No"] || "");
-
-    let key = "";
-
-    if (/^[A-Za-z]/.test(flat)) {
-
-      key = flat.charAt(0).toUpperCase();
-
-    } else {
-
-      key = flat.charAt(0);
-
-    }
-
-    if (!grouped[key]) {
-      grouped[key] = [];
-    }
-
-    grouped[key].push(flat);
-
-  });
-
-  let flatLines = "";
-
-  Object.keys(grouped)
-
-  .sort()
-
-  .forEach(key => {
-
-    flatLines += grouped[key].join(", ") + "\n";
-
-  });
-
-  const text =
-
+    document.getElementById("defaultersText").textContent =
 `Hello everyone,
 
 The following flats are showing as pending for ${month} maintenance:
 
 ${flatLines}
-
 If you have already made the payment, please share the screenshot so I can update the records. Otherwise, request you to kindly clear the dues at the earliest.
 
 Thanks`;
+  }
 
-  defaultersText.textContent = text;
-
-}
-
-window.copyDefaulters = function () {
-
-  const text =
-    document.getElementById("defaultersText")
-    .textContent;
-
-  navigator.clipboard.writeText(text);
-
-  alert("Copied for WhatsApp!");
-
-};
-
+  window.copyDefaulters = function () {
+    const text = document.getElementById("defaultersText").textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.querySelector('.copy-btn');
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<span>✅</span> Copied!';
+      btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
+      setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; }, 2000);
+    });
+  };
 });
-
 </script>
-
 </body>
 </html>
