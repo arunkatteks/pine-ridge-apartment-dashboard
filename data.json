@@ -52,7 +52,7 @@
       "Date": 46113,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 113706
+      "Amount": 113716
     },
     {
       "Date": 46142,
@@ -563,43 +563,50 @@
       "Month": 46143,
       "Flat No": "G01",
       "Owner Name": "Sahajahan",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": "G02",
       "Owner Name": "Anoop Ashok",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": "G03",
       "Owner Name": "Bhandari Prakash",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": "G04",
       "Owner Name": "Rajesh",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": "G05",
       "Owner Name": "Ravi Kishore",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": "G06",
       "Owner Name": "Balachinappa",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": "G07",
       "Owner Name": "Mohammed Fazi",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -617,25 +624,29 @@
       "Month": 46143,
       "Flat No": "G10",
       "Owner Name": "Ashwath Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 101,
       "Owner Name": "Nagesh",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 102,
       "Owner Name": "Venkatesh Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 103,
       "Owner Name": "Charan",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -659,13 +670,15 @@
       "Month": 46143,
       "Flat No": 107,
       "Owner Name": "Ramamurthy N S",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 108,
       "Owner Name": "Seshadri Seetharamaiah",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -677,7 +690,8 @@
       "Month": 46143,
       "Flat No": 110,
       "Owner Name": "Venkat Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -689,25 +703,29 @@
       "Month": 46143,
       "Flat No": 202,
       "Owner Name": "Hemanth Ravindra",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 203,
       "Owner Name": "Chandan",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 204,
       "Owner Name": "Arun Katte",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 205,
       "Owner Name": "Swetha Krishnappa",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -719,7 +737,8 @@
       "Month": 46143,
       "Flat No": 207,
       "Owner Name": "Rama Tejaswi Karipeddi",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -737,19 +756,22 @@
       "Month": 46143,
       "Flat No": 210,
       "Owner Name": "Venkat Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 301,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 302,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -767,13 +789,15 @@
       "Month": 46143,
       "Flat No": 305,
       "Owner Name": "Akash C Y",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 306,
       "Owner Name": "Marineni Prasad",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -785,19 +809,22 @@
       "Month": 46143,
       "Flat No": 308,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 309,
       "Owner Name": "Narayanaswamy Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 310,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -809,13 +836,15 @@
       "Month": 46143,
       "Flat No": 402,
       "Owner Name": "Srivalli",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 403,
       "Owner Name": "Sridhar Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -827,7 +856,8 @@
       "Month": 46143,
       "Flat No": 405,
       "Owner Name": "Madhavi",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -851,7 +881,8 @@
       "Month": 46143,
       "Flat No": 409,
       "Owner Name": "Shesh Raj Arval",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
