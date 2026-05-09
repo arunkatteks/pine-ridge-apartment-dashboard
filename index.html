@@ -148,6 +148,23 @@
   .footer-credit span { color: var(--gold); font-weight: 600; }
   .footer-sub { font-size: 10px; color: var(--text-muted); margin-top: 6px; letter-spacing: 1px; text-transform: uppercase; }
 
+  /* Notice Section */
+  .notice-section { animation: fadeUp 0.5s ease 0.55s both; }
+  .notice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .notice-card { border-radius: var(--radius); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; border: 1px solid; }
+  .notice-card.notice-yellow { background: rgba(251,191,36,0.05); border-color: rgba(251,191,36,0.2); }
+  .notice-card.notice-blue   { background: rgba(96,165,250,0.05); border-color: rgba(96,165,250,0.2); }
+  .notice-card.notice-purple { background: rgba(167,139,250,0.05); border-color: rgba(167,139,250,0.2); }
+  .notice-icon { font-size: 22px; line-height: 1; }
+  .notice-card h4 { font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
+  .notice-card.notice-yellow h4 { color: #fbbf24; }
+  .notice-card.notice-blue   h4 { color: #60a5fa; }
+  .notice-card.notice-purple h4 { color: #a78bfa; }
+  .notice-card p { font-size: 12.5px; color: var(--text-muted); line-height: 1.75; margin: 0; }
+  .notice-card p strong { color: var(--text-dim); font-weight: 600; }
+  @media (max-width: 1100px) { .notice-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px)  { .notice-grid { grid-template-columns: 1fr; } }
+
   /* Error */
   .error-screen { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 40px; }
   .error-box { background: var(--surface); border: 1px solid rgba(248,113,113,0.25); border-radius: var(--radius); padding: 40px; max-width: 500px; text-align: center; }
@@ -299,13 +316,13 @@
             </div>
           </div>
           <div class="pay-note">
-            <strong>After payment, please share:</strong>
+            <strong>After payment, please share with the treasurer:</strong>
             <ul>
-              <li>Payment screenshot with date clearly visible</li>
-              <li>Your flat number (e.g. A-101, B-203)</li>
+              <li>Payment screenshot with the <b style="color:var(--text-dim)">date of payment clearly visible</b></li>
+              <li>Your <b style="color:var(--text-dim)">flat number</b> (e.g. A-101, B-203)</li>
               <li>Month the payment is for</li>
             </ul>
-            <span style="display:block;margin-top:8px;font-size:11px;">This helps us update records accurately and maintain a clean audit trail.</span>
+            <span style="display:block;margin-top:8px;font-size:11px;color:#64748b;">Your flat number and payment date are required for audit purposes and to ensure accurate record-keeping.</span>
           </div>
         </div>
       </div>
@@ -329,15 +346,44 @@
         <h3>Payment Proofs &amp; Bills</h3>
         <p>Access all maintenance payment screenshots, vendor bills, invoices and proof documents in the shared folder.</p>
       </div>
-      <a class="bills-link" href="https://1drv.ms/f/c/FB84C1A8D91E06CC/IgAy-baWb3ovQ5CBHzwEwfGcAenLFGo3a7ZciZxXt25xTsI?e=uubXVU" target="_blank">
+      <a class="bills-link" href="https://1drv.ms/f/c/FB84C1A8D91E06CC/IgAy-baWb3ovQ5CBHzwEwfGcAenLFGo3a7ZciZxXt25xTsI?e=uubXVU" target="_blank" rel="noopener noreferrer">
         <span>📁</span> Open Payment Proofs &amp; Bills Folder
       </a>
     </div>
   </div>
 
-</div>
+  <!-- Important Notices -->
+  <div class="notice-section">
+    <div class="section-label">Important Information</div>
+    <div class="notice-grid">
 
-<div class="footer">
+      <div class="notice-card notice-yellow">
+        <div class="notice-icon">🕐</div>
+        <h4>Data Update Timing</h4>
+        <p>This dashboard is <strong>not updated in real-time.</strong> Payments made during the month are typically reflected <strong>towards the end of the month</strong> after records are reconciled. If your payment is not showing yet, please allow time before reaching out.</p>
+      </div>
+
+      <div class="notice-card notice-blue">
+        <div class="notice-icon">🙋</div>
+        <h4>Discrepancy or Error?</h4>
+        <p>This dashboard is maintained with <strong>personal time and effort</strong> by a fellow resident — without any dedicated support or assistance. If you notice something displayed incorrectly or your status looks wrong, <strong>please reach out to your respective association member</strong> with your payment screenshot and flat number.</p>
+      </div>
+
+      <div class="notice-card notice-purple">
+        <div class="notice-icon">📌</div>
+        <h4>Good to Know</h4>
+        <p>
+          • Maintenance is due by the <strong>10th of every month.</strong><br>
+          • Always share your <strong>flat number + date-visible screenshot</strong> after paying.<br>
+          • For missed months, pay the full outstanding amount and mention all months covered.<br>
+          • This dashboard covers <strong>collection &amp; expenses only</strong> — for complaints or facility issues, contact the association directly.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
   <div class="footer-credit">Designed, developed &amp; maintained with ♥ by <span>Arun Katte</span></div>
   <div class="footer-sub">Pine Ridge Apartment · Maintenance Dashboard</div>
 </div>
