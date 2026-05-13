@@ -1128,7 +1128,7 @@
       "Description": "Common area Wifi",
       "Amount": 589,
       "__EMPTY_2": "Total collection for the month",
-      "__EMPTY_3": 62000
+      "__EMPTY_3": 72000
     },
     {
       "Date": 46151,
@@ -1136,7 +1136,7 @@
       "Description": "Generator diesel",
       "Amount": 3877.62,
       "__EMPTY_2": "Total spent in for the month",
-      "__EMPTY_3": 22808.62
+      "__EMPTY_3": 59358.619999999995
     },
     {
       "Date": 46151,
@@ -1144,11 +1144,21 @@
       "Description": "Phenyl",
       "Amount": 360,
       "__EMPTY_2": "Actual left in account as on last day of the month",
-      "__EMPTY_3": 49238.380000000005
+      "__EMPTY_3": 22688.380000000005
     },
     {
+      "Date": 46151,
+      "Category": "Maintenance",
+      "Description": "Duct area cleaning",
+      "Amount": 800,
       "__EMPTY_2": "What we are telling left in account as on last day of the month",
-      "__EMPTY_3": 154284.38
+      "__EMPTY_3": 127734.38
+    },
+    {
+      "Date": 46155,
+      "Category": "Usage bill",
+      "Description": "BWSSB Bill",
+      "Amount": 35750
     }
   ],
   "Maintenance May 2026": [
@@ -1245,7 +1255,8 @@
       "Month": 46143,
       "Flat No": 104,
       "Owner Name": "Seema Kamath",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1290,7 +1301,8 @@
       "Month": 46143,
       "Flat No": 201,
       "Owner Name": "Ramana SS Paradise",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1424,7 +1436,8 @@
       "Month": 46143,
       "Flat No": 401,
       "Owner Name": "Vijay Kumar Pentam",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1463,13 +1476,15 @@
       "Month": 46143,
       "Flat No": 407,
       "Owner Name": "Sabitha",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 408,
       "Owner Name": "Naren",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
