@@ -358,6 +358,21 @@ python3 -m http.server 8080
 
 # Then open: http://localhost:8080
 ```
+MONTHLY PROCESS (Very easy now)
+
+Every month:
+
+Update Excel
+Run:
+```bash
+cd "C:\Users\Arun\OneDrive\Documents\PineRidge\Tracker"
+
+node convert.js
+```
+
+Upload updated data.json to GitHub
+
+👉 Dashboard updates.
 
 **Option B — Node.js**
 ```bash
