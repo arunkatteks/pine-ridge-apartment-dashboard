@@ -1128,7 +1128,7 @@
       "Description": "Common area Wifi",
       "Amount": 589,
       "__EMPTY_2": "Total collection for the month",
-      "__EMPTY_3": 72000
+      "__EMPTY_3": 74000
     },
     {
       "Date": 46151,
@@ -1136,7 +1136,7 @@
       "Description": "Generator diesel",
       "Amount": 3877.62,
       "__EMPTY_2": "Total spent in for the month",
-      "__EMPTY_3": 59358.619999999995
+      "__EMPTY_3": 60208.619999999995
     },
     {
       "Date": 46151,
@@ -1144,7 +1144,7 @@
       "Description": "Phenyl",
       "Amount": 360,
       "__EMPTY_2": "Actual left in account as on last day of the month",
-      "__EMPTY_3": 22688.380000000005
+      "__EMPTY_3": 23838.380000000005
     },
     {
       "Date": 46151,
@@ -1152,13 +1152,19 @@
       "Description": "Duct area cleaning",
       "Amount": 800,
       "__EMPTY_2": "What we are telling left in account as on last day of the month",
-      "__EMPTY_3": 127734.38
+      "__EMPTY_3": 128884.38
     },
     {
       "Date": 46155,
       "Category": "Usage bill",
       "Description": "BWSSB Bill",
       "Amount": 35750
+    },
+    {
+      "Date": 46162,
+      "Category": "Maintenance",
+      "Description": "Tap repair at common area",
+      "Amount": 850
     }
   ],
   "Maintenance May 2026": [
@@ -1221,7 +1227,8 @@
       "Month": 46143,
       "Flat No": "G09",
       "Owner Name": "Manujanth Veera",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1361,8 +1368,7 @@
       "Month": 46143,
       "Flat No": 210,
       "Owner Name": "Venkat Reddy",
-      "Amount Due": 0,
-      "Amount Paid": 2000
+      "Amount Due": 2000
     },
     {
       "Month": 46143,
@@ -1409,7 +1415,8 @@
       "Month": 46143,
       "Flat No": 307,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
