@@ -1128,7 +1128,7 @@
       "Description": "Common area Wifi",
       "Amount": 589,
       "__EMPTY_2": "Total collection for the month",
-      "__EMPTY_3": 74000
+      "__EMPTY_3": 90000
     },
     {
       "Date": 46151,
@@ -1144,7 +1144,7 @@
       "Description": "Phenyl",
       "Amount": 360,
       "__EMPTY_2": "Actual left in account as on last day of the month",
-      "__EMPTY_3": 23838.380000000005
+      "__EMPTY_3": 39838.380000000005
     },
     {
       "Date": 46151,
@@ -1152,7 +1152,7 @@
       "Description": "Duct area cleaning",
       "Amount": 800,
       "__EMPTY_2": "What we are telling left in account as on last day of the month",
-      "__EMPTY_3": 128884.38
+      "__EMPTY_3": 144884.38
     },
     {
       "Date": 46155,
@@ -1172,8 +1172,8 @@
       "Month": 46143,
       "Flat No": "G01",
       "Owner Name": "Sahajahan",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1275,7 +1275,8 @@
       "Month": 46143,
       "Flat No": 106,
       "Owner Name": "Siva Prasad Bangaru",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1343,7 +1344,8 @@
       "Month": 46143,
       "Flat No": 206,
       "Owner Name": "Madhusudhan Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1356,19 +1358,22 @@
       "Month": 46143,
       "Flat No": 208,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 209,
       "Owner Name": "Jagadish Gopalaiah",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 210,
       "Owner Name": "Venkat Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1464,7 +1469,8 @@
       "Month": 46143,
       "Flat No": 404,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1504,7 +1510,8 @@
       "Month": 46143,
       "Flat No": 410,
       "Owner Name": "Vijay Kumar Pentam",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     }
   ]
 }
