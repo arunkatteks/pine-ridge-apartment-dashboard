@@ -1128,7 +1128,7 @@
       "Description": "Common area Wifi",
       "Amount": 589,
       "__EMPTY_2": "Total collection for the month",
-      "__EMPTY_3": 90000
+      "__EMPTY_3": 95200
     },
     {
       "Date": 46151,
@@ -1136,7 +1136,7 @@
       "Description": "Generator diesel",
       "Amount": 3877.62,
       "__EMPTY_2": "Total spent in for the month",
-      "__EMPTY_3": 60208.619999999995
+      "__EMPTY_3": 61058.619999999995
     },
     {
       "Date": 46151,
@@ -1144,7 +1144,7 @@
       "Description": "Phenyl",
       "Amount": 360,
       "__EMPTY_2": "Actual left in account as on last day of the month",
-      "__EMPTY_3": 39838.380000000005
+      "__EMPTY_3": 44188.380000000005
     },
     {
       "Date": 46151,
@@ -1152,7 +1152,7 @@
       "Description": "Duct area cleaning",
       "Amount": 800,
       "__EMPTY_2": "What we are telling left in account as on last day of the month",
-      "__EMPTY_3": 144884.38
+      "__EMPTY_3": 149234.38
     },
     {
       "Date": 46155,
@@ -1164,6 +1164,12 @@
       "Date": 46162,
       "Category": "Maintenance",
       "Description": "Tap repair at common area",
+      "Amount": 850
+    },
+    {
+      "Date": 46164,
+      "Category": "Maintenance",
+      "Description": "Jump wire repair from BESCOM",
       "Amount": 850
     }
   ],
@@ -1221,7 +1227,8 @@
       "Month": 46143,
       "Flat No": "G08",
       "Owner Name": "Vasudevaraju",
-      "Amount Due": 2000
+      "Amount Due": 800,
+      "Amount Paid": 1200
     },
     {
       "Month": 46143,
@@ -1269,7 +1276,8 @@
       "Month": 46143,
       "Flat No": 105,
       "Owner Name": "Ravi Kishore",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1483,7 +1491,8 @@
       "Month": 46143,
       "Flat No": 406,
       "Owner Name": "Purushotham Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
