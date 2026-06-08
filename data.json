@@ -1606,7 +1606,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 58000
+      "__EMPTY_2": 62000
     },
     {
       "Date": 46203,
@@ -1622,7 +1622,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 9707.380000000005
+      "__EMPTY_2": 13707.380000000005
     },
     {
       "Date": 46203,
@@ -1630,7 +1630,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 114753.38
+      "__EMPTY_2": 118753.38
     },
     {
       "Date": 46181,
@@ -1686,7 +1686,8 @@
       "Month": 46143,
       "Flat No": "G07",
       "Owner Name": "Mohammed Fazi",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1724,7 +1725,8 @@
       "Month": 46143,
       "Flat No": 103,
       "Owner Name": "Charan",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
