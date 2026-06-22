@@ -1606,7 +1606,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 62000
+      "__EMPTY_2": 76000
     },
     {
       "Date": 46203,
@@ -1614,7 +1614,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 55331
+      "__EMPTY_2": 101287.82
     },
     {
       "Date": 46203,
@@ -1622,7 +1622,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 13707.380000000005
+      "__EMPTY_2": -18249.440000000002
     },
     {
       "Date": 46203,
@@ -1630,13 +1630,31 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 118753.38
+      "__EMPTY_2": 86796.56
     },
     {
       "Date": 46181,
       "Category": "Usage bill",
       "Description": "Common area Wifi",
       "Amount": 589
+    },
+    {
+      "Date": 46195,
+      "Category": "Maintenance",
+      "Description": "Generator diesel",
+      "Amount": 4206.82
+    },
+    {
+      "Date": 46195,
+      "Category": "Maintenance",
+      "Description": "Security door replacement",
+      "Amount": 6000
+    },
+    {
+      "Date": 46155,
+      "Category": "Usage bill",
+      "Description": "BWSSB Bill",
+      "Amount": 35750
     }
   ],
   "Maintenance June 2026": [
@@ -1732,7 +1750,8 @@
       "Month": 46143,
       "Flat No": 104,
       "Owner Name": "Seema Kamath",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1786,7 +1805,8 @@
       "Month": 46143,
       "Flat No": 202,
       "Owner Name": "Hemanth Ravindra",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1831,7 +1851,8 @@
       "Month": 46143,
       "Flat No": 209,
       "Owner Name": "Jagadish Gopalaiah",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1851,7 +1872,8 @@
       "Month": 46143,
       "Flat No": 302,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1882,7 +1904,8 @@
       "Month": 46143,
       "Flat No": 307,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1937,7 +1960,8 @@
       "Month": 46143,
       "Flat No": 405,
       "Owner Name": "Madhavi",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1957,7 +1981,8 @@
       "Month": 46143,
       "Flat No": 408,
       "Owner Name": "Naren",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
