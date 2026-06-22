@@ -1606,7 +1606,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 78000
+      "__EMPTY_2": 86000
     },
     {
       "Date": 46203,
@@ -1622,7 +1622,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -16249.440000000002
+      "__EMPTY_2": -8249.440000000002
     },
     {
       "Date": 46203,
@@ -1630,7 +1630,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 88796.56
+      "__EMPTY_2": 96796.56
     },
     {
       "Date": 46181,
@@ -1717,13 +1717,15 @@
       "Month": 46143,
       "Flat No": "G09",
       "Owner Name": "Manujanth Veera",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": "G10",
       "Owner Name": "Ashwath Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1880,7 +1882,8 @@
       "Month": 46143,
       "Flat No": 303,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1899,7 +1902,8 @@
       "Month": 46143,
       "Flat No": 306,
       "Owner Name": "Marineni Prasad",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
