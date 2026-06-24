@@ -52,7 +52,7 @@
       "__EMPTY_1": 1377
     }
   ],
-  "Acct stmt 29-03-26 to 08-05-26": [
+  "Acct stmt 29-03-26 to 24-06-26": [
     {
       "Date": 46083,
       "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
@@ -572,6 +572,334 @@
       "Value Date": 46151,
       "Debit": 9227,
       "Closing balance": 80286.23
+    },
+    {
+      "Date": 46151,
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH00987788762-SIVA AND BBMP",
+      "RefNO": "HDFCH00987788762",
+      "Value Date": "09/05/26",
+      "Debit": 7715.62,
+      "Closing balance": 72570.61
+    },
+    {
+      "Date": 46151,
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26129655799",
+      "RefNO": "KKBKH26129655799",
+      "Value Date": "09/05/26",
+      "Credit": 2000,
+      "Closing balance": 74570.61
+    },
+    {
+      "Date": "10/05/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 10/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": "10/05/26",
+      "Credit": 5961.06,
+      "Closing balance": 80531.67
+    },
+    {
+      "Date": "12/05/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 12/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": "12/05/26",
+      "Credit": 2000,
+      "Closing balance": 82531.67
+    },
+    {
+      "Date": "13/05/26",
+      "Narratoin": "HGALP120EB0366970146-BANGALOREWA-BILLPAY-50200026202917",
+      "RefNO": "0000001411955772",
+      "Value Date": "13/05/26",
+      "Debit": 35750,
+      "Closing balance": 46781.67
+    },
+    {
+      "Date": "14/05/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 14/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": "14/05/26",
+      "Credit": 2000,
+      "Closing balance": 48781.67
+    },
+    {
+      "Date": "17/05/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 17/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": "17/05/26",
+      "Credit": 2000,
+      "Closing balance": 50781.67
+    },
+    {
+      "Date": "20/05/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 20/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": "20/05/26",
+      "Credit": 2000,
+      "Closing balance": 52781.67
+    },
+    {
+      "Date": "20/05/26",
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26140987449",
+      "RefNO": "KKBKH26140987449",
+      "Value Date": "20/05/26",
+      "Credit": 2000,
+      "Closing balance": 54781.67
+    },
+    {
+      "Date": "21/05/26",
+      "Narratoin": "IMPS-614108130314-RAVI KIRAN KANCULAKU-ICIC-XXXXXXXX9522-RENT",
+      "RefNO": "0000614108130314",
+      "Value Date": "21/05/26",
+      "Credit": 2000,
+      "Closing balance": 56781.67
+    },
+    {
+      "Date": "21/05/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 21/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": "21/05/26",
+      "Credit": 8000,
+      "Closing balance": 64781.67
+    },
+    {
+      "Date": "26/05/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 26/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": "26/05/26",
+      "Credit": 1200,
+      "Closing balance": 65981.67
+    },
+    {
+      "Date": "31/05/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 31/05/26",
+      "RefNO": "000000000000000",
+      "Value Date": "31/05/26",
+      "Credit": 2000,
+      "Closing balance": 67981.67
+    },
+    {
+      "Date": "31/05/26",
+      "Narratoin": "ATW-403875XXXXXX8577-01316428-BANGALORE",
+      "RefNO": "0000615113429907",
+      "Value Date": "31/05/26",
+      "Debit": 10000,
+      "Closing balance": 57981.67
+    },
+    {
+      "Date": "31/05/26",
+      "Narratoin": "ATW-403875XXXXXX8577-01316428-BANGALORE",
+      "RefNO": "0000615113429935",
+      "Value Date": "31/05/26",
+      "Debit": 5000,
+      "Closing balance": 52981.67
+    },
+    {
+      "Date": 46174,
+      "Narratoin": "UPI SETTLEMENT -CNT784- 01/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "01/06/26",
+      "Credit": 2000,
+      "Closing balance": 54981.67
+    },
+    {
+      "Date": "01/06/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01029461891-DUCT SALARY TAP GA",
+      "RefNO": "HDFCH01029461891",
+      "Value Date": "01/06/26",
+      "Debit": 24650,
+      "Closing balance": 30331.67
+    },
+    {
+      "Date": "02/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 02/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "02/06/26",
+      "Credit": 16000,
+      "Closing balance": 46331.67
+    },
+    {
+      "Date": "03/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 03/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "03/06/26",
+      "Credit": 7961.06,
+      "Closing balance": 54292.73
+    },
+    {
+      "Date": "04/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 04/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "04/06/26",
+      "Credit": 14000,
+      "Closing balance": 68292.73
+    },
+    {
+      "Date": "06/06/26",
+      "Narratoin": "IMPS-615707309768-RAVI KIRAN KANCULAKU-ICIC-XXXXXXXX9522-RENT",
+      "RefNO": "0000615707309768",
+      "Value Date": "06/06/26",
+      "Credit": 2000,
+      "Closing balance": 70292.73
+    },
+    {
+      "Date": "06/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 06/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "06/06/26",
+      "Credit": 4000,
+      "Closing balance": 74292.73
+    },
+    {
+      "Date": "06/06/26",
+      "Narratoin": "50100735149790-TPT-402-PRAVALLI S",
+      "RefNO": "0000001045605772",
+      "Value Date": "06/06/26",
+      "Credit": 2000,
+      "Closing balance": 76292.73
+    },
+    {
+      "Date": "06/06/26",
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26157708784",
+      "RefNO": "KKBKH26157708784",
+      "Value Date": "06/06/26",
+      "Credit": 2000,
+      "Closing balance": 78292.73
+    },
+    {
+      "Date": "06/06/26",
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26157709072",
+      "RefNO": "KKBKH26157709072",
+      "Value Date": "06/06/26",
+      "Credit": 2000,
+      "Closing balance": 80292.73
+    },
+    {
+      "Date": "07/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 07/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "07/06/26",
+      "Credit": 4000,
+      "Closing balance": 84292.73
+    },
+    {
+      "Date": "08/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 08/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "08/06/26",
+      "Credit": 1961.06,
+      "Closing balance": 86253.79
+    },
+    {
+      "Date": "08/06/26",
+      "Narratoin": "HGALP017D10637720625-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000001413925146",
+      "Value Date": "08/06/26",
+      "Debit": 8689,
+      "Closing balance": 77564.79
+    },
+    {
+      "Date": "08/06/26",
+      "Narratoin": "HGALP14E160637730760-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000001413925198",
+      "Value Date": "08/06/26",
+      "Debit": 8553,
+      "Closing balance": 69011.79
+    },
+    {
+      "Date": "08/06/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01050015175-SEC MAL HK SAL WIF",
+      "RefNO": "HDFCH01050015175",
+      "Value Date": "08/06/26",
+      "Debit": 38089,
+      "Closing balance": 30922.79
+    },
+    {
+      "Date": "09/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 09/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "09/06/26",
+      "Credit": 3922.12,
+      "Closing balance": 34844.91
+    },
+    {
+      "Date": "10/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 10/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "10/06/26",
+      "Credit": 2000,
+      "Closing balance": 36844.91
+    },
+    {
+      "Date": "11/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 11/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "11/06/26",
+      "Credit": 4000,
+      "Closing balance": 40844.91
+    },
+    {
+      "Date": "11/06/26",
+      "Narratoin": "HGALP019A50669377806-BANGALOREWA-BILLPAY-50200026202917",
+      "RefNO": "0000001414164610",
+      "Value Date": "11/06/26",
+      "Debit": 35750,
+      "Closing balance": 5094.91
+    },
+    {
+      "Date": "14/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 14/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "14/06/26",
+      "Credit": 2000,
+      "Closing balance": 7094.91
+    },
+    {
+      "Date": "15/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 15/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "15/06/26",
+      "Credit": 2000,
+      "Closing balance": 9094.91
+    },
+    {
+      "Date": "16/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 16/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "16/06/26",
+      "Credit": 5161.06,
+      "Closing balance": 14255.97
+    },
+    {
+      "Date": "17/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 17/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "17/06/26",
+      "Credit": 2000,
+      "Closing balance": 16255.97
+    },
+    {
+      "Date": "22/06/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01076043591-NBFHKMWH6OUHYUHP",
+      "RefNO": "HDFCH01076043591",
+      "Value Date": "22/06/26",
+      "Debit": 6000,
+      "Closing balance": 10255.97
+    },
+    {
+      "Date": "23/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 23/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "23/06/26",
+      "Credit": 4000,
+      "Closing balance": 14255.97
+    },
+    {
+      "Date": "24/06/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 24/06/26",
+      "RefNO": "000000000000000",
+      "Value Date": "24/06/26",
+      "Credit": 4000,
+      "Closing balance": 18255.97
     }
   ],
   "Expenses April 2026": [
@@ -1606,7 +1934,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 86000
+      "__EMPTY_2": 95200
     },
     {
       "Date": 46203,
@@ -1622,7 +1950,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -8249.440000000002
+      "__EMPTY_2": 950.5599999999977
     },
     {
       "Date": 46203,
@@ -1630,7 +1958,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 96796.56
+      "__EMPTY_2": 105996.56
     },
     {
       "Date": 46181,
@@ -1711,7 +2039,8 @@
       "Month": 46143,
       "Flat No": "G08",
       "Owner Name": "Vasudevaraju",
-      "Amount Due": 2000
+      "Amount Due": 800,
+      "Amount Paid": 1200
     },
     {
       "Month": 46143,
@@ -1828,7 +2157,8 @@
       "Month": 46143,
       "Flat No": 205,
       "Owner Name": "Swetha Krishnappa",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1848,7 +2178,8 @@
       "Month": 46143,
       "Flat No": 208,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
@@ -1951,15 +2282,15 @@
       "Month": 46143,
       "Flat No": 403,
       "Owner Name": "Sridhar Reddy",
-      "Amount Due": 2000,
-      "__EMPTY_3": 8553
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
       "Flat No": 404,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000,
-      "__EMPTY_3": 8689
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46143,
