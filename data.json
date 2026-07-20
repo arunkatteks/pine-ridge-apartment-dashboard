@@ -2506,7 +2506,7 @@
       "Description": "Electricity Bill",
       "Amount": 18993,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 71200
+      "__EMPTY_2": 75200
     },
     {
       "Category": "Salary",
@@ -2520,14 +2520,14 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -21646.440000000002
+      "__EMPTY_2": -17646.440000000002
     },
     {
       "Category": "Salary",
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 83399.56
+      "__EMPTY_2": 87399.56
     },
     {
       "Category": "Usage bill",
@@ -2662,8 +2662,8 @@
       "Month": 46204,
       "Flat No": 106,
       "Owner Name": "Siva Prasad Bangaru",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -2697,8 +2697,8 @@
       "Month": 46204,
       "Flat No": 201,
       "Owner Name": "Ramana SS Paradise",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
