@@ -3041,50 +3041,24 @@
       "__EMPTY_2": -3646.4400000000023
     },
     {
-      "Category": "Maintenance",
-      "Description": "Plumber work for 10 series",
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
       "__EMPTY_2": 101399.56
     },
     {
-      "Category": "Usage bill",
-      "Description": "Electricity Bill",
       "__EMPTY_1": "Total collection for the month",
       "__EMPTY_2": 4000
     },
     {
-      "Category": "Salary",
-      "Description": "Mallaiah Salary",
       "__EMPTY_1": "Total spent in for the month",
       "__EMPTY_2": 0
     },
     {
-      "Category": "Salary",
-      "Description": "Security Salary",
       "__EMPTY_1": "Actual left in account as on last day of the month",
       "__EMPTY_2": 353.5599999999977
     },
     {
-      "Category": "Salary",
-      "Description": "Housekeeping Salary",
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
       "__EMPTY_2": 105399.56
-    },
-    {
-      "Category": "Usage bill",
-      "Description": "BBMP - Garbage Pickup"
-    },
-    {
-      "Category": "Usage bill",
-      "Description": "Common area Wifi"
-    },
-    {
-      "Category": "Maintenance",
-      "Description": "Duct area cleaning"
-    },
-    {
-      "Category": "Usage bill",
-      "Description": "BWSSB Bill"
     }
   ],
   "Maintenance August 2026": [
