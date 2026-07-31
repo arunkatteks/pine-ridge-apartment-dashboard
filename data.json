@@ -52,7 +52,7 @@
       "__EMPTY_1": 1377
     }
   ],
-  "Acct stmt 29-03-26 to 24-06-26": [
+  "Acct stmt 29-03-26 to 19-07-26": [
     {
       "Date": 46083,
       "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
@@ -891,7 +891,11 @@
       "RefNO": "000000000000000",
       "Value Date": "23/06/26",
       "Credit": 4000,
-      "Closing balance": 14255.97
+      "Closing balance": 14255.97,
+      "__EMPTY_1": 46181,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "Electricity Bill",
+      "__EMPTY_4": 17242
     },
     {
       "Date": "24/06/26",
@@ -899,7 +903,11 @@
       "RefNO": "000000000000000",
       "Value Date": "24/06/26",
       "Credit": 4000,
-      "Closing balance": 18255.97
+      "Closing balance": 18255.97,
+      "__EMPTY_1": 46203,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Mallaiah Salary",
+      "__EMPTY_4": 10000
     },
     {
       "Date": "25/06/26",
@@ -907,7 +915,11 @@
       "RefNO": "000000000000000",
       "Value Date": "25/06/26",
       "Credit": 2000,
-      "Closing balance": 20255.97
+      "Closing balance": 20255.97,
+      "__EMPTY_1": 46203,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Security Salary",
+      "__EMPTY_4": 13000
     },
     {
       "Date": "01/07/26",
@@ -915,7 +927,11 @@
       "RefNO": "000000000000000",
       "Value Date": "01/07/26",
       "Credit": 500,
-      "Closing balance": 20755.97
+      "Closing balance": 20755.97,
+      "__EMPTY_1": 46203,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Housekeeping Salary",
+      "__EMPTY_4": 11000
     },
     {
       "Date": "02/07/26",
@@ -923,7 +939,11 @@
       "RefNO": "000000000000000",
       "Value Date": "02/07/26",
       "Credit": 11961.06,
-      "Closing balance": 32717.03
+      "Closing balance": 32717.03,
+      "__EMPTY_1": 46203,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "BBMP - Garbage Pickup",
+      "__EMPTY_4": 3500
     },
     {
       "Date": "03/07/26",
@@ -931,7 +951,11 @@
       "RefNO": "000000000000000",
       "Value Date": "03/07/26",
       "Credit": 15961.06,
-      "Closing balance": 48678.09
+      "Closing balance": 48678.09,
+      "__EMPTY_1": 46181,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "Common area Wifi",
+      "__EMPTY_4": 589
     },
     {
       "Date": "03/07/26",
@@ -939,7 +963,11 @@
       "RefNO": "0000000108638552",
       "Value Date": "03/07/26",
       "Credit": 2000,
-      "Closing balance": 50678.09
+      "Closing balance": 50678.09,
+      "__EMPTY_1": 46195,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Generator diesel",
+      "__EMPTY_4": 4206.82
     },
     {
       "Date": "04/07/26",
@@ -947,7 +975,11 @@
       "RefNO": "000000000000000",
       "Value Date": "04/07/26",
       "Credit": 4000,
-      "Closing balance": 54678.09
+      "Closing balance": 54678.09,
+      "__EMPTY_1": 46195,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Security door replacement",
+      "__EMPTY_4": 6000
     },
     {
       "Date": "05/07/26",
@@ -955,7 +987,11 @@
       "RefNO": "000000000000000",
       "Value Date": "05/07/26",
       "Credit": 4000,
-      "Closing balance": 58678.09
+      "Closing balance": 58678.09,
+      "__EMPTY_1": 46195,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "BWSSB Bill",
+      "__EMPTY_4": 35750
     },
     {
       "Date": "06/07/26",
@@ -963,7 +999,11 @@
       "RefNO": "000000000000000",
       "Value Date": "06/07/26",
       "Credit": 8000,
-      "Closing balance": 66678.09
+      "Closing balance": 66678.09,
+      "__EMPTY_1": 46199,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "Mallayya+Security -Drinking Water",
+      "__EMPTY_4": 500
     },
     {
       "Date": "07/07/26",
@@ -971,7 +1011,11 @@
       "RefNO": "000000000000000",
       "Value Date": "07/07/26",
       "Credit": 8000,
-      "Closing balance": 74678.09
+      "Closing balance": 74678.09,
+      "__EMPTY_1": 46199,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "Book and pen for record keeping",
+      "__EMPTY_4": 65
     },
     {
       "Date": "10/07/26",
@@ -1011,7 +1055,11 @@
       "RefNO": "0000001417118313",
       "Value Date": "17/07/26",
       "Debit": 9630,
-      "Closing balance": 64885.09
+      "Closing balance": 64885.09,
+      "__EMPTY_1": 46204,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Plumber work for 10 series",
+      "__EMPTY_4": 1500
     },
     {
       "Date": "17/07/26",
@@ -1019,7 +1067,11 @@
       "RefNO": "0000001417118421",
       "Value Date": "17/07/26",
       "Debit": 35750,
-      "Closing balance": 29135.09
+      "Closing balance": 29135.09,
+      "__EMPTY_1": 46220,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "Electricity Bill",
+      "__EMPTY_4": 18993
     },
     {
       "Date": "17/07/26",
@@ -1027,7 +1079,10 @@
       "RefNO": "HDFCH01133804825",
       "Value Date": "17/07/26",
       "Debit": 27089,
-      "Closing balance": 2046.09
+      "Closing balance": 2046.09,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Mallaiah Salary",
+      "__EMPTY_4": 10000
     },
     {
       "Date": "19/07/26",
@@ -1035,7 +1090,75 @@
       "RefNO": "000000000000000",
       "Value Date": "19/07/26",
       "Credit": 6000,
-      "Closing balance": 8046.09
+      "Closing balance": 8046.09,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Security Salary",
+      "__EMPTY_4": 13000
+    },
+    {
+      "Date": "20/07/26",
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26201673549",
+      "RefNO": "KKBKH26201673549",
+      "Value Date": "20/07/26",
+      "Credit": 4000,
+      "Closing balance": 12046.09,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Housekeeping Salary",
+      "__EMPTY_4": 11000
+    },
+    {
+      "Date": "20/07/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01138082100-JUN DIE WAT BOOK D",
+      "RefNO": "HDFCH01138082100",
+      "Value Date": "20/07/26",
+      "Debit": 5172,
+      "Closing balance": 6874.09,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "BBMP - Garbage Pickup",
+      "__EMPTY_4": 3500
+    },
+    {
+      "Date": "21/07/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 21/07/26",
+      "RefNO": "000000000000000",
+      "Value Date": "21/07/26",
+      "Credit": 7922.12,
+      "Closing balance": 14796.21,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "Common area Wifi",
+      "__EMPTY_4": 589
+    },
+    {
+      "Date": "22/07/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 22/07/26",
+      "RefNO": "000000000000000",
+      "Value Date": "22/07/26",
+      "Credit": 2000,
+      "Closing balance": 16796.21,
+      "__EMPTY_1": 46212,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Duct area cleaning",
+      "__EMPTY_4": 400
+    },
+    {
+      "Date": "23/07/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 23/07/26",
+      "RefNO": "000000000000000",
+      "Value Date": "23/07/26",
+      "Credit": 2000,
+      "Closing balance": 18796.21,
+      "__EMPTY_1": 46220,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "BWSSB Bill",
+      "__EMPTY_4": 35750
+    },
+    {
+      "Date": "27/07/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 27/07/26",
+      "RefNO": "000000000000000",
+      "Value Date": "27/07/26",
+      "Credit": 4000,
+      "Closing balance": 22796.21
     }
   ],
   "Expenses April 2026": [
@@ -2506,9 +2629,10 @@
       "Description": "Electricity Bill",
       "Amount": 18993,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 83200
+      "__EMPTY_2": 89200
     },
     {
+      "Date": 46234,
       "Category": "Salary",
       "Description": "Mallaiah Salary",
       "Amount": 10000,
@@ -2516,25 +2640,29 @@
       "__EMPTY_2": 93232
     },
     {
+      "Date": 46234,
       "Category": "Salary",
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -9646.440000000002
+      "__EMPTY_2": -3646.4400000000023
     },
     {
+      "Date": 46234,
       "Category": "Salary",
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 95399.56
+      "__EMPTY_2": 101399.56
     },
     {
+      "Date": 46234,
       "Category": "Usage bill",
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500
     },
     {
+      "Date": 46223,
       "Category": "Usage bill",
       "Description": "Common area Wifi",
       "Amount": 589
@@ -2732,8 +2860,8 @@
       "Month": 46204,
       "Flat No": 206,
       "Owner Name": "Madhusudhan Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -2746,8 +2874,8 @@
       "Month": 46204,
       "Flat No": 208,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -2858,8 +2986,8 @@
       "Month": 46204,
       "Flat No": 404,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -2902,6 +3030,413 @@
       "Owner Name": "Vijay Kumar Pentam",
       "Amount Due": 0,
       "Amount Paid": 2000
+    }
+  ],
+  "Expenses August 2026": [
+    {
+      "Category": "Balance",
+      "Description": "Opening Balance",
+      "Amount": 101399.56,
+      "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
+      "__EMPTY_2": -3646.4400000000023
+    },
+    {
+      "Category": "Maintenance",
+      "Description": "Plumber work for 10 series",
+      "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
+      "__EMPTY_2": 101399.56
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "Electricity Bill",
+      "__EMPTY_1": "Total collection for the month",
+      "__EMPTY_2": 4000
+    },
+    {
+      "Category": "Salary",
+      "Description": "Mallaiah Salary",
+      "__EMPTY_1": "Total spent in for the month",
+      "__EMPTY_2": 0
+    },
+    {
+      "Category": "Salary",
+      "Description": "Security Salary",
+      "__EMPTY_1": "Actual left in account as on last day of the month",
+      "__EMPTY_2": 353.5599999999977
+    },
+    {
+      "Category": "Salary",
+      "Description": "Housekeeping Salary",
+      "__EMPTY_1": "What we are telling left in account as on last day of the month",
+      "__EMPTY_2": 105399.56
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "BBMP - Garbage Pickup"
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "Common area Wifi"
+    },
+    {
+      "Category": "Maintenance",
+      "Description": "Duct area cleaning"
+    },
+    {
+      "Category": "Usage bill",
+      "Description": "BWSSB Bill"
+    }
+  ],
+  "Maintenance August 2026": [
+    {
+      "Month": 46204,
+      "Flat No": "G01",
+      "Owner Name": "Sahajahan",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G02",
+      "Owner Name": "Anoop Ashok",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G03",
+      "Owner Name": "Bhandari Prakash",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G04",
+      "Owner Name": "Rajesh",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G05",
+      "Owner Name": "Ravi Kishore",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G06",
+      "Owner Name": "Balachinappa",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G07",
+      "Owner Name": "Mohammed Fazi",
+      "Amount Due": 0,
+      "Amount Paid": 2000
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G08",
+      "Owner Name": "Vasudevaraju",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G09",
+      "Owner Name": "Manujanth Veera",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": "G10",
+      "Owner Name": "Ashwath Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 101,
+      "Owner Name": "Nagesh",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 102,
+      "Owner Name": "Venkatesh Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 103,
+      "Owner Name": "Charan",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 104,
+      "Owner Name": "Seema Kamath",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 105,
+      "Owner Name": "Ravi Kishore",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 106,
+      "Owner Name": "Siva Prasad Bangaru",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 107,
+      "Owner Name": "Ramamurthy N S",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 108,
+      "Owner Name": "Seshadri Seetharamaiah",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 109,
+      "Owner Name": "Varun",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 110,
+      "Owner Name": "Venkat Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 201,
+      "Owner Name": "Ramana SS Paradise",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 202,
+      "Owner Name": "Hemanth Ravindra",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 203,
+      "Owner Name": "Chandan",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 204,
+      "Owner Name": "Arun Katte",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 205,
+      "Owner Name": "Swetha Krishnappa",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 206,
+      "Owner Name": "Madhusudhan Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 207,
+      "Owner Name": "Rama Tejaswi Karipeddi",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 208,
+      "Owner Name": "Madhu Rao",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 209,
+      "Owner Name": "Jagadish Gopalaiah",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 210,
+      "Owner Name": "Venkat Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 301,
+      "Owner Name": "Athmaram",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 302,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 303,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 304,
+      "Owner Name": "Sridhar Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 305,
+      "Owner Name": "Akash C Y",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 306,
+      "Owner Name": "Marineni Prasad",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 307,
+      "Owner Name": "Athmaram",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 308,
+      "Owner Name": "Athmaram",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 309,
+      "Owner Name": "Narayanaswamy Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 310,
+      "Owner Name": "Prasad Gupta",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 401,
+      "Owner Name": "Vijay Kumar Pentam",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 402,
+      "Owner Name": "Srivalli",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 403,
+      "Owner Name": "Sridhar Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 404,
+      "Owner Name": "Madhu Rao",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 405,
+      "Owner Name": "Madhavi",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 406,
+      "Owner Name": "Purushotham Reddy",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 407,
+      "Owner Name": "Sabitha",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 408,
+      "Owner Name": "Naren",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 409,
+      "Owner Name": "Shesh Raj Arval",
+      "Amount Due": 2000,
+      "Amount Paid": 0
+    },
+    {
+      "Month": 46204,
+      "Flat No": 410,
+      "Owner Name": "Vijay Kumar Pentam",
+      "Amount Due": 2000,
+      "Amount Paid": 0
     }
   ]
 }
