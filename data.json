@@ -52,7 +52,7 @@
       "__EMPTY_1": 1377
     }
   ],
-  "Acct stmt 29-03-26 to 19-07-26": [
+  "Acct stmt 29-03-26 to 27-07-26 ": [
     {
       "Date": 46083,
       "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
@@ -2629,7 +2629,7 @@
       "Description": "Electricity Bill",
       "Amount": 18993,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 89200
+      "__EMPTY_2": 91200
     },
     {
       "Date": 46234,
@@ -2637,7 +2637,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 93232
+      "__EMPTY_2": 94132
     },
     {
       "Date": 46234,
@@ -2645,7 +2645,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -3646.4400000000023
+      "__EMPTY_2": -2546.4400000000023
     },
     {
       "Date": 46234,
@@ -2653,7 +2653,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 101399.56
+      "__EMPTY_2": 102499.56
     },
     {
       "Date": 46234,
@@ -2678,6 +2678,24 @@
       "Category": "Usage bill",
       "Description": "BWSSB Bill",
       "Amount": 35750
+    },
+    {
+      "Date": 46234,
+      "Category": "Essentials",
+      "Description": "Rangoli",
+      "Amount": 300
+    },
+    {
+      "Date": 46234,
+      "Category": "Essentials",
+      "Description": "Mallayya+Security -Drinking Water",
+      "Amount": 300
+    },
+    {
+      "Date": 46234,
+      "Category": "Maintenance",
+      "Description": "Garden area cleaning",
+      "Amount": 300
     }
   ],
   "Maintenance July 2026": [
@@ -3000,8 +3018,8 @@
       "Month": 46204,
       "Flat No": 406,
       "Owner Name": "Purushotham Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3034,19 +3052,20 @@
   ],
   "Expenses August 2026": [
     {
+      "Date": 46235,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 101399.56,
+      "Amount": 102499.56,
       "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
-      "__EMPTY_2": -3646.4400000000023
+      "__EMPTY_2": -2546.4400000000023
     },
     {
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
-      "__EMPTY_2": 101399.56
+      "__EMPTY_2": 102499.56
     },
     {
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 4000
+      "__EMPTY_2": 12000
     },
     {
       "__EMPTY_1": "Total spent in for the month",
@@ -3054,11 +3073,11 @@
     },
     {
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 353.5599999999977
+      "__EMPTY_2": 9453.559999999998
     },
     {
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 105399.56
+      "__EMPTY_2": 114499.56
     }
   ],
   "Maintenance August 2026": [
@@ -3269,8 +3288,8 @@
       "Month": 46204,
       "Flat No": 210,
       "Owner Name": "Venkat Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3290,8 +3309,8 @@
       "Month": 46204,
       "Flat No": 303,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3325,8 +3344,8 @@
       "Month": 46204,
       "Flat No": 308,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3381,8 +3400,8 @@
       "Month": 46204,
       "Flat No": 406,
       "Owner Name": "Purushotham Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
