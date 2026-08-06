@@ -3065,7 +3065,7 @@
     },
     {
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 12000
+      "__EMPTY_2": 62000
     },
     {
       "__EMPTY_1": "Total spent in for the month",
@@ -3073,11 +3073,11 @@
     },
     {
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 9453.559999999998
+      "__EMPTY_2": 59453.56
     },
     {
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 114499.56
+      "__EMPTY_2": 164499.56
     }
   ],
   "Maintenance August 2026": [
@@ -3085,15 +3085,15 @@
       "Month": 46204,
       "Flat No": "G01",
       "Owner Name": "Sahajahan",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": "G02",
       "Owner Name": "Anoop Ashok",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3106,15 +3106,15 @@
       "Month": 46204,
       "Flat No": "G04",
       "Owner Name": "Rajesh",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": "G05",
       "Owner Name": "Ravi Kishore",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3141,43 +3141,43 @@
       "Month": 46204,
       "Flat No": "G09",
       "Owner Name": "Manujanth Veera",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": "G10",
       "Owner Name": "Ashwath Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 101,
       "Owner Name": "Nagesh",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 102,
       "Owner Name": "Venkatesh Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 103,
       "Owner Name": "Charan",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 104,
       "Owner Name": "Seema Kamath",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3197,15 +3197,15 @@
       "Month": 46204,
       "Flat No": 107,
       "Owner Name": "Ramamurthy N S",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 108,
       "Owner Name": "Seshadri Seetharamaiah",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3232,22 +3232,22 @@
       "Month": 46204,
       "Flat No": 202,
       "Owner Name": "Hemanth Ravindra",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 203,
       "Owner Name": "Chandan",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 204,
       "Owner Name": "Arun Katte",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3267,8 +3267,8 @@
       "Month": 46204,
       "Flat No": 207,
       "Owner Name": "Rama Tejaswi Karipeddi",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3281,8 +3281,8 @@
       "Month": 46204,
       "Flat No": 209,
       "Owner Name": "Jagadish Gopalaiah",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3295,15 +3295,15 @@
       "Month": 46204,
       "Flat No": 301,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 302,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3323,15 +3323,15 @@
       "Month": 46204,
       "Flat No": 305,
       "Owner Name": "Akash C Y",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 306,
       "Owner Name": "Marineni Prasad",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3351,15 +3351,15 @@
       "Month": 46204,
       "Flat No": 309,
       "Owner Name": "Narayanaswamy Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
       "Flat No": 310,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3393,8 +3393,8 @@
       "Month": 46204,
       "Flat No": 405,
       "Owner Name": "Madhavi",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3428,8 +3428,8 @@
       "Month": 46204,
       "Flat No": 410,
       "Owner Name": "Vijay Kumar Pentam",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     }
   ]
 }
