@@ -2629,7 +2629,7 @@
       "Description": "Electricity Bill",
       "Amount": 18993,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 91200
+      "__EMPTY_2": 93200
     },
     {
       "Date": 46234,
@@ -2645,7 +2645,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -2546.4400000000023
+      "__EMPTY_2": -546.4400000000023
     },
     {
       "Date": 46234,
@@ -2653,7 +2653,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 102499.56
+      "__EMPTY_2": 104499.56
     },
     {
       "Date": 46234,
@@ -2955,8 +2955,8 @@
       "Month": 46204,
       "Flat No": 307,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3055,29 +3055,61 @@
       "Date": 46235,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 102499.56,
+      "Amount": 104499.56,
       "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
-      "__EMPTY_2": -2546.4400000000023
+      "__EMPTY_2": -546.4400000000023
     },
     {
+      "Date": 46246,
+      "Category": "Usage bill",
+      "Description": "BWSSB Bill",
+      "Amount": 36346,
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
-      "__EMPTY_2": 102499.56
+      "__EMPTY_2": 104499.56
     },
     {
+      "Date": 46246,
+      "Category": "Usage bill",
+      "Description": "Electricity Bill",
+      "Amount": 18194,
       "__EMPTY_1": "Total collection for the month",
       "__EMPTY_2": 70000
     },
     {
+      "Date": 46246,
+      "Category": "Usage bill",
+      "Description": "Common area Wifi",
+      "Amount": 589,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 0
+      "__EMPTY_2": 56283
     },
     {
+      "Date": 46234,
+      "Category": "Salary",
+      "Description": "Mallaiah Salary",
+      "Amount": 10000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 67453.56
+      "__EMPTY_2": 13170.559999999998
     },
     {
+      "Date": 46234,
+      "Category": "Salary",
+      "Description": "Security Salary",
+      "Amount": 13000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 172499.56
+      "__EMPTY_2": 118216.56
+    },
+    {
+      "Date": 46234,
+      "Category": "Salary",
+      "Description": "Housekeeping Salary",
+      "Amount": 11000
+    },
+    {
+      "Date": 46234,
+      "Category": "Usage bill",
+      "Description": "BBMP - Garbage Pickup",
+      "Amount": 3500
     }
   ],
   "Maintenance August 2026": [
