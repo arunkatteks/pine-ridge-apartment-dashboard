@@ -3065,7 +3065,7 @@
     },
     {
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 62000
+      "__EMPTY_2": 70000
     },
     {
       "__EMPTY_1": "Total spent in for the month",
@@ -3073,11 +3073,11 @@
     },
     {
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 59453.56
+      "__EMPTY_2": 67453.56
     },
     {
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 164499.56
+      "__EMPTY_2": 172499.56
     }
   ],
   "Maintenance August 2026": [
@@ -3183,8 +3183,8 @@
       "Month": 46204,
       "Flat No": 105,
       "Owner Name": "Ravi Kishore",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3372,8 +3372,8 @@
       "Month": 46204,
       "Flat No": 402,
       "Owner Name": "Srivalli",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3407,8 +3407,8 @@
       "Month": 46204,
       "Flat No": 407,
       "Owner Name": "Sabitha",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
@@ -3421,8 +3421,8 @@
       "Month": 46204,
       "Flat No": 409,
       "Owner Name": "Shesh Raj Arval",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
