@@ -3302,7 +3302,7 @@
       "Description": "Electricity Bill",
       "Amount": 18194,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 87200
+      "__EMPTY_2": 89200
     },
     {
       "Date": 46246,
@@ -3310,7 +3310,7 @@
       "Description": "Common area Wifi",
       "Amount": 589,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 56283
+      "__EMPTY_2": 92629
     },
     {
       "Date": 46260,
@@ -3318,7 +3318,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 32370.559999999998
+      "__EMPTY_2": -1975.4400000000023
     },
     {
       "Date": 46261,
@@ -3326,7 +3326,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 137416.56
+      "__EMPTY_2": 103070.56
     },
     {
       "Date": 46261,
@@ -3335,7 +3335,7 @@
       "Amount": 11000
     },
     {
-      "Date": 46234,
+      "Date": 46265,
       "Category": "Usage bill",
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500
@@ -3514,8 +3514,8 @@
       "Month": 46204,
       "Flat No": 205,
       "Owner Name": "Swetha Krishnappa",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
