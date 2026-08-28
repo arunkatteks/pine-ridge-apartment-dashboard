@@ -1323,7 +1323,11 @@
       "RefNO": "000000000000000",
       "Value Date": "12/08/26",
       "Credit": 1961.06,
-      "Closing balance": 106351.05
+      "Closing balance": 106351.05,
+      "__EMPTY_1": 46262,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Pest controlling by Mallaiah",
+      "__EMPTY_4": 3000
     },
     {
       "Date": "12/08/26",
@@ -1331,7 +1335,11 @@
       "RefNO": "0000001419202851",
       "Value Date": "12/08/26",
       "Debit": 36346,
-      "Closing balance": 70005.05
+      "Closing balance": 70005.05,
+      "__EMPTY_1": 46262,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Duct area cleaning",
+      "__EMPTY_4": 400
     },
     {
       "Date": "12/08/26",
@@ -1339,7 +1347,11 @@
       "RefNO": "0000001419202942",
       "Value Date": "12/08/26",
       "Debit": 9345,
-      "Closing balance": 60660.05
+      "Closing balance": 60660.05,
+      "__EMPTY_1": 46262,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "Mallayya+Security -Drinking Water",
+      "__EMPTY_4": 300
     },
     {
       "Date": "12/08/26",
@@ -1347,7 +1359,11 @@
       "RefNO": "0000001419203015",
       "Value Date": "12/08/26",
       "Debit": 8849,
-      "Closing balance": 51811.05
+      "Closing balance": 51811.05,
+      "__EMPTY_1": 46262,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Lift half year maintenance",
+      "__EMPTY_4": 28759.89
     },
     {
       "Date": "12/08/26",
@@ -1355,7 +1371,11 @@
       "RefNO": "HDFCH01192879456",
       "Value Date": "12/08/26",
       "Debit": 4089,
-      "Closing balance": 47722.05
+      "Closing balance": 47722.05,
+      "__EMPTY_1": 46262,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "Broomstick",
+      "__EMPTY_4": 300
     },
     {
       "Date": "15/08/26",
@@ -1388,6 +1408,46 @@
       "Value Date": "23/08/26",
       "Credit": 2000,
       "Closing balance": 57722.05
+    },
+    {
+      "Date": "26/08/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 26/08/26",
+      "RefNO": "000000000000000",
+      "Value Date": "26/08/26",
+      "Credit": 1200,
+      "Closing balance": 58922.05
+    },
+    {
+      "Date": "26/08/26",
+      "Narratoin": "ATW-403875XXXXXX8577-S1ANBE44-BANGALORE",
+      "RefNO": "0000000000007228",
+      "Value Date": "26/08/26",
+      "Debit": 10000,
+      "Closing balance": 48922.05
+    },
+    {
+      "Date": "26/08/26",
+      "Narratoin": "ATW-403875XXXXXX8577-S1ANBE44-BANGALORE",
+      "RefNO": "0000000000007229",
+      "Value Date": "26/08/26",
+      "Debit": 10000,
+      "Closing balance": 38922.05
+    },
+    {
+      "Date": "26/08/26",
+      "Narratoin": "ATW-403875XXXXXX8577-S1ANBE44-BANGALORE",
+      "RefNO": "0000000000007230",
+      "Value Date": "26/08/26",
+      "Debit": 10000,
+      "Closing balance": 28922.05
+    },
+    {
+      "Date": "27/08/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 27/08/26",
+      "RefNO": "000000000000000",
+      "Value Date": "27/08/26",
+      "Credit": 4000,
+      "Closing balance": 32922.05
     }
   ],
   "Expenses April 2026": [
@@ -3302,7 +3362,7 @@
       "Description": "Electricity Bill",
       "Amount": 18194,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 89200
+      "__EMPTY_2": 91200
     },
     {
       "Date": 46246,
@@ -3310,7 +3370,7 @@
       "Description": "Common area Wifi",
       "Amount": 589,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 92629
+      "__EMPTY_2": 125388.89
     },
     {
       "Date": 46260,
@@ -3318,7 +3378,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -1975.4400000000023
+      "__EMPTY_2": -32735.33
     },
     {
       "Date": 46261,
@@ -3326,7 +3386,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 103070.56
+      "__EMPTY_2": 72310.67
     },
     {
       "Date": 46261,
@@ -3339,6 +3399,36 @@
       "Category": "Usage bill",
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500
+    },
+    {
+      "Date": 46262,
+      "Category": "Maintenance",
+      "Description": "Pest controlling by Mallaiah",
+      "Amount": 3000
+    },
+    {
+      "Date": 46262,
+      "Category": "Maintenance",
+      "Description": "Duct area cleaning",
+      "Amount": 400
+    },
+    {
+      "Date": 46262,
+      "Category": "Essentials",
+      "Description": "Mallayya+Security -Drinking Water",
+      "Amount": 300
+    },
+    {
+      "Date": 46262,
+      "Category": "Maintenance",
+      "Description": "Lift half year maintenance",
+      "Amount": 28759.89
+    },
+    {
+      "Date": 46262,
+      "Category": "Essentials",
+      "Description": "Broomstick",
+      "Amount": 300
     }
   ],
   "Maintenance August 2026": [
@@ -3486,8 +3576,8 @@
       "Month": 46204,
       "Flat No": 201,
       "Owner Name": "Ramana SS Paradise",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46204,
