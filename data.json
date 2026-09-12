@@ -3048,7 +3048,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 94132
+      "__EMPTY_2": 95632
     },
     {
       "Date": 46234,
@@ -3056,7 +3056,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 9453.559999999998
+      "__EMPTY_2": 7953.559999999998
     },
     {
       "Date": 46234,
@@ -3064,7 +3064,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 114499.56
+      "__EMPTY_2": 112999.56
     },
     {
       "Date": 46234,
@@ -3466,9 +3466,9 @@
       "Date": 46235,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 114499.56,
+      "Amount": 112999.56,
       "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
-      "__EMPTY_2": 9453.559999999998
+      "__EMPTY_2": 7953.559999999998
     },
     {
       "Date": 46246,
@@ -3476,7 +3476,7 @@
       "Description": "BWSSB Bill",
       "Amount": 36346,
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
-      "__EMPTY_2": 114499.56
+      "__EMPTY_2": 112999.56
     },
     {
       "Date": 46246,
@@ -3500,7 +3500,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -20735.33
+      "__EMPTY_2": -22235.33
     },
     {
       "Date": 46261,
@@ -3508,7 +3508,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 84310.67
+      "__EMPTY_2": 82810.67
     },
     {
       "Date": 46261,
@@ -3910,9 +3910,9 @@
       "Date": 46266,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 84310.67,
+      "Amount": 82810.67,
       "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
-      "__EMPTY_2": -20735.33
+      "__EMPTY_2": -22235.33
     },
     {
       "Date": 46295,
@@ -3920,7 +3920,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
-      "__EMPTY_2": 84310.67
+      "__EMPTY_2": 82810.67
     },
     {
       "Date": 46295,
@@ -3944,24 +3944,24 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -37251.33
+      "__EMPTY_2": -38751.33
     },
     {
-      "Date": 46276,
+      "Date": 46277,
       "Category": "Usage bill",
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 67794.66999999998
+      "__EMPTY_2": 66294.66999999998
     },
     {
-      "Date": 46276,
+      "Date": 46277,
       "Category": "Usage bill",
       "Description": "Electricity Bill",
       "Amount": 16677
     },
     {
-      "Date": 46276,
+      "Date": 46277,
       "Category": "Usage bill",
       "Description": "Common area Wifi",
       "Amount": 589
