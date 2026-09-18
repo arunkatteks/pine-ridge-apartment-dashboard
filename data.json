@@ -3928,7 +3928,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 74000
+      "__EMPTY_2": 78000
     },
     {
       "Date": 46295,
@@ -3936,7 +3936,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 90516
+      "__EMPTY_2": 103516
     },
     {
       "Date": 46295,
@@ -3944,7 +3944,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -38751.33
+      "__EMPTY_2": -47751.33
     },
     {
       "Date": 46277,
@@ -3952,7 +3952,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 66294.66999999998
+      "__EMPTY_2": 57294.669999999984
     },
     {
       "Date": 46277,
@@ -3965,6 +3965,12 @@
       "Category": "Usage bill",
       "Description": "Common area Wifi",
       "Amount": 589
+    },
+    {
+      "Date": 46283,
+      "Category": "Maintenance",
+      "Description": "Concrete work near transformer",
+      "Amount": 13000
     }
   ],
   "Maintenance September 2026": [
@@ -4252,8 +4258,8 @@
       "Month": 46266,
       "Flat No": 401,
       "Owner Name": "Vijay Kumar Pentam",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46266,
@@ -4315,8 +4321,8 @@
       "Month": 46266,
       "Flat No": 410,
       "Owner Name": "Vijay Kumar Pentam",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     }
   ]
 }
