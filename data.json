@@ -3928,7 +3928,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 78000
+      "__EMPTY_2": 86000
     },
     {
       "Date": 46295,
@@ -3944,7 +3944,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -47751.33
+      "__EMPTY_2": -39751.33
     },
     {
       "Date": 46277,
@@ -3952,7 +3952,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 57294.669999999984
+      "__EMPTY_2": 65294.669999999984
     },
     {
       "Date": 46277,
@@ -4146,8 +4146,8 @@
       "Month": 46266,
       "Flat No": 205,
       "Owner Name": "Swetha Krishnappa",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46266,
@@ -4167,8 +4167,8 @@
       "Month": 46266,
       "Flat No": 208,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46266,
@@ -4272,15 +4272,15 @@
       "Month": 46266,
       "Flat No": 403,
       "Owner Name": "Sridhar Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46266,
       "Flat No": 404,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46266,
