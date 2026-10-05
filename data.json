@@ -4164,7 +4164,7 @@
     },
     {
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 30000
+      "__EMPTY_2": 56000
     },
     {
       "__EMPTY_1": "Total spent in for the month",
@@ -4172,11 +4172,11 @@
     },
     {
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -14651.330000000002
+      "__EMPTY_2": 11348.669999999998
     },
     {
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 90394.66999999998
+      "__EMPTY_2": 116394.66999999998
     }
   ],
   "Maintenance September 2026": [
@@ -4543,7 +4543,8 @@
       "Month": 46296,
       "Flat No": "G02",
       "Owner Name": "Anoop Ashok",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4595,7 +4596,8 @@
       "Month": 46296,
       "Flat No": "G10",
       "Owner Name": "Ashwath Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4615,13 +4617,15 @@
       "Month": 46296,
       "Flat No": 103,
       "Owner Name": "Charan",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
       "Flat No": 104,
       "Owner Name": "Seema Kamath",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4640,13 +4644,15 @@
       "Month": 46296,
       "Flat No": 107,
       "Owner Name": "Ramamurthy N S",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
       "Flat No": 108,
       "Owner Name": "Seshadri Seetharamaiah",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4658,7 +4664,8 @@
       "Month": 46296,
       "Flat No": 110,
       "Owner Name": "Venkat Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4703,7 +4710,8 @@
       "Month": 46296,
       "Flat No": 207,
       "Owner Name": "Rama Tejaswi Karipeddi",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4753,13 +4761,15 @@
       "Month": 46296,
       "Flat No": 305,
       "Owner Name": "Akash C Y",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
       "Flat No": 306,
       "Owner Name": "Marineni Prasad",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4771,7 +4781,8 @@
       "Month": 46296,
       "Flat No": 308,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4796,7 +4807,8 @@
       "Month": 46296,
       "Flat No": 402,
       "Owner Name": "Srivalli",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4839,7 +4851,8 @@
       "Month": 46296,
       "Flat No": 409,
       "Owner Name": "Shesh Raj Arval",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
