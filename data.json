@@ -52,7 +52,7 @@
       "__EMPTY_1": 1377
     }
   ],
-  "Acct stmt 29-03-26 to 30-09-26 ": [
+  "Acct stmt 29-03-26 to 06-10-26 ": [
     {
       "Date": 46083,
       "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
@@ -1720,6 +1720,86 @@
       "Value Date": "30/09/26",
       "Debit": 14000,
       "Closing balance": 11831.34
+    },
+    {
+      "Date": "01/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 01/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "01/10/26",
+      "Credit": 4000,
+      "Closing balance": 15831.34
+    },
+    {
+      "Date": "01/10/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01297174345-RANG WATCCTV GENERAT",
+      "RefNO": "HDFCH01297174345",
+      "Value Date": "01/10/26",
+      "Debit": 12200,
+      "Closing balance": 3631.34
+    },
+    {
+      "Date": "02/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 02/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "02/10/26",
+      "Credit": 29961.06,
+      "Closing balance": 33592.4
+    },
+    {
+      "Date": "03/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 03/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "03/10/26",
+      "Credit": 6000,
+      "Closing balance": 39592.4
+    },
+    {
+      "Date": "03/10/26",
+      "Narratoin": "00761610125371-TPT-402-PRAVALLI S",
+      "RefNO": "0000000130405694",
+      "Value Date": "03/10/26",
+      "Credit": 2000,
+      "Closing balance": 41592.4
+    },
+    {
+      "Date": "04/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 04/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "04/10/26",
+      "Credit": 2000,
+      "Closing balance": 43592.4
+    },
+    {
+      "Date": "05/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 05/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "05/10/26",
+      "Credit": 2000,
+      "Closing balance": 45592.4
+    },
+    {
+      "Date": "06/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 06/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "06/10/26",
+      "Credit": 14000,
+      "Closing balance": 59592.4
+    },
+    {
+      "Date": "06/10/26",
+      "Narratoin": "NEFT CR-KKBK0000958-P VIJAY KUMAR-PINERIDGE  RESIDENTS WELFARE ASSOC-KKBKH26279676967",
+      "RefNO": "KKBKH26279676967",
+      "Value Date": "06/10/26",
+      "Credit": 4000,
+      "Closing balance": 63592.4
+    },
+    {
+      "Date": "06/10/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01309941304-GENERATOR BATTERY",
+      "RefNO": "HDFCH01309941304",
+      "Value Date": "06/10/26",
+      "Debit": 10000,
+      "Closing balance": 53592.4
     }
   ],
   "Expenses April 2026": [
@@ -4159,24 +4239,62 @@
       "__EMPTY_2": -44651.33
     },
     {
+      "Date": 46326,
+      "Category": "Salary",
+      "Description": "Mallaiah Salary",
+      "Amount": 10000,
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
       "__EMPTY_2": 60394.669999999984
     },
     {
+      "Date": 46326,
+      "Category": "Salary",
+      "Description": "Security Salary",
+      "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 56000
+      "__EMPTY_2": 64000
     },
     {
+      "Date": 46326,
+      "Category": "Salary",
+      "Description": "Housekeeping Salary",
+      "Amount": 11000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 0
+      "__EMPTY_2": 100575
     },
     {
+      "Date": 46326,
+      "Category": "Usage bill",
+      "Description": "BBMP - Garbage Pickup",
+      "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": 11348.669999999998
+      "__EMPTY_2": -81226.33
     },
     {
+      "Date": 46304,
+      "Category": "Usage bill",
+      "Description": "BWSSB Bill",
+      "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 116394.66999999998
+      "__EMPTY_2": 23819.669999999984
+    },
+    {
+      "Date": 46304,
+      "Category": "Usage bill",
+      "Description": "Electricity Bill",
+      "Amount": 16236
+    },
+    {
+      "Date": 46302,
+      "Category": "Usage bill",
+      "Description": "Common area Wifi",
+      "Amount": 589
+    },
+    {
+      "Date": 46302,
+      "Category": "Maintenance",
+      "Description": "Transformer battery replacement",
+      "Amount": 10500
     }
   ],
   "Maintenance September 2026": [
@@ -4788,7 +4906,8 @@
       "Month": 46296,
       "Flat No": 309,
       "Owner Name": "Narayanaswamy Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4801,7 +4920,8 @@
       "Month": 46296,
       "Flat No": 401,
       "Owner Name": "Vijay Kumar Pentam",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4826,7 +4946,8 @@
       "Month": 46296,
       "Flat No": 405,
       "Owner Name": "Madhavi",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4858,7 +4979,8 @@
       "Month": 46296,
       "Flat No": 410,
       "Owner Name": "Vijay Kumar Pentam",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     }
   ]
 }
