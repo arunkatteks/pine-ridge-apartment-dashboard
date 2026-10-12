@@ -4252,7 +4252,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 64000
+      "__EMPTY_2": 74000
     },
     {
       "Date": 46326,
@@ -4268,18 +4268,18 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -81226.33
+      "__EMPTY_2": -71226.33
     },
     {
-      "Date": 46304,
+      "Date": 46305,
       "Category": "Usage bill",
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 23819.669999999984
+      "__EMPTY_2": 33819.669999999984
     },
     {
-      "Date": 46304,
+      "Date": 46305,
       "Category": "Usage bill",
       "Description": "Electricity Bill",
       "Amount": 16236
@@ -4668,7 +4668,8 @@
       "Month": 46296,
       "Flat No": "G03",
       "Owner Name": "Bhandari Prakash",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4841,7 +4842,8 @@
       "Month": 46296,
       "Flat No": 209,
       "Owner Name": "Jagadish Gopalaiah",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4867,7 +4869,8 @@
       "Month": 46296,
       "Flat No": 303,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4960,13 +4963,15 @@
       "Month": 46296,
       "Flat No": 407,
       "Owner Name": "Sabitha",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
       "Flat No": 408,
       "Owner Name": "Naren",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
