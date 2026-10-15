@@ -4160,7 +4160,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 93300
+      "__EMPTY_2": 95300
     },
     {
       "Date": 46295,
@@ -4176,7 +4176,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -44651.33
+      "__EMPTY_2": -42651.33
     },
     {
       "Date": 46277,
@@ -4184,7 +4184,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 60394.669999999984
+      "__EMPTY_2": 62394.669999999984
     },
     {
       "Date": 46277,
@@ -4234,9 +4234,9 @@
       "Date": 46296,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 60394.669999999984,
+      "Amount": 62394.669999999984,
       "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
-      "__EMPTY_2": -44651.33
+      "__EMPTY_2": -42651.33
     },
     {
       "Date": 46326,
@@ -4244,7 +4244,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
-      "__EMPTY_2": 60394.669999999984
+      "__EMPTY_2": 62394.669999999984
     },
     {
       "Date": 46326,
@@ -4252,7 +4252,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 74000
+      "__EMPTY_2": 76000
     },
     {
       "Date": 46326,
@@ -4268,7 +4268,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -71226.33
+      "__EMPTY_2": -67226.33
     },
     {
       "Date": 46305,
@@ -4276,7 +4276,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 33819.669999999984
+      "__EMPTY_2": 37819.669999999984
     },
     {
       "Date": 46305,
@@ -4435,8 +4435,8 @@
       "Month": 46266,
       "Flat No": 110,
       "Owner Name": "Venkat Reddy",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46266,
@@ -4863,7 +4863,8 @@
       "Month": 46296,
       "Flat No": 302,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
