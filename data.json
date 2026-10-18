@@ -4260,7 +4260,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 100575
+      "__EMPTY_2": 104166
     },
     {
       "Date": 46326,
@@ -4268,7 +4268,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -67226.33
+      "__EMPTY_2": -70817.33
     },
     {
       "Date": 46305,
@@ -4276,7 +4276,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 37819.669999999984
+      "__EMPTY_2": 34228.669999999984
     },
     {
       "Date": 46305,
@@ -4295,6 +4295,18 @@
       "Category": "Maintenance",
       "Description": "Transformer battery replacement",
       "Amount": 10500
+    },
+    {
+      "Date": 46313,
+      "Category": "Essentials",
+      "Description": "Front desk CCTV monitor",
+      "Amount": 2591
+    },
+    {
+      "Date": 46313,
+      "Category": "Essentials",
+      "Description": "BESCOM yearly festival payment",
+      "Amount": 1000
     }
   ],
   "Maintenance September 2026": [
