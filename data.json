@@ -1775,7 +1775,11 @@
       "RefNO": "000000000000000",
       "Value Date": "05/10/26",
       "Credit": 2000,
-      "Closing balance": 45592.4
+      "Closing balance": 45592.4,
+      "__EMPTY_1": 46326,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Mallaiah Salary",
+      "__EMPTY_4": 10000
     },
     {
       "Date": "06/10/26",
@@ -1783,7 +1787,11 @@
       "RefNO": "000000000000000",
       "Value Date": "06/10/26",
       "Credit": 14000,
-      "Closing balance": 59592.4
+      "Closing balance": 59592.4,
+      "__EMPTY_1": 46326,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Security Salary",
+      "__EMPTY_4": 13000
     },
     {
       "Date": "06/10/26",
@@ -1791,7 +1799,11 @@
       "RefNO": "KKBKH26279676967",
       "Value Date": "06/10/26",
       "Credit": 4000,
-      "Closing balance": 63592.4
+      "Closing balance": 63592.4,
+      "__EMPTY_1": 46326,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Housekeeping Salary",
+      "__EMPTY_4": 11000
     },
     {
       "Date": "06/10/26",
@@ -1799,7 +1811,119 @@
       "RefNO": "HDFCH01309941304",
       "Value Date": "06/10/26",
       "Debit": 10000,
-      "Closing balance": 53592.4
+      "Closing balance": 53592.4,
+      "__EMPTY_1": 46326,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "BBMP - Garbage Pickup",
+      "__EMPTY_4": 3500
+    },
+    {
+      "Date": "09/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 09/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "09/10/26",
+      "Credit": 2000,
+      "Closing balance": 55592.4,
+      "__EMPTY_1": 46305,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "BWSSB Bill",
+      "__EMPTY_4": 35750
+    },
+    {
+      "Date": "10/10/26",
+      "Narratoin": "HGAMP0728D0472605031-BANGALOREWA-BILLPAY-50200026202917",
+      "RefNO": "0000009423848016",
+      "Value Date": "10/10/26",
+      "Debit": 35750,
+      "Closing balance": 19842.4,
+      "__EMPTY_1": 46305,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "Electricity Bill",
+      "__EMPTY_4": 16236
+    },
+    {
+      "Date": "10/10/26",
+      "Narratoin": "HGAMP134220472610851-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000009423848092",
+      "Value Date": "10/10/26",
+      "Debit": 7816,
+      "Closing balance": 12026.4,
+      "__EMPTY_1": 46302,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "Common area Wifi",
+      "__EMPTY_4": 589
+    },
+    {
+      "Date": "10/10/26",
+      "Narratoin": "HGAMP0833D0472615023-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000009423848150",
+      "Value Date": "10/10/26",
+      "Debit": 8420,
+      "Closing balance": 3606.4,
+      "__EMPTY_1": 46302,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Transformer battery replacement",
+      "__EMPTY_4": 10500
+    },
+    {
+      "Date": "10/10/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01322042092-GEN BATTER AND INTER",
+      "RefNO": "HDFCH01322042092",
+      "Value Date": "10/10/26",
+      "Debit": 1089,
+      "Closing balance": 2517.4,
+      "__EMPTY_1": 46313,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "Front desk CCTV monitor",
+      "__EMPTY_4": 2591
+    },
+    {
+      "Date": "11/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 11/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "11/10/26",
+      "Credit": 2000,
+      "Closing balance": 4517.4,
+      "__EMPTY_1": 46313,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "BESCOM yearly festival payment",
+      "__EMPTY_4": 1000
+    },
+    {
+      "Date": "12/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 12/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "12/10/26",
+      "Credit": 2000,
+      "Closing balance": 6517.4,
+      "__EMPTY_1": 46313,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "BBMP yearly festival payment",
+      "__EMPTY_4": 500
+    },
+    {
+      "Date": "13/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 13/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "13/10/26",
+      "Credit": 9961.06,
+      "Closing balance": 16478.46
+    },
+    {
+      "Date": "20/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 20/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "20/10/26",
+      "Credit": 9261.06,
+      "Closing balance": 25739.52
+    },
+    {
+      "Date": "21/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 21/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "21/10/26",
+      "Credit": 4000,
+      "Closing balance": 29739.52
     }
   ],
   "Expenses April 2026": [
@@ -4252,7 +4376,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 76000
+      "__EMPTY_2": 88000
     },
     {
       "Date": 46326,
@@ -4260,7 +4384,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 104166
+      "__EMPTY_2": 104666
     },
     {
       "Date": 46326,
@@ -4268,7 +4392,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -70817.33
+      "__EMPTY_2": -59317.33
     },
     {
       "Date": 46305,
@@ -4276,7 +4400,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 34228.669999999984
+      "__EMPTY_2": 45728.669999999984
     },
     {
       "Date": 46305,
@@ -4307,6 +4431,12 @@
       "Category": "Essentials",
       "Description": "BESCOM yearly festival payment",
       "Amount": 1000
+    },
+    {
+      "Date": 46313,
+      "Category": "Essentials",
+      "Description": "BBMP yearly festival payment",
+      "Amount": 500
     }
   ],
   "Maintenance September 2026": [
@@ -4721,7 +4851,8 @@
       "Month": 46296,
       "Flat No": "G09",
       "Owner Name": "Manujanth Veera",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4762,7 +4893,8 @@
       "Month": 46296,
       "Flat No": 105,
       "Owner Name": "Ravi Kishore",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4802,7 +4934,8 @@
       "Month": 46296,
       "Flat No": 201,
       "Owner Name": "Ramana SS Paradise",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4848,7 +4981,8 @@
       "Month": 46296,
       "Flat No": 208,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -4950,13 +5084,15 @@
       "Month": 46296,
       "Flat No": 403,
       "Owner Name": "Sridhar Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
       "Flat No": 404,
       "Owner Name": "Madhu Rao",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
