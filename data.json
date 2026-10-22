@@ -4932,7 +4932,8 @@
       "Month": 46296,
       "Flat No": 109,
       "Owner Name": "Varun",
-      "Amount Due": 2000
+      "Amount Due": 2000,
+      "Amount Paid": 0
     },
     {
       "Month": 46296,
@@ -5036,7 +5037,8 @@
       "Month": 46296,
       "Flat No": 304,
       "Owner Name": "Sridhar Reddy",
-      "Amount Due": 2000
+      "Amount Due": 2000,
+      "Amount Paid": 0
     },
     {
       "Month": 46296,
