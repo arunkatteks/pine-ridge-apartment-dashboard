@@ -1907,7 +1907,11 @@
       "RefNO": "000000000000000",
       "Value Date": "13/10/26",
       "Credit": 9961.06,
-      "Closing balance": 16478.46
+      "Closing balance": 16478.46,
+      "__EMPTY_1": 46313,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "Tape, pin and lamination",
+      "__EMPTY_4": 140
     },
     {
       "Date": "20/10/26",
@@ -3840,7 +3844,7 @@
       "Description": "Electricity Bill",
       "Amount": 18194,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 95200
+      "__EMPTY_2": 97200
     },
     {
       "Date": 46246,
@@ -3856,7 +3860,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -22235.33
+      "__EMPTY_2": -20235.33
     },
     {
       "Date": 46261,
@@ -3864,7 +3868,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 82810.67
+      "__EMPTY_2": 84810.67
     },
     {
       "Date": 46261,
@@ -4166,8 +4170,8 @@
       "Month": 46235,
       "Flat No": 307,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46235,
@@ -4266,9 +4270,9 @@
       "Date": 46266,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 82810.67,
+      "Amount": 84810.67,
       "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
-      "__EMPTY_2": -22235.33
+      "__EMPTY_2": -20235.33
     },
     {
       "Date": 46295,
@@ -4276,7 +4280,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
-      "__EMPTY_2": 82810.67
+      "__EMPTY_2": 84810.67
     },
     {
       "Date": 46295,
@@ -4284,7 +4288,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 95300
+      "__EMPTY_2": 97300
     },
     {
       "Date": 46295,
@@ -4300,7 +4304,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -42651.33
+      "__EMPTY_2": -38651.33
     },
     {
       "Date": 46277,
@@ -4308,7 +4312,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 62394.669999999984
+      "__EMPTY_2": 66394.66999999998
     },
     {
       "Date": 46277,
@@ -4358,9 +4362,9 @@
       "Date": 46296,
       "Category": "Balance",
       "Description": "Opening Balance",
-      "Amount": 62394.669999999984,
+      "Amount": 66394.66999999998,
       "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
-      "__EMPTY_2": -42651.33
+      "__EMPTY_2": -38651.33
     },
     {
       "Date": 46326,
@@ -4368,7 +4372,7 @@
       "Description": "Mallaiah Salary",
       "Amount": 10000,
       "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
-      "__EMPTY_2": 62394.669999999984
+      "__EMPTY_2": 66394.66999999998
     },
     {
       "Date": 46326,
@@ -4376,7 +4380,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 88000
+      "__EMPTY_2": 95300
     },
     {
       "Date": 46326,
@@ -4384,7 +4388,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 104666
+      "__EMPTY_2": 104806
     },
     {
       "Date": 46326,
@@ -4392,7 +4396,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -59317.33
+      "__EMPTY_2": -48157.33
     },
     {
       "Date": 46305,
@@ -4400,7 +4404,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 45728.669999999984
+      "__EMPTY_2": 56888.669999999984
     },
     {
       "Date": 46305,
@@ -4437,6 +4441,12 @@
       "Category": "Essentials",
       "Description": "BBMP yearly festival payment",
       "Amount": 500
+    },
+    {
+      "Date": 46313,
+      "Category": "Essentials",
+      "Description": "Tape, pin and lamination",
+      "Amount": 140
     }
   ],
   "Maintenance September 2026": [
@@ -4696,8 +4706,8 @@
       "Month": 46266,
       "Flat No": 307,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46266,
@@ -4845,7 +4855,8 @@
       "Month": 46296,
       "Flat No": "G08",
       "Owner Name": "Vasudevaraju",
-      "Amount Due": 2000
+      "Amount Due": 700,
+      "Amount Paid": 1300
     },
     {
       "Month": 46296,
@@ -4962,13 +4973,15 @@
       "Month": 46296,
       "Flat No": 205,
       "Owner Name": "Swetha Krishnappa",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
       "Flat No": 206,
       "Owner Name": "Madhusudhan Reddy",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
@@ -5043,7 +5056,8 @@
       "Month": 46296,
       "Flat No": 307,
       "Owner Name": "Athmaram",
-      "Amount Due": 2000
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
