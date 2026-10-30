@@ -52,7 +52,7 @@
       "__EMPTY_1": 1377
     }
   ],
-  "Acct stmt 29-03-26 to 06-10-26 ": [
+  "Acct stmt 29-03-26 to 30-10-26 ": [
     {
       "Date": 46083,
       "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
@@ -1928,6 +1928,46 @@
       "Value Date": "21/10/26",
       "Credit": 4000,
       "Closing balance": 29739.52
+    },
+    {
+      "Date": "21/10/26",
+      "Narratoin": "ATW-403875XXXXXX8577-S1ANBK90-BANGALORE",
+      "RefNO": "0000000000000842",
+      "Value Date": "21/10/26",
+      "Debit": 20000,
+      "Closing balance": 9739.52
+    },
+    {
+      "Date": "22/10/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01347876733-GARBA CCTV FEST TAPE",
+      "RefNO": "HDFCH01347876733",
+      "Value Date": "22/10/26",
+      "Debit": 7731,
+      "Closing balance": 2008.52
+    },
+    {
+      "Date": "23/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 23/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "23/10/26",
+      "Credit": 9883.18,
+      "Closing balance": 11891.7
+    },
+    {
+      "Date": "24/10/26",
+      "Narratoin": "ATW-403875XXXXXX8577-S1ANBE44-BANGALORE",
+      "RefNO": "0000000000000886",
+      "Value Date": "24/10/26",
+      "Debit": 11500,
+      "Closing balance": 391.7
+    },
+    {
+      "Date": "30/10/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 30/10/26",
+      "RefNO": "000000000000000",
+      "Value Date": "30/10/26",
+      "Credit": 2000,
+      "Closing balance": 2391.7
     }
   ],
   "Expenses April 2026": [
@@ -4380,7 +4420,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 95300
+      "__EMPTY_2": 97300
     },
     {
       "Date": 46326,
@@ -4396,7 +4436,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -48157.33
+      "__EMPTY_2": -46157.33
     },
     {
       "Date": 46305,
@@ -4404,7 +4444,7 @@
       "Description": "BWSSB Bill",
       "Amount": 35750,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 56888.669999999984
+      "__EMPTY_2": 58888.669999999984
     },
     {
       "Date": 46305,
@@ -4443,7 +4483,7 @@
       "Amount": 500
     },
     {
-      "Date": 46313,
+      "Date": 46316,
       "Category": "Essentials",
       "Description": "Tape, pin and lamination",
       "Amount": 140
@@ -4932,8 +4972,8 @@
       "Month": 46296,
       "Flat No": 109,
       "Owner Name": "Varun",
-      "Amount Due": 2000,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2000
     },
     {
       "Month": 46296,
