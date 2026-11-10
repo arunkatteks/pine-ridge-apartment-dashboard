@@ -52,7 +52,7 @@
       "__EMPTY_1": 1377
     }
   ],
-  "Acct stmt 29-03-26 to 02-11-26 ": [
+  "Acct stmt 29-03-26 to 10-11-26 ": [
     {
       "Date": 46083,
       "Narratoin": "ATW-403875XXXXXX8577-11821625-BANGALORE",
@@ -1984,6 +1984,156 @@
       "Value Date": "02/11/26",
       "Credit": 20451.32,
       "Closing balance": 29843.02
+    },
+    {
+      "Date": "03/11/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 03/11/26",
+      "RefNO": "000000000000000",
+      "Value Date": "03/11/26",
+      "Credit": 17500,
+      "Closing balance": 47343.02
+    },
+    {
+      "Date": "03/11/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01377078139-PREV MNTH BACK FILL",
+      "RefNO": "HDFCH01377078139",
+      "Value Date": "03/11/26",
+      "Debit": 2500,
+      "Closing balance": 44843.02
+    },
+    {
+      "Date": "04/11/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 04/11/26",
+      "RefNO": "000000000000000",
+      "Value Date": "04/11/26",
+      "Credit": 2500,
+      "Closing balance": 47343.02
+    },
+    {
+      "Date": "05/11/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 05/11/26",
+      "RefNO": "000000000000000",
+      "Value Date": "05/11/26",
+      "Credit": 12451.32,
+      "Closing balance": 59794.34
+    },
+    {
+      "Date": "06/11/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 06/11/26",
+      "RefNO": "000000000000000",
+      "Value Date": "06/11/26",
+      "Credit": 5000,
+      "Closing balance": 64794.34
+    },
+    {
+      "Date": "07/11/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 07/11/26",
+      "RefNO": "000000000000000",
+      "Value Date": "07/11/26",
+      "Credit": 5499,
+      "Closing balance": 70293.34
+    },
+    {
+      "Date": "08/11/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 08/11/26",
+      "RefNO": "000000000000000",
+      "Value Date": "08/11/26",
+      "Credit": 5000,
+      "Closing balance": 75293.34,
+      "__EMPTY_1": 46356,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Mallaiah Salary",
+      "__EMPTY_4": 10000
+    },
+    {
+      "Date": "10/11/26",
+      "Narratoin": "UPI SETTLEMENT -CNT784- 10/11/26",
+      "RefNO": "000000000000000",
+      "Value Date": "10/11/26",
+      "Credit": 5000,
+      "Closing balance": 80293.34,
+      "__EMPTY_1": 46356,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Security Salary",
+      "__EMPTY_4": 13000
+    },
+    {
+      "Date": "10/11/26",
+      "Narratoin": "HGAMP0C4810669974929-BANGALOREWA-BILLPAY-50200026202917",
+      "RefNO": "0000009426295574",
+      "Value Date": "10/11/26",
+      "Debit": 35750,
+      "Closing balance": 44543.34,
+      "__EMPTY_1": 46356,
+      "__EMPTY_2": "Salary",
+      "__EMPTY_3": "Housekeeping Salary",
+      "__EMPTY_4": 11000
+    },
+    {
+      "Date": "10/11/26",
+      "Narratoin": "HGAMP03B210669988681-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000009426295660",
+      "Value Date": "10/11/26",
+      "Debit": 8242,
+      "Closing balance": 36301.34,
+      "__EMPTY_1": 46356,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "BBMP - Garbage Pickup",
+      "__EMPTY_4": 3500
+    },
+    {
+      "Date": "10/11/26",
+      "Narratoin": "HGAMP0F8DC0669993867-BANGALOREEL-BILLPAY-50200026202917",
+      "RefNO": "0000009426295694",
+      "Value Date": "10/11/26",
+      "Debit": 8704,
+      "Closing balance": 27597.34,
+      "__EMPTY_1": 46328,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "Rangoli",
+      "__EMPTY_4": 300
+    },
+    {
+      "Date": "10/11/26",
+      "Narratoin": "NEFT DR-UBIN0920304-ARUNA K S-NETBANK, MUM-HDFCH01400632670-BBMPRANWIDUCTDIEBONU",
+      "RefNO": "HDFCH01400632670",
+      "Value Date": "10/11/26",
+      "Debit": 12996,
+      "Closing balance": 14601.34,
+      "__EMPTY_1": 46328,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "Common area Wifi",
+      "__EMPTY_4": 589
+    },
+    {
+      "__EMPTY_1": 46336,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Duct area cleaning",
+      "__EMPTY_4": 400
+    },
+    {
+      "__EMPTY_1": 46331,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Generator diesel",
+      "__EMPTY_4": 4206.82
+    },
+    {
+      "__EMPTY_1": 46333,
+      "__EMPTY_2": "Maintenance",
+      "__EMPTY_3": "Deepavali bonus to security",
+      "__EMPTY_4": 4000
+    },
+    {
+      "__EMPTY_1": 46336,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "BWSSB Bill",
+      "__EMPTY_4": 35750
+    },
+    {
+      "__EMPTY_1": 46336,
+      "__EMPTY_2": "Usage bill",
+      "__EMPTY_3": "Electricity Bill",
+      "__EMPTY_4": 16946
     }
   ],
   "Expenses April 2026": [
@@ -4505,52 +4655,6 @@
       "Amount": 140
     }
   ],
-  "Expenses November 2026": [
-    {
-      "Date": 46327,
-      "Category": "Balance",
-      "Description": "Opening Balance",
-      "Amount": 58888.669999999984,
-      "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
-      "__EMPTY_2": -46157.33
-    },
-    {
-      "Date": 46356,
-      "Category": "Salary",
-      "Description": "Mallaiah Salary",
-      "Amount": 10000,
-      "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
-      "__EMPTY_2": 58888.669999999984
-    },
-    {
-      "Date": 46356,
-      "Category": "Salary",
-      "Description": "Security Salary",
-      "Amount": 13000,
-      "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 52500
-    },
-    {
-      "Date": 46356,
-      "Category": "Salary",
-      "Description": "Housekeeping Salary",
-      "Amount": 11000,
-      "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 37500
-    },
-    {
-      "Date": 46356,
-      "Category": "Usage bill",
-      "Description": "BBMP - Garbage Pickup",
-      "Amount": 3500,
-      "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -31157.33
-    },
-    {
-      "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 73888.66999999998
-    }
-  ],
   "Maintenance September 2026": [
     {
       "Month": 46266,
@@ -5255,6 +5359,98 @@
       "Amount Paid": 2000
     }
   ],
+  "Expenses November 2026": [
+    {
+      "Date": 46327,
+      "Category": "Balance",
+      "Description": "Opening Balance",
+      "Amount": 58888.669999999984,
+      "__EMPTY_1": "Actual carry forwarded to account as on 1st of the month",
+      "__EMPTY_2": -46157.33
+    },
+    {
+      "Date": 46356,
+      "Category": "Salary",
+      "Description": "Mallaiah Salary",
+      "Amount": 10000,
+      "__EMPTY_1": "What we are telling carry forwarded as on 1st of the month",
+      "__EMPTY_2": 58888.669999999984
+    },
+    {
+      "Date": 46356,
+      "Category": "Salary",
+      "Description": "Security Salary",
+      "Amount": 13000,
+      "__EMPTY_1": "Total collection for the month",
+      "__EMPTY_2": 80000
+    },
+    {
+      "Date": 46356,
+      "Category": "Salary",
+      "Description": "Housekeeping Salary",
+      "Amount": 11000,
+      "__EMPTY_1": "Total spent in for the month",
+      "__EMPTY_2": 99691.82
+    },
+    {
+      "Date": 46356,
+      "Category": "Usage bill",
+      "Description": "BBMP - Garbage Pickup",
+      "Amount": 3500,
+      "__EMPTY_1": "Actual left in account as on last day of the month",
+      "__EMPTY_2": -65849.15000000001
+    },
+    {
+      "Date": 46328,
+      "Category": "Essentials",
+      "Description": "Rangoli",
+      "Amount": 300,
+      "__EMPTY_1": "What we are telling left in account as on last day of the month",
+      "__EMPTY_2": 39196.84999999998
+    },
+    {
+      "Date": 46336,
+      "Category": "Usage bill",
+      "Description": "Common area Wifi",
+      "Amount": 589
+    },
+    {
+      "Date": 46328,
+      "Category": "Maintenance",
+      "Description": "Duct area cleaning",
+      "Amount": 400
+    },
+    {
+      "Date": 46331,
+      "Category": "Maintenance",
+      "Description": "Generator diesel",
+      "Amount": 4206.82
+    },
+    {
+      "Date": 46333,
+      "Category": "Maintenance",
+      "Description": "Deepavali bonus to security",
+      "Amount": 4000
+    },
+    {
+      "Date": 46336,
+      "Category": "Usage bill",
+      "Description": "BWSSB Bill",
+      "Amount": 35750
+    },
+    {
+      "Date": 46336,
+      "Category": "Usage bill",
+      "Description": "Electricity Bill",
+      "Amount": 16946
+    },
+    {
+      "__EMPTY_2": 8242
+    },
+    {
+      "__EMPTY_2": 8704
+    }
+  ],
   "Maintenance November 2026": [
     {
       "Month": 46296,
@@ -5267,15 +5463,15 @@
       "Month": 46296,
       "Flat No": "G02",
       "Owner Name": "Anoop Ashok",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
       "Flat No": "G03",
       "Owner Name": "Bhandari Prakash",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5379,8 +5575,8 @@
       "Month": 46296,
       "Flat No": 108,
       "Owner Name": "Seshadri Seetharamaiah",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5393,8 +5589,8 @@
       "Month": 46296,
       "Flat No": 110,
       "Owner Name": "Venkat Reddy",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5442,8 +5638,8 @@
       "Month": 46296,
       "Flat No": 207,
       "Owner Name": "Rama Tejaswi Karipeddi",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5456,8 +5652,8 @@
       "Month": 46296,
       "Flat No": 209,
       "Owner Name": "Jagadish Gopalaiah",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5477,8 +5673,8 @@
       "Month": 46296,
       "Flat No": 302,
       "Owner Name": "Prasad Gupta",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5498,8 +5694,8 @@
       "Month": 46296,
       "Flat No": 305,
       "Owner Name": "Akash C Y",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5519,8 +5715,8 @@
       "Month": 46296,
       "Flat No": 308,
       "Owner Name": "Athmaram",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5582,8 +5778,8 @@
       "Month": 46296,
       "Flat No": 407,
       "Owner Name": "Sabitha",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5596,8 +5792,8 @@
       "Month": 46296,
       "Flat No": 409,
       "Owner Name": "Shesh Raj Arval",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
