@@ -5382,7 +5382,7 @@
       "Description": "Security Salary",
       "Amount": 13000,
       "__EMPTY_1": "Total collection for the month",
-      "__EMPTY_2": 80000
+      "__EMPTY_2": 85000
     },
     {
       "Date": 46356,
@@ -5390,7 +5390,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 99691.82
+      "__EMPTY_2": 115555.82
     },
     {
       "Date": 46356,
@@ -5398,7 +5398,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -65849.15000000001
+      "__EMPTY_2": -76713.15000000001
     },
     {
       "Date": 46328,
@@ -5406,7 +5406,7 @@
       "Description": "Rangoli",
       "Amount": 300,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 39196.84999999998
+      "__EMPTY_2": 28332.849999999977
     },
     {
       "Date": 46336,
@@ -5445,10 +5445,34 @@
       "Amount": 16946
     },
     {
-      "__EMPTY_2": 8242
+      "Date": 46338,
+      "Category": "Maintenance",
+      "Description": "Water tank cleaning",
+      "Amount": 8000
     },
     {
-      "__EMPTY_2": 8704
+      "Date": 46339,
+      "Category": "Maintenance",
+      "Description": "Ground floor light installation",
+      "Amount": 835
+    },
+    {
+      "Date": 46340,
+      "Category": "Essentials",
+      "Description": "Floor cleaning liquid",
+      "Amount": 1143
+    },
+    {
+      "Date": 46339,
+      "Category": "Maintenance",
+      "Description": "Dustbin area closer work",
+      "Amount": 5000
+    },
+    {
+      "Date": 46338,
+      "Category": "Maintenance",
+      "Description": "Gym & party hall lock installation",
+      "Amount": 886
     }
   ],
   "Maintenance November 2026": [
@@ -5540,8 +5564,8 @@
       "Month": 46296,
       "Flat No": 103,
       "Owner Name": "Charan",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
@@ -5743,8 +5767,8 @@
       "Month": 46296,
       "Flat No": 402,
       "Owner Name": "Srivalli",
-      "Amount Due": 2500,
-      "Amount Paid": 0
+      "Amount Due": 0,
+      "Amount Paid": 2500
     },
     {
       "Month": 46296,
