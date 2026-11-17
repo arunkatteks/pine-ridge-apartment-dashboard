@@ -2164,6 +2164,12 @@
       "__EMPTY_2": "Maintenance",
       "__EMPTY_3": "Gym & party hall lock installation",
       "__EMPTY_4": 886
+    },
+    {
+      "__EMPTY_1": 46341,
+      "__EMPTY_2": "Essentials",
+      "__EMPTY_3": "Broomstick",
+      "__EMPTY_4": 578
     }
   ],
   "Expenses April 2026": [
@@ -5420,7 +5426,7 @@
       "Description": "Housekeeping Salary",
       "Amount": 11000,
       "__EMPTY_1": "Total spent in for the month",
-      "__EMPTY_2": 115555.82
+      "__EMPTY_2": 116133.82
     },
     {
       "Date": 46356,
@@ -5428,7 +5434,7 @@
       "Description": "BBMP - Garbage Pickup",
       "Amount": 3500,
       "__EMPTY_1": "Actual left in account as on last day of the month",
-      "__EMPTY_2": -54213.15000000001
+      "__EMPTY_2": -54791.15000000001
     },
     {
       "Date": 46328,
@@ -5436,7 +5442,7 @@
       "Description": "Rangoli",
       "Amount": 300,
       "__EMPTY_1": "What we are telling left in account as on last day of the month",
-      "__EMPTY_2": 50832.84999999998
+      "__EMPTY_2": 50254.84999999998
     },
     {
       "Date": 46336,
@@ -5503,6 +5509,12 @@
       "Category": "Maintenance",
       "Description": "Gym & party hall lock installation",
       "Amount": 886
+    },
+    {
+      "Date": 46341,
+      "Category": "Essentials",
+      "Description": "Broomstick",
+      "Amount": 578
     }
   ],
   "Maintenance November 2026": [
